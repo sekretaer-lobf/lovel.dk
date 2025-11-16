@@ -1,4 +1,8 @@
 {
+    "site": {
+        "title": "Løvel - lige i nærheden",
+        "description": "Løvel, årets lokalområde 2016. En aktiv og drivkraftig landsby i Viborg kommune."
+    },
     "pages": {
         "home": {
             "title": "Forside",
