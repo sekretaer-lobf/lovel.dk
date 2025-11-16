@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="{{ page_description }}">
+    <title>{{ page_title }} - Løvel - lige i nærheden</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="{{ css_path }}" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" id="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="{{ root_path }}index.html" class="logo">Løvel</a>
+            </div>
+            <div class="navbar-menu" id="navbar-menu">
+                <ul class="nav-list">
+                    <li><a href="{{ root_path }}index.html" class="{% if page_id == 'home' %}active{% endif %}">Forside</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Dagtilbud</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ root_path }}dagtilbud/dagpleje/">Dagpleje</a></li>
+                            <li><a href="{{ root_path }}dagtilbud/vuggestue/">Vuggestue</a></li>
+                            <li><a href="{{ root_path }}dagtilbud/boernehave/">Børnehave</a></li>
+                            <li><a href="{{ root_path }}dagtilbud/skole/">Skole</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Foreninger</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ root_path }}foreninger/luif/">LUIF</a></li>
+                            <li><a href="{{ root_path }}foreninger/luif-friluftsliv/">LUIF - Friluftsliv</a></li>
+                            <li><a href="{{ root_path }}foreninger/luif-petanque/">LUIF - Petanque</a></li>
+                            <li><a href="{{ root_path }}foreninger/luif-gymnastik/">LUIF - Gymnastik</a></li>
+                            <li><a href="{{ root_path }}foreninger/luif-fodbold/">LUIF - Fodbold</a></li>
+                            <li><a href="{{ root_path }}foreninger/luif-badminton/">LUIF - Badminton</a></li>
+                            <li><a href="{{ root_path }}foreninger/luif-loebeklub/">LUIF - Løbeklub</a></li>
+                            <li><a href="{{ root_path }}foreninger/haandbold/">Håndfeld</a></li>
+                            <li><a href="{{ root_path }}foreninger/borgerforening/">Borgerforening</a></li>
+                            <li><a href="{{ root_path }}foreninger/loevelfonden-2000/">Løvelfonden 2000</a></li>
+                            <li><a href="{{ root_path }}foreninger/seniorforening/">Seniorforening</a></li>
+                            <li><a href="{{ root_path }}foreninger/amatoerscenen/">Amatørscenen</a></li>
+                            <li><a href="{{ root_path }}foreninger/kultur-og-forsamlingshus/">Kultur og Forsamlingshus</a></li>
+                            <li><a href="{{ root_path }}foreninger/menighedsraad/">Menighedsråd</a></li>
+                            <li><a href="{{ root_path }}foreninger/motor-klub/">Motor Klub</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{{ root_path }}erhverv/">Erhverv</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Informationer</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ root_path }}informationer/placering/">Placering</a></li>
+                            <li><a href="{{ root_path }}informationer/byfest/">Byfest</a></li>
+                            <li><a href="{{ root_path }}informationer/byens-loeve/">Byens løve</a></li>
+                            <li><a href="{{ root_path }}informationer/vandvaerket/">Vandværket</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Film</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ root_path }}film/">Film</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{{ root_path }}loevel-netop-nu/">Løvel Netop Nu</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <p><strong>Henvendelser vedr. hjemmesiden:</strong></p>
+                    <p><a href="mailto:support@lovel.dk">support@lovel.dk</a></p>
+                </div>
+                <div class="footer-section">
+                    <p>2025 | Løvel - lige i nærheden</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ js_path }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+{
+    "site": {
+        "title": "Løvel - lige i nærheden",
+        "description": "Løvel, årets lokalområde 2016. En aktiv og drivkraftig landsby i Viborg kommune."
+    },
+    "pages": {
+        "home": {
+            "title": "Forside",
+            "description": "Løvel, årets lokalområde 2016. En aktiv og drivkraftig landsby i Viborg kommune.",
+            "hero": {
+                "image": "media/shared/general/forside.jpg",
+                "title": "Løvel",
+                "subtitle": "-lige i nærheden"
+            },
+            "sections": [{
+                "type": "content",
+                "layout": "two-col",
+                "columns": [{
+                        "type": "text",
+                        "content": "<h2>Løvel</h2><p>Løvel er en aktiv og drivkraftig landsby. Den ligger lige i nærheden af et væld af muligheder.</p><p>10 minutters kørsel til Viborg, naturen lige i baghaven og nærvær og tryghed for vores børn.</p><p>Her er mange muligheder for pasning samt en attraktiv og god skole.</p><p>Velkommen til storkenes landingsplads.</p>"
+                    },
+                    {
+                        "type": "image",
+                        "src": "media/shared/general/wordle-loevel-2.png",
+                        "alt": "Løvel - lige i nærheden"
+                    }
+                ]
+            }]
+        }
+    }
+}
