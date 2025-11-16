@@ -532,19 +532,6 @@
                 }
             ]
         },
-        "foreninger/loevelfonden-2000-formaal": {
-            "title": "Løvelfonden 2000 - Formål",
-            "description": "Løvelfonden 2000 vedtægter og formål",
-            "sections": [{
-                    "type": "header",
-                    "title": "LøvelFonden 2000's formål"
-                },
-                {
-                    "type": "text",
-                    "content": "<p><strong>VEDTÆGTER FOR FORENINGEN \"LØVELFONDEN 2000\"</strong></p><p><strong>1. Navn og hjemsted</strong></p><p>Foreningens navn er: Foreningen \"Løvelfonden 2000\".</p><p>Foreningens hjemsted er i Løvel i Tjele kommune, formandens adresse, 8830 Tjele.</p><p><strong>2. Formål</strong></p><p>Foreningen \"Løvelfonden 2000\" er en uafhængig almenvelgørende og almennyttig forening, hvis formål er:</p><p>a). at styrke og udvikle de folkelige og tværkulturelle samarbejde i Løvel og omegn.</p><p>b). at yde økonomisk støtte til eksisterende og nye lokale initiativer inden for forenings, idræts- og kulturlivet på tværs af aldersgrupper.</p><p>c). at yde økonomisk støtte til etablering og vedligeholdelse af kulturelle anlæg i Løvel og omegn.</p><p>Se hele vedtægterne på filen nedenfor...</p>"
-                }
-            ]
-        },
         "foreninger/viborg-motor-klub-loevelbanen": {
             "title": "Viborg Motor Klub - Løvelbanen",
             "description": "Viborg Motor Klub holder til ved Løvelbanen",
