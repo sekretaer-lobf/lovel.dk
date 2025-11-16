@@ -243,8 +243,11 @@ def render_page(page_id: str, page_data: dict) -> str:
     for section in page_data.get("sections", []):
         html += render_section(section, root_path)
     
-    # Footer
+    # Footer with last updated date
+    last_updated = datetime.now().strftime("%d. %B %Y")
     html += f"""    </main>
+
+    <button id="scrollToTop" aria-label="Tilbage til toppen">↑</button>
 
     <footer>
         <div class="container">
@@ -254,13 +257,43 @@ def render_page(page_id: str, page_data: dict) -> str:
                     <p><a href="mailto:support@lovel.dk">support@lovel.dk</a></p>
                 </div>
                 <div class="footer-section">
+                    <p><strong>Sitemap</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li><a href="{root_path}index.html">Forside</a></li>
+                        <li><a href="{root_path}dagtilbud/vuggestue/">Dagtilbud</a></li>
+                        <li><a href="{root_path}foreninger/luif/">Foreninger</a></li>
+                        <li><a href="{root_path}informationer/placering/">Informationer</a></li>
+                        <li><a href="{root_path}erhverv.html">Erhverv</a></li>
+                        <li><a href="{root_path}film.html">Film</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
                     <p>© 2025 | Løvel - lige i nærheden</p>
+                    <p><small>Sidst opdateret: {last_updated}</small></p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', function() {{
+            if (window.pageYOffset > 300) {{
+                scrollToTopBtn.classList.add('show');
+            }} else {{
+                scrollToTopBtn.classList.remove('show');
+            }}
+        }});
+        
+        scrollToTopBtn.addEventListener('click', function() {{
+            window.scrollTo({{
+                top: 0,
+                behavior: 'smooth'
+            }});
+        }});
+
         // Mobile menu toggle
         const toggle = document.getElementById('navbar-toggle');
         const menu = document.getElementById('navbar-menu');

@@ -69,6 +69,8 @@
 <div class='section ' ><div class='container'><div class='row cols-2'><div class='col'><p><strong>Kontaktoplysninger:</strong></p><p><strong>Formand:</strong> Kaj Kristensen, tlf.: 26 63 95 31<br>Mail: Kristensen_kaj@hotmail.com</p><p><strong>Næstformand:</strong> Kjeld Berg Jacobsen, tlf.: 23 28 05 38<br>Mail: Jacobsen.loevel@outlook.com</p></div><div class='col'><div class='img-container'><img src='../../media/foreninger/logo.jpg' alt='LOBF logo'></div></div></div></div></div>
     </main>
 
+    <button id="scrollToTop" aria-label="Tilbage til toppen">↑</button>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -77,13 +79,43 @@
                     <p><a href="mailto:support@lovel.dk">support@lovel.dk</a></p>
                 </div>
                 <div class="footer-section">
+                    <p><strong>Sitemap</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li><a href="../../index.html">Forside</a></li>
+                        <li><a href="../../dagtilbud/vuggestue/">Dagtilbud</a></li>
+                        <li><a href="../../foreninger/luif/">Foreninger</a></li>
+                        <li><a href="../../informationer/placering/">Informationer</a></li>
+                        <li><a href="../../erhverv.html">Erhverv</a></li>
+                        <li><a href="../../film.html">Film</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
                     <p>© 2025 | Løvel - lige i nærheden</p>
+                    <p><small>Sidst opdateret: 16. November 2025</small></p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
         // Mobile menu toggle
         const toggle = document.getElementById('navbar-toggle');
         const menu = document.getElementById('navbar-menu');

@@ -69,6 +69,8 @@
 <div class='section ' ><div class='container'><p><strong>Medlemskab</strong></p><p>For at kunne give noget ud, skal der jo som bekendt også noget ind. Dette gælder også midlerne i "Løvelfonden 2000". Ifølge vedtægterne skal der oparbejdes en grundkapital på 250.000 kr., før der kan foretages udlodning. Det er hensigten, at der altid skal være en grundkapital på dette beløb.</p><p>Tegn et medlemskab i "Løvelfonden 2000" og vær med til at støtte udviklingen i din by og opland. Medlemskontingentet udgør:</p><ul><li>100 kr. for en hustand</li><li>150 kr. for foreninger</li><li>250 kr. for virksomheder</li></ul><p><strong>Kontakt:</strong> Formand: Klaus Høgh, 20454202</p><p><a href='../../media/foreninger/Vedtægter Løvelfonden2000.pdf' target='_blank'>Vedtægter for Løvelfonden 2000</a></p></div></div>
     </main>
 
+    <button id="scrollToTop" aria-label="Tilbage til toppen">↑</button>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -77,13 +79,43 @@
                     <p><a href="mailto:support@lovel.dk">support@lovel.dk</a></p>
                 </div>
                 <div class="footer-section">
+                    <p><strong>Sitemap</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li><a href="../../index.html">Forside</a></li>
+                        <li><a href="../../dagtilbud/vuggestue/">Dagtilbud</a></li>
+                        <li><a href="../../foreninger/luif/">Foreninger</a></li>
+                        <li><a href="../../informationer/placering/">Informationer</a></li>
+                        <li><a href="../../erhverv.html">Erhverv</a></li>
+                        <li><a href="../../film.html">Film</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
                     <p>© 2025 | Løvel - lige i nærheden</p>
+                    <p><small>Sidst opdateret: 16. November 2025</small></p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
         // Mobile menu toggle
         const toggle = document.getElementById('navbar-toggle');
         const menu = document.getElementById('navbar-menu');

@@ -70,6 +70,8 @@
 <div class='section ' ><div class='container'><div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg);'><div style='background: #f0f0f0; border-radius: var(--radius); overflow: hidden;'><div style='position: relative; padding-bottom: 56.25%; height: 0;'><iframe style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' src='https://www.youtube.com/embed/dQw4w9WgXcQ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div><p style='padding: var(--spacing); margin: 0; text-align: center; font-size: 0.9rem;'><em>Erstat video-ID ovenfor med dine YouTube videoer</em></p></div></div></div></div>
     </main>
 
+    <button id="scrollToTop" aria-label="Tilbage til toppen">↑</button>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -78,13 +80,43 @@
                     <p><a href="mailto:support@lovel.dk">support@lovel.dk</a></p>
                 </div>
                 <div class="footer-section">
+                    <p><strong>Sitemap</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li><a href="../index.html">Forside</a></li>
+                        <li><a href="../dagtilbud/vuggestue/">Dagtilbud</a></li>
+                        <li><a href="../foreninger/luif/">Foreninger</a></li>
+                        <li><a href="../informationer/placering/">Informationer</a></li>
+                        <li><a href="../erhverv.html">Erhverv</a></li>
+                        <li><a href="../film.html">Film</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
                     <p>© 2025 | Løvel - lige i nærheden</p>
+                    <p><small>Sidst opdateret: 16. November 2025</small></p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
         // Mobile menu toggle
         const toggle = document.getElementById('navbar-toggle');
         const menu = document.getElementById('navbar-menu');

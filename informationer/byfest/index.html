@@ -68,6 +68,8 @@
 <div class='section ' ><div class='container'><div class='row cols-2-ratio'><div class='col'><div class='img-container'><img src='../../media/informationer/byfest.jpg' alt='Byfest'></div></div><div class='col'><p><strong>Byfest</strong></p><p>Det er den årlige festuge i juni måned, festen er for både børn og voksne. Festen afholdes som regel i uge 23.</p><p>Byfesten er knap en uge med fest og farver.</p><p>Der er festplads og -telt med diverse underholdning, fællesspisning og bal.</p><p>Underholdningen er i top for både børn og voksne.</p><p><strong>Arrangør:</strong> Festudvalg nedsat af Idrætsforeningen og Borgerforeningen med deltagelse af Løven.</p><p>Like og find nyeste information om byfesten på deres <a href='https://www.facebook.com/L%C3%B8vel-Byfest-585120928305171/' target='_blank'>Facebookside</a></p></div></div></div></div>
     </main>
 
+    <button id="scrollToTop" aria-label="Tilbage til toppen">↑</button>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -76,13 +78,43 @@
                     <p><a href="mailto:support@lovel.dk">support@lovel.dk</a></p>
                 </div>
                 <div class="footer-section">
+                    <p><strong>Sitemap</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li><a href="../../index.html">Forside</a></li>
+                        <li><a href="../../dagtilbud/vuggestue/">Dagtilbud</a></li>
+                        <li><a href="../../foreninger/luif/">Foreninger</a></li>
+                        <li><a href="../../informationer/placering/">Informationer</a></li>
+                        <li><a href="../../erhverv.html">Erhverv</a></li>
+                        <li><a href="../../film.html">Film</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
                     <p>© 2025 | Løvel - lige i nærheden</p>
+                    <p><small>Sidst opdateret: 16. November 2025</small></p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
         // Mobile menu toggle
         const toggle = document.getElementById('navbar-toggle');
         const menu = document.getElementById('navbar-menu');

@@ -68,6 +68,8 @@
 <div class='section ' ><div class='container'><div class='row cols-2'><div class='col'><div class='img-container'><img src='../../media/informationer/loeve.jpg' alt='Løve'></div></div><div class='col'><p>Årets Æresløve bliver udnævnt hvert år ved byfestens afslutning. For at blive Æresløve skal man have ydet en anerkendelsesværdig indsats for Løvel og omegn.</p><p>Som bevis på udnævnelsen modtager Løven en kæde, som skal bæres ved forskellige arrangementer i byen. Desuden får Æresløven 1.000 kr., som han/hun skal få størst mulig udbytte af, ved afholdelse af forskellige aktiviteter.</p><p>Udbyttet bliver indsat på en konto og midlerne skal bruges til by-forskønnelse eller andre formål, der kommer borgerne i Løvel og omegn til gode.</p><p>Tilskud kan søges af alle i Løvel og omegn, såvel foreninger som enkeltpersoner.</p><p>Alle foreninger og indbyggere i Løvel og omegn kan skriftligt indstille kandidater til Årets Æresløve</p></div></div></div></div>
     </main>
 
+    <button id="scrollToTop" aria-label="Tilbage til toppen">↑</button>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -76,13 +78,43 @@
                     <p><a href="mailto:support@lovel.dk">support@lovel.dk</a></p>
                 </div>
                 <div class="footer-section">
+                    <p><strong>Sitemap</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li><a href="../../index.html">Forside</a></li>
+                        <li><a href="../../dagtilbud/vuggestue/">Dagtilbud</a></li>
+                        <li><a href="../../foreninger/luif/">Foreninger</a></li>
+                        <li><a href="../../informationer/placering/">Informationer</a></li>
+                        <li><a href="../../erhverv.html">Erhverv</a></li>
+                        <li><a href="../../film.html">Film</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
                     <p>© 2025 | Løvel - lige i nærheden</p>
+                    <p><small>Sidst opdateret: 16. November 2025</small></p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
         // Mobile menu toggle
         const toggle = document.getElementById('navbar-toggle');
         const menu = document.getElementById('navbar-menu');

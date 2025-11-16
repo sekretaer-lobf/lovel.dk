@@ -68,6 +68,8 @@
 <div class='section ' ><div class='container'><div class='row cols-2'><div class='col'><div class='img-container'><img src='../../media/foreninger/amatoerscenen1.jpg' alt='Amatørscenen'></div></div><div class='col'><p><strong>Formål</strong><br />Foreningen "Amatørscenen Løvel" har til formål at samle interesserede om et seriøst arbejde med amatørteater, herunder revy og anden scenisk optræden.</p><p><strong>Formand</strong><br />Else Nielsen<br />Tlf.nr.: 86 69 90 16 / 28 29 90 16<br />E-mail: <a href='mailto:henningmn@mail.tele.dk' target='_blank'>henningmn@mail.tele.dk</a></p><p align='justify'>'Amatørscenen Løvel' er en lokal teaterforening, der blev dannet i februar 1986.</p><p align='justify'>Foreningen består af en bestyrelse på 5 bestyrelsesmedlemmer, der vælges for 2 år ad gangen, således at der på hver årlig generalforsamling vælges 2 hhv. 3 bestyrelsesmedlemmer.</p><p>Gennem årene har Amatørscenen udviklet sig fra at have én årlig opførelse af teaterstykke eller revy til at have 3-4 arrangementer om året. Vi er faste arrangører af revy, cabaret eller teaterstykke ved Løvels årlige byfest i juni måned. De sidste par år har vi arrangeret fællesspisning med underholdning i efteråret. Ved byens årlige juletræsfest i december for børn og voksne i alle aldre har vi forestået underholdningen, ligesom vi gennem de seneste 5 år har lavet cabaret/teaterstykke ved Løvels vinterfest i februar/marts måned.</p><p align='justify'>Udover en fast stab af aktører udvider Amatørscenen løbende sin besætning af aktive spillere, og det er for nyligt lykkedes os at stable et børneteater på benene. Dette fik med stor succes sin debut ved juletræsfesten i december 2005. En flok dygtige børn optræder med et julespil til stor fornøjelse for publikum.</p><p align='justify'>Som det fremgår af ovenstående, er vi aktive på underholdningsområdet og stiller gerne op ved bestilte arrangementer. Vi har deltaget i 3 Landsstævner med teaterstykker, og vores lidenskab må nok siges at være farcer. Et par gange har vi med succes prøvet kræfter med at have Dario Fo på plakaten.</p><p align='justify'>Skulle du selv have fået lyst til at vise dit talent på scenen er du velkommen til at kontakte os.</p></div></div></div></div>
     </main>
 
+    <button id="scrollToTop" aria-label="Tilbage til toppen">↑</button>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -76,13 +78,43 @@
                     <p><a href="mailto:support@lovel.dk">support@lovel.dk</a></p>
                 </div>
                 <div class="footer-section">
+                    <p><strong>Sitemap</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li><a href="../../index.html">Forside</a></li>
+                        <li><a href="../../dagtilbud/vuggestue/">Dagtilbud</a></li>
+                        <li><a href="../../foreninger/luif/">Foreninger</a></li>
+                        <li><a href="../../informationer/placering/">Informationer</a></li>
+                        <li><a href="../../erhverv.html">Erhverv</a></li>
+                        <li><a href="../../film.html">Film</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
                     <p>© 2025 | Løvel - lige i nærheden</p>
+                    <p><small>Sidst opdateret: 16. November 2025</small></p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
         // Mobile menu toggle
         const toggle = document.getElementById('navbar-toggle');
         const menu = document.getElementById('navbar-menu');

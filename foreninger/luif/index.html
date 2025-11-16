@@ -82,6 +82,8 @@
 <div class='section collapsible-content collapsed' data-section='team-loevel'><div class='container'><div class='row cols-2'><div class='col'><div class='img-container'><img src='../../media/foreninger/team-loevel-2.jpg' alt='Team Løvel'></div></div><div class='col'><p align='justify'><strong>Formål</strong><br />Team Løvel er for alle, der har lyst til at løbe, nybegyndere såvel som garvede.</p><p align='justify'>Vi lægger vægt på gode løbeoplevelser i hyggelig atmosfære. I Team Løvel vil vi satse på: Socialt samvær med naboer, venner og medborgere på en sjov og sund måde, som måske kan skabe andre gode ideer for Løvel og Omegn.</p><p align='justify'>Socialt samvær med naboer, venner, og medborgere på en sjov og sund måde, som måske kan skabe andre gode ideer for Løvel og Omegn. Opnå et personligt velvære gennem motion og samtidig komme små skavanker i forkøbet. Hjælp fra andre medlemmer til at nå din personlige målsætning med hensyn til motion. Stille med motionshold til mange forskellige former for løb (24 timers løb, halvmaraton, byløb mv.)</p><p align='justify'><strong>Styregruppen:</strong></p><p align='justify'>Martin Bjerring m.fl.<br />Tlf.nr. 2617 9346<br />E-mail: martin.bjerring@gmail.com<br />Hjemmeside: <a href='http://www.teamloevel.dk/' target='_blank'>www.teamloevel.dk</a></p></div></div></div></div>
     </main>
 
+    <button id="scrollToTop" aria-label="Tilbage til toppen">↑</button>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -90,13 +92,43 @@
                     <p><a href="mailto:support@lovel.dk">support@lovel.dk</a></p>
                 </div>
                 <div class="footer-section">
+                    <p><strong>Sitemap</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li><a href="../../index.html">Forside</a></li>
+                        <li><a href="../../dagtilbud/vuggestue/">Dagtilbud</a></li>
+                        <li><a href="../../foreninger/luif/">Foreninger</a></li>
+                        <li><a href="../../informationer/placering/">Informationer</a></li>
+                        <li><a href="../../erhverv.html">Erhverv</a></li>
+                        <li><a href="../../film.html">Film</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
                     <p>© 2025 | Løvel - lige i nærheden</p>
+                    <p><small>Sidst opdateret: 16. November 2025</small></p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
         // Mobile menu toggle
         const toggle = document.getElementById('navbar-toggle');
         const menu = document.getElementById('navbar-menu');

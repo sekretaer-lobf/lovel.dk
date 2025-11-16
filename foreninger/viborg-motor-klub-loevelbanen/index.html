@@ -68,6 +68,8 @@
 <div class='section ' ><div class='container'><div class='row cols-2'><div class='col'><div class='img-container'><img src='../../media/foreninger/loevelbanen.jpg' alt='Løvelbanen'></div></div><div class='col'><p>Viborg Motor Klub holder til i den smukke "Kirkedal" lidt uden for Løvel, hvor klubben i over 70 år har haft baner. I starten var det hovedsageligt Speedway der blev kørt, siden er banen blevet bygget om. I de senere år har det været Gokart, Folkerace og Rallycross, der er blevet kørt i Kirkedalen.</p><p>I foråret 2010 er banerne endnu en gang blevet udvidet. Denne gang er der lagt asfalt, på en del af jordbanen, således at den nu også kan anvendes til RallyCross.</p><div>Gokartbanen er også blevet udbygget med et par nye sving, og et nyt stort pitområde.</div><div></div><div>Nogle af de største navne Viborg Motor Klub har huset, er Ole Olsen(speedway) og Kristian Poulsen(DTC, WTCC og Le Mans). Klubben bliver ved med at have nye talenter i støbeskeen i gokart-afdelingen.</div><p>Se mere på hjemmesiden: <a href='http://viborgmotorklub.dk/' target='_blank' title='Løvelbanen'>http://viborgmotorklub.dk/</a></p></div></div></div></div>
     </main>
 
+    <button id="scrollToTop" aria-label="Tilbage til toppen">↑</button>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -76,13 +78,43 @@
                     <p><a href="mailto:support@lovel.dk">support@lovel.dk</a></p>
                 </div>
                 <div class="footer-section">
+                    <p><strong>Sitemap</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li><a href="../../index.html">Forside</a></li>
+                        <li><a href="../../dagtilbud/vuggestue/">Dagtilbud</a></li>
+                        <li><a href="../../foreninger/luif/">Foreninger</a></li>
+                        <li><a href="../../informationer/placering/">Informationer</a></li>
+                        <li><a href="../../erhverv.html">Erhverv</a></li>
+                        <li><a href="../../film.html">Film</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
                     <p>© 2025 | Løvel - lige i nærheden</p>
+                    <p><small>Sidst opdateret: 16. November 2025</small></p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
         // Mobile menu toggle
         const toggle = document.getElementById('navbar-toggle');
         const menu = document.getElementById('navbar-menu');
