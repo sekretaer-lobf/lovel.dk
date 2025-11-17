@@ -56,17 +56,20 @@
                             <li><a href="../../foreninger/viborg-motor-klub-loevelbanen/">Viborg Motor Klub - Løvelbanen</a></li>
                         </ul>
                     </li>
-                    <li><a href="../../erhverv/">Erhverv</a></li>
+                    <li><a href="../../erhverv.html">Erhverv</a></li>
                     <li><a href="../../film.html">Film</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+
     <main>
 <div class='section'><div class='container'><h1>Løvel Kultur og Forsamlingshus (LKOF)</h1></div></div>
-<div class='section ' ><div class='container'><div class='row cols-2'><div class='col'><div class='img-container'><img src='../../media/foreninger/forsamlingshuset.jpg' alt='Forsamlingshuset'></div></div><div class='col'><p><strong>Formål</strong></p><p>Foreningens formål er at drive Løvel Kultur og Forsamlingshus, der skal virke som møde og forsamlingssted for egnens beboer. Løvel Kultur og Forsamlingshus danner ramme om kulturelle aktiviteter såsom møder, amatørteater, dans, foredrag, foreningsarrangementer og fester.</p><p>Forsamlingshuset har gode faciliteter til at holde fest, her er både en stor og lille sal samt gode køkkenfaciliteter.</p><p><strong>Kontakt</strong></p><p>Dan Gohlke</p><p>Tlf.: 51909231<br>E-mail: dan-g@fibermail.dk<br>Hjemmeside: <a href='http://www.loevelforsamlingshus.dk' target='_blank'>www.loevelforsamlingshus.dk</a></p></div></div></div></div>
+<div class='section ' ><div class='container'><div class='row cols-2'><div class='col'><div class='img-container'><img src='../../media/foreninger/forsamlingshuset.jpg' alt='Forsamlingshuset'></div></div><div class='col'><p>Formål</p><p>Foreningens formål er at drive Løvel Kultur og Forsamlingshus, der skal virke som møde og forsamlingssted for egnens beboer. Løvel Kultur og Forsamlingshus danner ramme om kulturelle aktiviteter såsom møder, amatørteater, dans, foredrag, foreningsarrangementer og fester.</p><p>Forsamlingshuset har gode faciliteter til at holde fest, her er både en stor og lille sal samt gode køkkenfaciliteter.</p><p>Kontakt</p><p>Dan Gohlke</p></div></div></div></div>
     </main>
+
+    <button id="scrollToTop" aria-label="Tilbage til toppen">↑</button>
 
     <footer>
         <div class="container">
@@ -76,13 +79,43 @@
                     <p><a href="mailto:support@lovel.dk">support@lovel.dk</a></p>
                 </div>
                 <div class="footer-section">
+                    <p><strong>Sitemap</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li><a href="../../index.html">Forside</a></li>
+                        <li><a href="../../dagtilbud/vuggestue/">Dagtilbud</a></li>
+                        <li><a href="../../foreninger/luif/">Foreninger</a></li>
+                        <li><a href="../../informationer/placering/">Informationer</a></li>
+                        <li><a href="../../erhverv.html">Erhverv</a></li>
+                        <li><a href="../../film.html">Film</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
                     <p>© 2025 | Løvel - lige i nærheden</p>
+                    <p><small>Sidst opdateret: 17. November 2025</small></p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
         // Mobile menu toggle
         const toggle = document.getElementById('navbar-toggle');
         const menu = document.getElementById('navbar-menu');

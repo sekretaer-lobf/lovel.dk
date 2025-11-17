@@ -17,14 +17,23 @@
                 "layout": "two-col",
                 "columns": [{
                         "type": "text",
-                        "content": "<h2>Løvel</h2><p>Løvel er en aktiv og drivkraftig landsby. Den ligger lige i nærheden af et væld af muligheder.</p><p>10 minutters kørsel til Viborg, naturen lige i baghaven og nærvær og tryghed for vores børn.</p><p>Her er mange muligheder for pasning samt en attraktiv og god skole.</p><p>Velkommen til storkenes landingsplads.</p>"
+                        "paragraphs": [
+                            "Løvel",
+                            "Løvel er en aktiv og drivkraftig landsby. Den ligger lige i nærheden af et væld af muligheder.",
+                            "10 minutters kørsel til Viborg, naturen lige i baghaven og nærvær og tryghed for vores børn.",
+                            "Her er mange muligheder for pasning samt en attraktiv og god skole.",
+                            "Velkommen til storkenes landingsplads."
+                        ],
+                        "title": "Løvel"
                     },
                     {
                         "type": "image",
                         "src": "media/shared/general/wordle-loevel-2.png",
                         "alt": "Løvel - lige i nærheden"
                     }
-                ]
+                ],
+                "collapsible": false,
+                "id": null
             }]
         },
         "dagtilbud/dagpleje": {
@@ -32,7 +41,9 @@
             "description": "Information om dagpleje i Løvel",
             "sections": [{
                     "type": "header",
-                    "title": "Dagpleje"
+                    "title": "Dagpleje",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
@@ -44,10 +55,19 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p><strong>Dagplejen</strong></p><p>Dagplejen er et dagtilbud i private hjem for børn i alderen 24 uger – 3 år.</p><p>Det hjemlige miljø i dagplejen, giver mulighed for fokus på nærvær og den individuelle relation. Dette er med til at give barnet en tryg og overskuelig hverdag.</p><p>De mødes med hinanden en gang om måneden. Dette er med til at sikre børnenes relation til deres gæstedagpleje.</p><p>Dagplejerne i Løvel gør et stort arbejde i, at lave overgangen til børnehaven så blid som muligt.</p><p>Du kan læse meget mere om de enkelte dagplejere i Løvel på dette <a href='http://kommune.viborg.dk/Borger/Boern,-unge-og-familie/Dagtilbud-0-6-aar/Pasningstilbud/Dagpleje-vuggestuer-og-boernehaver/Omraade_Ost/Dagplejen' target='_blank'>link</a> til Viborg kommunes hjemmeside.</p>",
+                            "paragraphs": [
+                                "Dagplejen",
+                                "Dagplejen er et dagtilbud i private hjem for børn i alderen 24 uger – 3 år.",
+                                "Det hjemlige miljø i dagplejen, giver mulighed for fokus på nærvær og den individuelle relation. Dette er med til at give barnet en tryg og overskuelig hverdag.",
+                                "De mødes med hinanden en gang om måneden. Dette er med til at sikre børnenes relation til deres gæstedagpleje.",
+                                "Dagplejerne i Løvel gør et stort arbejde i, at lave overgangen til børnehaven så blid som muligt.",
+                                "til Viborg kommunes hjemmeside."
+                            ],
                             "width": "2"
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 }
             ]
         },
@@ -56,7 +76,9 @@
             "description": "Vuggestue i Løvel - daginstitution for små børn",
             "sections": [{
                     "type": "header",
-                    "title": "Vuggestue"
+                    "title": "Vuggestue",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
@@ -79,26 +101,50 @@
                         },
                         {
                             "type": "text",
-                            "content": "<h2>Vuggestue</h2><p>Løvel fik i 2016 lavet en ombygning af børnehaven så den nu også indeholder vuggestue. Vuggestuen står derfor helt ny med flotte lyse lokaler og særdeles god indretning.</p><p>Når dit barn er indskrevet hos os indbyder vi, hver onsdag formiddag 9.30-10.30 til legestue. Du og dit barn kan møde op 3 md. Før start i vuggestue, så dit barn får kendskab til det at gå i vuggestue. Det giver os en mulighed for at lære dit barn og dig at kende og du får mulighed for at følge vores hverdag som den er, når dit barn skal være en del af vuggestuen. Dermed har vi afstemt vores forventninger til hinanden inden jeres barn starter, samt et godt samarbejde er i gang.</p>",
+                            "paragraphs": [
+                                "Vuggestue",
+                                "Løvel fik i 2016 lavet en ombygning af børnehaven så den nu også indeholder vuggestue. Vuggestuen står derfor helt ny med flotte lyse lokaler og særdeles god indretning.",
+                                "Når dit barn er indskrevet hos os indbyder vi, hver onsdag formiddag 9.30-10.30 til legestue. Du og dit barn kan møde op 3 md. Før start i vuggestue, så dit barn får kendskab til det at gå i vuggestue. Det giver os en mulighed for at lære dit barn og dig at kende og du får mulighed for at følge vores hverdag som den er, når dit barn skal være en del af vuggestuen. Dermed har vi afstemt vores forventninger til hinanden inden jeres barn starter, samt et godt samarbejde er i gang."
+                            ],
+                            "title": "Vuggestue",
                             "width": "2"
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 },
                 {
                     "type": "text",
-                    "content": "<h3>Søvnpolitik</h3><p>I Sødal Børnehus har vi en søvnpolitik. Da vi mener, søvn er en afgørende betydning i det lille barns liv. Vi har ingen faste sovetider, jeres barn sover efter behov. Det foregår i tæt dialog med jer forældre. Dette snakker vi desuden meget mere om, når I kommer i legestue. Læs desuden mere om vores søvnpolitik på vores hjemmeside soedahlbh.viborg.dk</p>"
+                    "paragraphs": [
+                        "Søvnpolitik",
+                        "I Sødal Børnehus har vi en søvnpolitik. Da vi mener, søvn er en afgørende betydning i det lille barns liv. Vi har ingen faste sovetider, jeres barn sover efter behov. Det foregår i tæt dialog med jer forældre. Dette snakker vi desuden meget mere om, når I kommer i legestue. Læs desuden mere om vores søvnpolitik på vores hjemmeside soedahlbh.viborg.dk"
+                    ],
+                    "title": "Søvnpolitik"
                 },
                 {
                     "type": "text",
-                    "content": "<h3>Aktiviteter</h3><p>Vi tilstræber, at komme ud hver dag enten på tur i vores motorbarnevogn, hvor vi kan komme ud og opleve naturens gang i områdets mange naturskønne steder eller på legepladsen.</p>"
+                    "paragraphs": [
+                        "Aktiviteter",
+                        "Vi tilstræber, at komme ud hver dag enten på tur i vores motorbarnevogn, hvor vi kan komme ud og opleve naturens gang i områdets mange naturskønne steder eller på legepladsen."
+                    ],
+                    "title": "Aktiviteter"
                 },
                 {
                     "type": "text",
-                    "content": "<h3>Miljø og trygghed</h3><p>Vi ønsker, at vuggestuen er et overskueligt og trygt sted at være, med tydelige og nærværende voksne, som børnene kan regne med og er trygge ved.</p><p>Vi glæder os til at se jer.</p>"
+                    "paragraphs": [
+                        "Miljø og trygghed",
+                        "Vi ønsker, at vuggestuen er et overskueligt og trygt sted at være, med tydelige og nærværende voksne, som børnene kan regne med og er trygge ved.",
+                        "Vi glæder os til at se jer."
+                    ],
+                    "title": "Miljø og trygghed"
                 },
                 {
                     "type": "text",
-                    "content": "<h3>Kontaktoplysninger</h3><p><strong>Sødalbørnehus</strong><br>Gl. Røddingvej 8<br>8830 Tjele<br>Tlf. 87 87 12 70</p>"
+                    "paragraphs": [
+                        "Kontaktoplysninger",
+                        "SødalbørnehusGl. Røddingvej 88830 TjeleTlf. 87 87 12 70"
+                    ],
+                    "title": "Kontaktoplysninger"
                 }
             ]
         },
@@ -107,7 +153,9 @@
             "description": "Information om børnehave i Løvel",
             "sections": [{
                     "type": "header",
-                    "title": "Børnehaven"
+                    "title": "Børnehaven",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
@@ -119,24 +167,40 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p><strong>Sødal Børnehus Løvel</strong></p><p>Sødal Børnehus har afdelinger i Løvel og Rødding. Tidligere var Løvelafdelingen en selvstændig børnehave, men er nu lagt sammen med Rødding Børnehave under fælles navn og ledelse.</p><p>Her er nærvær og sammenhold i højsædet. Børnene, forældrene og personale kender hinanden godt.<br />Vi samarbejder med dagplejen, vuggestuen og skolen.<br />At børnehaven er en del af Sødalskolen - Løvel afdelingens fysiske rammer giver sammenhold, overskuelighed og tilhørsforhold med hinanden.</p><p>Det er børnehavens overordnede mål, gennem en tæt og åben forældrekontakt, at være med til at stimulere barnets udvikling, og derved medvirke som et supplement til hjemmet.</p><p><strong>Madordning:</strong></p><p>Vi har nu haft madordning i Løvel siden 4. januar 2016. Vi har ansat ernæringsassistent Vibeke som laver mad til alle børnene i Løvel. Det nye køkken er derfor indviet og vi nyder alle de mange lækre retter og duften fra køkkenet</p>",
+                            "paragraphs": [
+                                "Sødal Børnehus Løvel",
+                                "Sødal Børnehus har afdelinger i Løvel og Rødding. Tidligere var Løvelafdelingen en selvstændig børnehave, men er nu lagt sammen med Rødding Børnehave under fælles navn og ledelse.",
+                                "Her er nærvær og sammenhold i højsædet. Børnene, forældrene og personale kender hinanden godt.Vi samarbejder med dagplejen, vuggestuen og skolen.At børnehaven er en del af Sødalskolen - Løvel afdelingens fysiske rammer giver sammenhold, overskuelighed og tilhørsforhold med hinanden.",
+                                "Det er børnehavens overordnede mål, gennem en tæt og åben forældrekontakt, at være med til at stimulere barnets udvikling, og derved medvirke som et supplement til hjemmet.",
+                                "Madordning:",
+                                "Vi har nu haft madordning i Løvel siden 4. januar 2016. Vi har ansat ernæringsassistent Vibeke som laver mad til alle børnene i Løvel. Det nye køkken er derfor indviet og vi nyder alle de mange lækre retter og duften fra køkkenet"
+                            ],
                             "width": "2"
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 },
                 {
                     "type": "content",
                     "layout": "two-col",
                     "columns": [{
                             "type": "text",
-                            "content": "<p>Du / I er altid velkomne til at kontakte os for yderligere information.</p><p><strong>Børnehuset Sødal - Løvel afdeling</strong></p><p>Gl. Røddingvej 8<br />8830 Tjele<br />Tlf. børnehaven: 87 87 12 70<br />E-mail: <a href='mailto:lre@viborg.dk' target='_blank'>lre@viborg.dk</a><br />Web: <a href='http://soedalbh.viborg.dk/FrontEnd.aspx?id=1026258' target='_blank' title='Sødal Børnehus'>Sødal Børnehus - Løvel afd.</a></p><p><strong>Institutionsleder:</strong> Solbrit Feldbak</p><p><strong>Afdelingsleder i Løvel:</strong> Lene Refsgaard</p>"
+                            "paragraphs": [
+                                "Du / I er altid velkomne til at kontakte os for yderligere information.",
+                                "Børnehuset Sødal - Løvel afdeling",
+                                "Institutionsleder:Solbrit Feldbak",
+                                "Afdelingsleder i Løvel:Lene Refsgaard"
+                            ]
                         },
                         {
                             "type": "image",
                             "src": "media/dagtilbud/soedal-boernehus.png",
                             "alt": "Sødal Børnehus"
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 }
             ]
         },
@@ -145,7 +209,9 @@
             "description": "Sødalskolen i Viborg Kommune - fællesskab, faglighed og tryghed",
             "sections": [{
                     "type": "header",
-                    "title": "Sødalskolen"
+                    "title": "Sødalskolen",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
@@ -157,10 +223,23 @@
                         },
                         {
                             "type": "text",
-                            "content": "<h2>Sødalskolen</h2><p><strong>Skolen</strong></p><p>Sødalskolen er en folkeskole i Viborg Kommune med fokus på tryghed, ansvar, respekt og faglighed. Skolen består af to afdelinger:</p><ul><li><strong>Løvel Afdeling:</strong> 0. - 6. klasse</li><li><strong>Rødding Afdeling:</strong> 0. - 9. klasse (udskolingen foregår her)</li></ul><p>Vi kalder os \"Danmarks længste skole\" – der er 5 kilometer mellem afdelingerne.</p><p><strong>Nøgletal:</strong><br />Omkring 360 elever og 53 ansatte.</p><p><strong>Ledelse:</strong><br />Skoleleder: Brian Albæk<br />Daglig leder i Løvel: Pia Østergaard<br />Formand for skolebestyrelsen: Henrik Karlsen</p><p><strong>Kontakt:</strong><br />Mail: <a href='mailto:skole.sodalskolen@viborg.dk'>skole.sodalskolen@viborg.dk</a><br />Telefon: <a href='tel:+4587872450'>+45 87872450</a><br />Adresse: Meldgårdsvej 24 / Gl. Røddingvej 8, 8830 Tjele</p><p><a href='https://sodalskolen.aula.dk' target='_blank'>Besøg Sødalskolens hjemmeside</a></p>",
+                            "paragraphs": [
+                                "Sødalskolen",
+                                "Skolen",
+                                "Sødalskolen er en folkeskole i Viborg Kommune med fokus på tryghed, ansvar, respekt og faglighed. Skolen består af to afdelinger:",
+                                "Løvel Afdeling:0. - 6. klasse",
+                                "Rødding Afdeling:0. - 9. klasse (udskolingen foregår her)",
+                                "Vi kalder os \"Danmarks længste skole\" – der er 5 kilometer mellem afdelingerne.",
+                                "Nøgletal:Omkring 360 elever og 53 ansatte.",
+                                "Ledelse:Skoleleder: Brian AlbækDaglig leder i Løvel: Pia ØstergaardFormand for skolebestyrelsen: Henrik Karlsen",
+                                "Adresse: Meldgårdsvej 24 / Gl. Røddingvej 8, 8830 Tjele"
+                            ],
+                            "title": "Sødalskolen",
                             "width": "2"
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 }
             ]
         },
@@ -169,7 +248,9 @@
             "description": "LUIF - Løvel Ungdoms- og Idrætsforening og alle dens aktiviteter",
             "sections": [{
                     "type": "header",
-                    "title": "LUIF - Løvel Ungdoms- og Idrætsforening"
+                    "title": "LUIF - Løvel Ungdoms- og Idrætsforening",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
@@ -181,9 +262,16 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p>Løvel Ungdoms og idrætforening er grundlagt i 1902 og tæller i dag 10 afdelinger og ca 700 medlemmer.</p><p>Under sig har LUIF flere foreninger i byen, du kan læse mere om hver enkelt underforening her på hjemmesiden.</p><p><strong>Foreningen har som formål at samle unge og ældre til idrætslig og socialt samvær</strong></p><p><strong>Kontakt:</strong><br>Formand: Jesper Taastrup Christensen<br>Tlf.: 25 11 31 11<br>Mail: jtc@fibermail.dk</p>"
+                            "paragraphs": [
+                                "Løvel Ungdoms og idrætforening er grundlagt i 1902 og tæller i dag 10 afdelinger og ca 700 medlemmer.",
+                                "Under sig har LUIF flere foreninger i byen, du kan læse mere om hver enkelt underforening her på hjemmesiden.",
+                                "Foreningen har som formål at samle unge og ældre til idrætslig og socialt samvær",
+                                "Kontakt:Formand: Jesper Taastrup ChristensenTlf.: 25 11 31 11Mail: jtc@fibermail.dk"
+                            ]
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 },
                 {
                     "type": "header",
@@ -193,7 +281,9 @@
                 },
                 {
                     "type": "text",
-                    "content": "<p>I Løvel er der under idrætsforeningen en selvstændig badmintonafdeling. Også her samarbejder Løvel med nabobyen Rødding. Der er mulighed for både sommer- og vinterbadminton samt motions, trænings- og turneringsmuligheder for alle aldersgrupper. Om vinteren tilbydes træning for børn og unge med træner udefra.</p>",
+                    "paragraphs": [
+                        "I Løvel er der under idrætsforeningen en selvstændig badmintonafdeling. Også her samarbejder Løvel med nabobyen Rødding. Der er mulighed for både sommer- og vinterbadminton samt motions, trænings- og turneringsmuligheder for alle aldersgrupper. Om vinteren tilbydes træning for børn og unge med træner udefra."
+                    ],
                     "id": "badminton",
                     "collapsible": true
                 },
@@ -213,11 +303,16 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p align='justify'><span style='font-family: arial,helvetica,sans-serif; font-size: 10pt;'>Løvel Ungdoms- og Idrætsforening tilbyder fodbold til både ungdom og seniorer: Drenge og piger såvel som damer og herrer.</span></p><p align='justify'><span style='font-family: arial,helvetica,sans-serif; font-size: 10pt;'>Der samarbejdes med Rødding og Vammen under navnet Tjele Vest Sport. Vi deltager i rækker lige fra micro til oldboys. Kom og vær med for motionens, spillets og samværets skyld. Vi har gode omklædningsfaciliteter. Med mellemrum afvikles Tjele Mesterskabet i Løvel.</span></p><p align='justify'><span style='font-family: arial,helvetica,sans-serif; font-size: 10pt;'>Derudover er der fodboldskole i Løvel som afholdes i samarbejde med DBU. Det er en succes hvert år med mange deltagende børn.</span></p><p align='justify'><span style='font-family: arial,helvetica,sans-serif; font-size: 10pt;'>Kontakt: Jan Jakobsen tlf.: 21469965</span></p>"
+                            "paragraphs": [
+                                "Løvel Ungdoms- og Idrætsforening tilbyder fodbold til både ungdom og seniorer: Drenge og piger såvel som damer og herrer.",
+                                "Der samarbejdes med Rødding og Vammen under navnet Tjele Vest Sport. Vi deltager i rækker lige fra micro til oldboys. Kom og vær med for motionens, spillets og samværets skyld. Vi har gode omklædningsfaciliteter. Med mellemrum afvikles Tjele Mesterskabet i Løvel.",
+                                "Derudover er der fodboldskole i Løvel som afholdes i samarbejde med DBU. Det er en succes hvert år med mange deltagende børn.",
+                                "Kontakt: Jan Jakobsen tlf.: 21469965"
+                            ]
                         }
                     ],
-                    "id": "fodbold",
-                    "collapsible": true
+                    "collapsible": true,
+                    "id": "fodbold"
                 },
                 {
                     "type": "header",
@@ -235,11 +330,19 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p align='justify'>Løvel Friluftsliv er en aktivitet under LUIF</p><p>Friluftsliv er et alternativ til idrætsforeningens traditionelle aktiviteter - Så er du til aktiviteter ude i naturen, så er friluftsliv lige noget for dig / dit barn.</p><p align='justify'>Børnene deles i 2 hold.</p><p align='justify'>Hakuna: 0., 1. og 2. Klasse.<br>Matata: 3. klasse til og med 7. klasse.</p><p align='justify'>Der tilbydes oplevelser ude i naturen, hvor sanseoplevelser, og brug af kroppen kommer i fokus. Friluftsliv bygger på succesoplevelser både individuelt og som del af et team.</p><p align='justify'>Vi mødes i Slugten, Kirkedal i Løvel, en friluftsplads der sammen med naturen danner ramme om vores aktiviteter.</p><p><strong>Kontakt</strong><br>Torben Gade<br>Tlf.nr.: 21 65 43 40<br>E-mail: tg8830@gmail.com</p><p>Hjemmeside: <a href='http://www.luif.minisite.dk/Friluftsliv' target='_blank'>http://www.luif.minisite.dk/Friluftsliv</a></p>"
+                            "paragraphs": [
+                                "Løvel Friluftsliv er en aktivitet under LUIF",
+                                "Friluftsliv er et alternativ til idrætsforeningens traditionelle aktiviteter - Så er du til aktiviteter ude i naturen, så er friluftsliv lige noget for dig / dit barn.",
+                                "Børnene deles i 2 hold.",
+                                "Hakuna: 0., 1. og 2. Klasse.Matata: 3. klasse til og med 7. klasse.",
+                                "Der tilbydes oplevelser ude i naturen, hvor sanseoplevelser, og brug af kroppen kommer i fokus. Friluftsliv bygger på succesoplevelser både individuelt og som del af et team.",
+                                "Vi mødes i Slugten, Kirkedal i Løvel, en friluftsplads der sammen med naturen danner ramme om vores aktiviteter.",
+                                "KontaktTorben GadeTlf.nr.: 21 65 43 40E-mail: tg8830@gmail.com"
+                            ]
                         }
                     ],
-                    "id": "friluftsliv",
-                    "collapsible": true
+                    "collapsible": true,
+                    "id": "friluftsliv"
                 },
                 {
                     "type": "header",
@@ -257,12 +360,16 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p><span>Leje af Slugten giver adgang til toilet, tekøkken, shelters og bålhytten.</span></p><p>Bookning af Slugten gøres via hjemmesiden:</p><p><a href='http://www.luif.minisite.dk/Slugten-429245' target='_blank' title='Booking Slugten'>http://www.luif.minisite.dk/Slugten-429245</a></p><p>Hvis der skulle opstå spørgsmål, eller problemer med booking, så skriv til nedenstående kontaktperson.</p><p><span>Kontakt</span><br />Torben Gade<br />Tlf.nr.: 21 65 43 40<br />E-mail: <a href='mailto:tg8830@gmail.com' target='_blank'>tg8830@gmail.com</a></p>",
+                            "paragraphs": [
+                                "Leje af Slugten giver adgang til toilet, tekøkken, shelters og bålhytten.",
+                                "Bookning af Slugten gøres via hjemmesiden:",
+                                "Hvis der skulle opstå spørgsmål, eller problemer med booking, så skriv til nedenstående kontaktperson."
+                            ],
                             "width": "2"
                         }
                     ],
-                    "id": "friluftsliv",
-                    "collapsible": true
+                    "collapsible": true,
+                    "id": "friluftsliv"
                 },
                 {
                     "type": "header",
@@ -275,7 +382,15 @@
                     "layout": "two-col",
                     "columns": [{
                             "type": "text",
-                            "content": "<p><span style='font-size: 10pt;'>Gymnastik er et udvalg under Løvel Ungdoms- og Idrætsforening</span></p><p><span style='font-size: 10pt;'>Gymnastik er primært for de yngste medlemmer.</span></p><p><span style='font-size: 10pt;'>Fræser: 4 - 6 år</span></p><p><span style='font-size: 10pt;'>Turbo: 7 - ca. 12 år</span></p><p><span style='font-size: 10pt;'>Aktiviteterne minder meget om selve gymnastikken, om end den er krydret med anderledes gymnastik, aktiviteten foregår i Løvel Hallen. Vi forsøger, at lave aktiviteter der udvikler børnenes sammenhænge mellem sanser og intelligens. Det foregår ved hjælp af forskellige boldspil, sanglege, rytme, og en masse sjov og ballade.</span></p><p><span style='font-size: 10pt;'>Tider og priser oplyses ved henvendelse til nedenstående instruktører:</span></p><p><span style='font-size: 10pt;'>Anne Mette Hansen tlf.: 2933 5181 mail: sit@mail.dk</span></p>"
+                            "paragraphs": [
+                                "Gymnastik er et udvalg under Løvel Ungdoms- og Idrætsforening",
+                                "Gymnastik er primært for de yngste medlemmer.",
+                                "Fræser: 4 - 6 år",
+                                "Turbo: 7 - ca. 12 år",
+                                "Aktiviteterne minder meget om selve gymnastikken, om end den er krydret med anderledes gymnastik, aktiviteten foregår i Løvel Hallen. Vi forsøger, at lave aktiviteter der udvikler børnenes sammenhænge mellem sanser og intelligens. Det foregår ved hjælp af forskellige boldspil, sanglege, rytme, og en masse sjov og ballade.",
+                                "Tider og priser oplyses ved henvendelse til nedenstående instruktører:",
+                                "Anne Mette Hansen tlf.: 2933 5181 mail: sit@mail.dk"
+                            ]
                         },
                         {
                             "type": "image",
@@ -283,8 +398,8 @@
                             "alt": "Gymnastik"
                         }
                     ],
-                    "id": "gymnastik",
-                    "collapsible": true
+                    "collapsible": true,
+                    "id": "gymnastik"
                 },
                 {
                     "type": "header",
@@ -302,11 +417,14 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p>Løvel Petanque Klub er en aktivitet under LUIF</p><p>En forening, indtil nu primært for seniorerne, som har haft en stor opblomstring og har gjort Løvel kendt rundt omkring. Her er tid og rum til hygge, træning og turnering. Der er mulighed for at spille både indendørs og udendørs. Vi deltager i bl.a. vinterstævner, \"bistrocup\", klubmesterskaber og DGI-turnering. Ønsker du at være med så bare mød op.<br /><br /><strong>Formål</strong><br />At samle interesserede til på sportslig og kammeratlig vis at deltage i spillet Petanque. At deltage i træning og turneringer. At udbrede kendskabet til Petanque.</p><p><strong>Formand</strong><br />Jens Henriksen<br />Tlf.nr.: 86 69 91 56<br />E-mail: <a href='mailto:dittejens@mail.dk' target='_blank'>dittejens@mail.dk</a></p>"
+                            "paragraphs": [
+                                "Løvel Petanque Klub er en aktivitet under LUIF",
+                                "En forening, indtil nu primært for seniorerne, som har haft en stor opblomstring og har gjort Løvel kendt rundt omkring. Her er tid og rum til hygge, træning og turnering. Der er mulighed for at spille både indendørs og udendørs. Vi deltager i bl.a. vinterstævner, \"bistrocup\", klubmesterskaber og DGI-turnering. Ønsker du at være med så bare mød op.FormålAt samle interesserede til på sportslig og kammeratlig vis at deltage i spillet Petanque. At deltage i træning og turneringer. At udbrede kendskabet til Petanque."
+                            ]
                         }
                     ],
-                    "id": "petanque",
-                    "collapsible": true
+                    "collapsible": true,
+                    "id": "petanque"
                 },
                 {
                     "type": "header",
@@ -324,11 +442,16 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p align='justify'><strong>Formål</strong><br />Team Løvel er for alle, der har lyst til at løbe, nybegyndere såvel som garvede.</p><p align='justify'>Vi lægger vægt på gode løbeoplevelser i hyggelig atmosfære. I Team Løvel vil vi satse på: Socialt samvær med naboer, venner og medborgere på en sjov og sund måde, som måske kan skabe andre gode ideer for Løvel og Omegn.</p><p align='justify'>Socialt samvær med naboer, venner, og medborgere på en sjov og sund måde, som måske kan skabe andre gode ideer for Løvel og Omegn. Opnå et personligt velvære gennem motion og samtidig komme små skavanker i forkøbet. Hjælp fra andre medlemmer til at nå din personlige målsætning med hensyn til motion. Stille med motionshold til mange forskellige former for løb (24 timers løb, halvmaraton, byløb mv.)</p><p align='justify'><strong>Styregruppen:</strong></p><p align='justify'>Martin Bjerring m.fl.<br />Tlf.nr. 2617 9346<br />E-mail: martin.bjerring@gmail.com<br />Hjemmeside: <a href='http://www.teamloevel.dk/' target='_blank'>www.teamloevel.dk</a></p>"
+                            "paragraphs": [
+                                "FormålTeam Løvel er for alle, der har lyst til at løbe, nybegyndere såvel som garvede.",
+                                "Vi lægger vægt på gode løbeoplevelser i hyggelig atmosfære. I Team Løvel vil vi satse på: Socialt samvær med naboer, venner og medborgere på en sjov og sund måde, som måske kan skabe andre gode ideer for Løvel og Omegn.",
+                                "Socialt samvær med naboer, venner, og medborgere på en sjov og sund måde, som måske kan skabe andre gode ideer for Løvel og Omegn. Opnå et personligt velvære gennem motion og samtidig komme små skavanker i forkøbet. Hjælp fra andre medlemmer til at nå din personlige målsætning med hensyn til motion. Stille med motionshold til mange forskellige former for løb (24 timers løb, halvmaraton, byløb mv.)",
+                                "Styregruppen:"
+                            ]
                         }
                     ],
-                    "id": "team-loevel",
-                    "collapsible": true
+                    "collapsible": true,
+                    "id": "team-loevel"
                 }
             ]
         },
@@ -337,7 +460,9 @@
             "description": "Løvel Kultur og Forsamlingshus",
             "sections": [{
                     "type": "header",
-                    "title": "Løvel Kultur og Forsamlingshus (LKOF)"
+                    "title": "Løvel Kultur og Forsamlingshus (LKOF)",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
@@ -349,9 +474,17 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p><strong>Formål</strong></p><p>Foreningens formål er at drive Løvel Kultur og Forsamlingshus, der skal virke som møde og forsamlingssted for egnens beboer. Løvel Kultur og Forsamlingshus danner ramme om kulturelle aktiviteter såsom møder, amatørteater, dans, foredrag, foreningsarrangementer og fester.</p><p>Forsamlingshuset har gode faciliteter til at holde fest, her er både en stor og lille sal samt gode køkkenfaciliteter.</p><p><strong>Kontakt</strong></p><p>Dan Gohlke</p><p>Tlf.: 51909231<br>E-mail: dan-g@fibermail.dk<br>Hjemmeside: <a href='http://www.loevelforsamlingshus.dk' target='_blank'>www.loevelforsamlingshus.dk</a></p>"
+                            "paragraphs": [
+                                "Formål",
+                                "Foreningens formål er at drive Løvel Kultur og Forsamlingshus, der skal virke som møde og forsamlingssted for egnens beboer. Løvel Kultur og Forsamlingshus danner ramme om kulturelle aktiviteter såsom møder, amatørteater, dans, foredrag, foreningsarrangementer og fester.",
+                                "Forsamlingshuset har gode faciliteter til at holde fest, her er både en stor og lille sal samt gode køkkenfaciliteter.",
+                                "Kontakt",
+                                "Dan Gohlke"
+                            ]
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 }
             ]
         },
@@ -360,7 +493,9 @@
             "description": "Menighedsrådet i Løvel, Rødding og Pederstrup sogn",
             "sections": [{
                     "type": "header",
-                    "title": "Menighedsrådet"
+                    "title": "Menighedsrådet",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
@@ -372,9 +507,15 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p><strong>Formål</strong></p><p>Menighedsrådet styrer sognets anliggender i troskab mod den danske evangelisk-lutherske folkekirke, så der bliver gode vilkår for den kristne menigheds liv og vækst.</p><p>Målet er at gøre kirken til et sted, hvor man føler sig velkommen både til hverdag og til særlige lejligheder.</p><p><strong>Formand:</strong> Lars Østergaard Nielsen, 86699058<br>E-mail: <a href='mailto:larsoenielsen@hotmail.com'>larsoenielsen@hotmail.com</a><br>Hjemmeside: <a href='http://www.lovelkirke.dk/' target='_blank'>www.lovelkirke.dk</a></p>"
+                            "paragraphs": [
+                                "Formål",
+                                "Menighedsrådet styrer sognets anliggender i troskab mod den danske evangelisk-lutherske folkekirke, så der bliver gode vilkår for den kristne menigheds liv og vækst.",
+                                "Målet er at gøre kirken til et sted, hvor man føler sig velkommen både til hverdag og til særlige lejligheder."
+                            ]
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 }
             ]
         },
@@ -383,7 +524,9 @@
             "description": "Løvel og Omegns Borgerforening arbejder for en dynamisk landsby",
             "sections": [{
                     "type": "header",
-                    "title": "Løvel og Omegns Borgerforening"
+                    "title": "Løvel og Omegns Borgerforening",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
@@ -395,23 +538,57 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p><span>LOBF arbejder i dag på mange fronter for at gøre by og omegn aktiv og dynamisk – til et godt sted at bo og være – ved både at bibeholde nogle af de gamle og traditionelle aktiviteter og samtidig bygge på ved nye tiltag.</span></p><p>Derfor er nye ideer og ikke mindst medlemmers opbakning og støtte nødvendig.</p><p><strong>Aktiviteter som foreningen har tradition for at lave:</strong></p><ul><li>Fastelavn</li><li>Ren by</li><li>Skt. Hans</li><li>Juletræsfest</li></ul><p><strong>Medlemskontingent:</strong></p><p>Husstand: 120 kr.<br>Enlige og pensionistpar: 80 kr.<br>Enlig pensionist: 60 kr.</p><p><strong>Indbetalingsformer:</strong></p><ul><li>Girokort</li><li>MobilePay til nr. 11658</li><li>Kontant til bestyrelsesmedlemmer</li><li>Indbetaling i Den Jyske Sparekasse på reg. nr. 9261 konto 2810070342</li><li>Automatisk betaling via betalingsservice</li></ul>"
+                            "paragraphs": [
+                                "LOBF arbejder i dag på mange fronter for at gøre by og omegn aktiv og dynamisk – til et godt sted at bo og være – ved både at bibeholde nogle af de gamle og traditionelle aktiviteter og samtidig bygge på ved nye tiltag.",
+                                "Derfor er nye ideer og ikke mindst medlemmers opbakning og støtte nødvendig."
+                            ],
+                            "bullets": [{
+                                    "title": "Aktiviteter som foreningen har tradition for at lave:",
+                                    "items": ["Fastelavn", "Ren by", "Skt. Hans", "Juletræsfest"]
+                                },
+                                {
+                                    "title": "Medlemskontingent:",
+                                    "items": [
+                                        "Husstand: 120 kr.",
+                                        "Enlige og pensionistpar: 80 kr.",
+                                        "Enlig pensionist: 60 kr."
+                                    ]
+                                },
+                                {
+                                    "title": "Indbetalingsformer:",
+                                    "items": [
+                                        "Girokort",
+                                        "MobilePay til nr. 11658",
+                                        "Kontant til bestyrelsesmedlemmer",
+                                        "Indbetaling i Den Jyske Sparekasse på reg. nr. 9261 konto 2810070342",
+                                        "Automatisk betaling via betalingsservice"
+                                    ]
+                                }
+                            ]
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 },
                 {
                     "type": "content",
                     "layout": "two-col",
                     "columns": [{
                             "type": "text",
-                            "content": "<p><strong>Kontaktoplysninger:</strong></p><p><strong>Formand:</strong> Kaj Kristensen, tlf.: 26 63 95 31<br>Mail: Kristensen_kaj@hotmail.com</p><p><strong>Næstformand:</strong> Kjeld Berg Jacobsen, tlf.: 23 28 05 38<br>Mail: Jacobsen.loevel@outlook.com</p>"
+                            "paragraphs": [
+                                "Kontaktoplysninger:",
+                                "Formand:Kaj Kristensen, tlf.: 26 63 95 31Mail: Kristensen_kaj@hotmail.com",
+                                "Næstformand:Kjeld Berg Jacobsen, tlf.: 23 28 05 38Mail: Jacobsen.loevel@outlook.com"
+                            ]
                         },
                         {
                             "type": "image",
                             "src": "media/foreninger/logo.jpg",
                             "alt": "LOBF logo"
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 }
             ]
         },
@@ -420,7 +597,9 @@
             "description": "Løvel og Omegns Seniorforening",
             "sections": [{
                     "type": "header",
-                    "title": "Løvel og Omegns Seniorforening"
+                    "title": "Løvel og Omegns Seniorforening",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
@@ -432,9 +611,17 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p><strong>Formål</strong></p><p>Foreningens formål er at samle omegnens ældre til socialt samvær. Dette søges opnået ved møder af vidt forskellig art, f.eks. underholdning, spil, udflugter og fester. Endvidere at varetage pensionisters og seniorers særlige interesser overfor myndighederne.</p><p><strong>Formand</strong></p><p>Vera Kristensen</p><p>Tlf. nr. 24 98 82 60</p>"
+                            "paragraphs": [
+                                "Formål",
+                                "Foreningens formål er at samle omegnens ældre til socialt samvær. Dette søges opnået ved møder af vidt forskellig art, f.eks. underholdning, spil, udflugter og fester. Endvidere at varetage pensionisters og seniorers særlige interesser overfor myndighederne.",
+                                "Formand",
+                                "Vera Kristensen",
+                                "Tlf. nr. 24 98 82 60"
+                            ]
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 }
             ]
         },
@@ -443,7 +630,9 @@
             "description": "Løvelfonden 2000 er en lokal fond",
             "sections": [{
                     "type": "header",
-                    "title": "Løvelfonden 2000"
+                    "title": "Løvelfonden 2000",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
@@ -455,13 +644,27 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p><strong>Baggrund</strong></p><p>Ideen til at etablere \"Løvelfonden 2000\" blev skabt af en gruppe mennesker, bredt repræsenteret dels fra byens foreningsliv og af privatpersoner uden for foreningslivet. Gruppen bestod af ca. 15-18 personer. I perioden marts–oktober 2000 arbejdede gruppen med et oplæg til en udvidelse af Løvel hallen og det var sideløbende hermed, at tankerne om en \"Løvelfond\" så dagens lys.</p><p>Man så nødvendigheden i at skabe noget overordnet, en form for en fremtidssikring for udviklingen i Løvel og omegn. I erkendelse af, at alt udvikling udover initiativ også koster penge er det en nødvendighed, at et lokalsamfund selv står med et kapitalberedskab, der kan virke som medfinansierende til eksisterende og nye initiativer.</p>"
+                            "paragraphs": [
+                                "Baggrund",
+                                "Ideen til at etablere \"Løvelfonden 2000\" blev skabt af en gruppe mennesker, bredt repræsenteret dels fra byens foreningsliv og af privatpersoner uden for foreningslivet. Gruppen bestod af ca. 15-18 personer. I perioden marts–oktober 2000 arbejdede gruppen med et oplæg til en udvidelse af Løvel hallen og det var sideløbende hermed, at tankerne om en \"Løvelfond\" så dagens lys.",
+                                "Man så nødvendigheden i at skabe noget overordnet, en form for en fremtidssikring for udviklingen i Løvel og omegn. I erkendelse af, at alt udvikling udover initiativ også koster penge er det en nødvendighed, at et lokalsamfund selv står med et kapitalberedskab, der kan virke som medfinansierende til eksisterende og nye initiativer."
+                            ]
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 },
                 {
                     "type": "text",
-                    "content": "<p><strong>Medlemskab</strong></p><p>For at kunne give noget ud, skal der jo som bekendt også noget ind. Dette gælder også midlerne i \"Løvelfonden 2000\". Ifølge vedtægterne skal der oparbejdes en grundkapital på 250.000 kr., før der kan foretages udlodning. Det er hensigten, at der altid skal være en grundkapital på dette beløb.</p><p>Tegn et medlemskab i \"Løvelfonden 2000\" og vær med til at støtte udviklingen i din by og opland. Medlemskontingentet udgør:</p><ul><li>100 kr. for en hustand</li><li>150 kr. for foreninger</li><li>250 kr. for virksomheder</li></ul><p><strong>Kontakt:</strong> Formand: Klaus Høgh, 20454202</p><p><a href='../../media/foreninger/Vedtægter Løvelfonden2000.pdf' target='_blank'>Vedtægter for Løvelfonden 2000</a></p>"
+                    "paragraphs": [
+                        "Medlemskab",
+                        "For at kunne give noget ud, skal der jo som bekendt også noget ind. Dette gælder også midlerne i \"Løvelfonden 2000\". Ifølge vedtægterne skal der oparbejdes en grundkapital på 250.000 kr., før der kan foretages udlodning. Det er hensigten, at der altid skal være en grundkapital på dette beløb.",
+                        "Tegn et medlemskab i \"Løvelfonden 2000\" og vær med til at støtte udviklingen i din by og opland. Medlemskontingentet udgør:",
+                        "100 kr. for en hustand",
+                        "150 kr. for foreninger",
+                        "250 kr. for virksomheder",
+                        "Kontakt:Formand: Klaus Høgh, 20454202"
+                    ]
                 }
             ]
         },
@@ -470,19 +673,31 @@
             "description": "Lokale virksomheder og erhvervsliv i Løvel",
             "sections": [{
                     "type": "header",
-                    "title": "Erhverv i Løvel"
+                    "title": "Erhverv i Løvel",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "text",
-                    "content": "<p><strong>Velkommen til Løvel Erhverv</strong></p><p>Løvel er hjemsted for flere dygtige virksomheder og lokale erhvervsdrivende. Her finder du information om de virksomheder som er baseret i vores by.</p>"
+                    "paragraphs": [
+                        "Velkommen til Løvel Erhverv",
+                        "Løvel er hjemsted for flere dygtige virksomheder og lokale erhvervsdrivende. Her finder du information om de virksomheder som er baseret i vores by."
+                    ]
                 },
                 {
                     "type": "text",
-                    "content": "<h3>Virksomheder i Løvel</h3><p><em>Denne liste opdateres løbende. Hvis du driver virksomhed i Løvel og gerne vil være med, kontakt os venligst.</em></p>"
+                    "paragraphs": [
+                        "Virksomheder i Løvel",
+                        "Denne liste opdateres løbende. Hvis du driver virksomhed i Løvel og gerne vil være med, kontakt os venligst."
+                    ],
+                    "title": "Virksomheder i Løvel"
                 },
                 {
                     "type": "text",
-                    "content": "<div class='business-grid'><div class='business-card' style='padding: var(--spacing); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: var(--spacing);'><h4>Din virksomhed her?</h4><p>Hvis du driver en virksomhed i Løvel eller er interesseret i at være præsenteret på denne side, kontakt os:</p><p><strong>Email:</strong> <a href='mailto:info@lovel.dk'>info@lovel.dk</a></p></div></div>"
+                    "paragraphs": [
+                        "Din virksomhed her?",
+                        "Hvis du driver en virksomhed i Løvel eller er interesseret i at være præsenteret på denne side, kontakt os:"
+                    ]
                 }
             ]
         },
@@ -491,7 +706,9 @@
             "description": "Amatørscenen i Løvel er en revyforening",
             "sections": [{
                     "type": "header",
-                    "title": "Amatørscenen"
+                    "title": "Amatørscenen",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
@@ -503,9 +720,19 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p><strong>Formål</strong><br />Foreningen \"Amatørscenen Løvel\" har til formål at samle interesserede om et seriøst arbejde med amatørteater, herunder revy og anden scenisk optræden.</p><p><strong>Formand</strong><br />Else Nielsen<br />Tlf.nr.: 86 69 90 16 / 28 29 90 16<br />E-mail: <a href='mailto:henningmn@mail.tele.dk' target='_blank'>henningmn@mail.tele.dk</a></p><p align='justify'>'Amatørscenen Løvel' er en lokal teaterforening, der blev dannet i februar 1986.</p><p align='justify'>Foreningen består af en bestyrelse på 5 bestyrelsesmedlemmer, der vælges for 2 år ad gangen, således at der på hver årlig generalforsamling vælges 2 hhv. 3 bestyrelsesmedlemmer.</p><p>Gennem årene har Amatørscenen udviklet sig fra at have én årlig opførelse af teaterstykke eller revy til at have 3-4 arrangementer om året. Vi er faste arrangører af revy, cabaret eller teaterstykke ved Løvels årlige byfest i juni måned. De sidste par år har vi arrangeret fællesspisning med underholdning i efteråret. Ved byens årlige juletræsfest i december for børn og voksne i alle aldre har vi forestået underholdningen, ligesom vi gennem de seneste 5 år har lavet cabaret/teaterstykke ved Løvels vinterfest i februar/marts måned.</p><p align='justify'>Udover en fast stab af aktører udvider Amatørscenen løbende sin besætning af aktive spillere, og det er for nyligt lykkedes os at stable et børneteater på benene. Dette fik med stor succes sin debut ved juletræsfesten i december 2005. En flok dygtige børn optræder med et julespil til stor fornøjelse for publikum.</p><p align='justify'>Som det fremgår af ovenstående, er vi aktive på underholdningsområdet og stiller gerne op ved bestilte arrangementer. Vi har deltaget i 3 Landsstævner med teaterstykker, og vores lidenskab må nok siges at være farcer. Et par gange har vi med succes prøvet kræfter med at have Dario Fo på plakaten.</p><p align='justify'>Skulle du selv have fået lyst til at vise dit talent på scenen er du velkommen til at kontakte os.</p>"
+                            "paragraphs": [
+                                "FormålForeningen \"Amatørscenen Løvel\" har til formål at samle interesserede om et seriøst arbejde med amatørteater, herunder revy og anden scenisk optræden.",
+                                "'Amatørscenen Løvel' er en lokal teaterforening, der blev dannet i februar 1986.",
+                                "Foreningen består af en bestyrelse på 5 bestyrelsesmedlemmer, der vælges for 2 år ad gangen, således at der på hver årlig generalforsamling vælges 2 hhv. 3 bestyrelsesmedlemmer.",
+                                "Gennem årene har Amatørscenen udviklet sig fra at have én årlig opførelse af teaterstykke eller revy til at have 3-4 arrangementer om året. Vi er faste arrangører af revy, cabaret eller teaterstykke ved Løvels årlige byfest i juni måned. De sidste par år har vi arrangeret fællesspisning med underholdning i efteråret. Ved byens årlige juletræsfest i december for børn og voksne i alle aldre har vi forestået underholdningen, ligesom vi gennem de seneste 5 år har lavet cabaret/teaterstykke ved Løvels vinterfest i februar/marts måned.",
+                                "Udover en fast stab af aktører udvider Amatørscenen løbende sin besætning af aktive spillere, og det er for nyligt lykkedes os at stable et børneteater på benene. Dette fik med stor succes sin debut ved juletræsfesten i december 2005. En flok dygtige børn optræder med et julespil til stor fornøjelse for publikum.",
+                                "Som det fremgår af ovenstående, er vi aktive på underholdningsområdet og stiller gerne op ved bestilte arrangementer. Vi har deltaget i 3 Landsstævner med teaterstykker, og vores lidenskab må nok siges at være farcer. Et par gange har vi med succes prøvet kræfter med at have Dario Fo på plakaten.",
+                                "Skulle du selv have fået lyst til at vise dit talent på scenen er du velkommen til at kontakte os."
+                            ]
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 }
             ]
         },
@@ -514,21 +741,30 @@
             "description": "LRV-Skals Håndbold",
             "sections": [{
                     "type": "header",
-                    "title": "LRV - Skals Håndbold"
+                    "title": "LRV - Skals Håndbold",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
                     "layout": "two-col",
                     "columns": [{
                             "type": "text",
-                            "content": "<p><span style='line-height: normal;'>LRV-Skals Håndbold er en selvstændig håndboldklub, som tilbyder hold fra U6 til senior. Vi sætter det sociale miljø og tætte samarbejde højt, så kom og vær med, her er plads til alle!</span></p><p><span style='line-height: 1.5;'>Klubben blev grundlagt i 2012, hvor håndboldafdelingen i Skals GF og håndboldklubben LRV gik sammen og dannede en ny forening. LRV-Skals står for Løvel, Rødding, Vammen og Skals.</span></p><p>Vi byder alle spillere, forældre, trænere og frivillige velkomne klubben! Kontakt gerne bestyrelsen, hvis du har kommentarer eller er interesseret i at være med.</p><p><strong>LRV-Skals Håndbold søger trænere til både ungdomshold og seniorhold i sæsonen 2016/17. Derudover søger vi også en person til at hjælpe med sponsorarbejdet. Hvis det har din interesse, hører vi rigtig gerne fra dig. Kontakt Pia på piabhansen1990@gmail.com eller 25 56 49 93.</strong></p><p><strong>Se mere på hjemmesiden: <a href='http://www.lrv-skals.dk' target='_blank'>www.lrv-skals.dk</a></strong></p>"
+                            "paragraphs": [
+                                "LRV-Skals Håndbold er en selvstændig håndboldklub, som tilbyder hold fra U6 til senior. Vi sætter det sociale miljø og tætte samarbejde højt, så kom og vær med, her er plads til alle!",
+                                "Klubben blev grundlagt i 2012, hvor håndboldafdelingen i Skals GF og håndboldklubben LRV gik sammen og dannede en ny forening. LRV-Skals står for Løvel, Rødding, Vammen og Skals.",
+                                "Vi byder alle spillere, forældre, trænere og frivillige velkomne klubben! Kontakt gerne bestyrelsen, hvis du har kommentarer eller er interesseret i at være med.",
+                                "LRV-Skals Håndbold søger trænere til både ungdomshold og seniorhold i sæsonen 2016/17. Derudover søger vi også en person til at hjælpe med sponsorarbejdet. Hvis det har din interesse, hører vi rigtig gerne fra dig. Kontakt Pia på piabhansen1990@gmail.com eller 25 56 49 93."
+                            ]
                         },
                         {
                             "type": "image",
                             "src": "media/foreninger/lrv-skals.jpg",
                             "alt": "Håndfeld"
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 }
             ]
         },
@@ -537,7 +773,9 @@
             "description": "Viborg Motor Klub holder til ved Løvelbanen",
             "sections": [{
                     "type": "header",
-                    "title": "Viborg Motorklub"
+                    "title": "Viborg Motorklub",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
@@ -549,9 +787,15 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p>Viborg Motor Klub holder til i den smukke \"Kirkedal\" lidt uden for Løvel, hvor klubben i over 70 år har haft baner. I starten var det hovedsageligt Speedway der blev kørt, siden er banen blevet bygget om. I de senere år har det været Gokart, Folkerace og Rallycross, der er blevet kørt i Kirkedalen.</p><p>I foråret 2010 er banerne endnu en gang blevet udvidet. Denne gang er der lagt asfalt, på en del af jordbanen, således at den nu også kan anvendes til RallyCross.</p><div>Gokartbanen er også blevet udbygget med et par nye sving, og et nyt stort pitområde.</div><div></div><div>Nogle af de største navne Viborg Motor Klub har huset, er Ole Olsen(speedway) og Kristian Poulsen(DTC, WTCC og Le Mans). Klubben bliver ved med at have nye talenter i støbeskeen i gokart-afdelingen.</div><p>Se mere på hjemmesiden: <a href='http://viborgmotorklub.dk/' target='_blank' title='Løvelbanen'>http://viborgmotorklub.dk/</a></p>"
+                            "paragraphs": [
+                                "Viborg Motor Klub holder til i den smukke \"Kirkedal\" lidt uden for Løvel, hvor klubben i over 70 år har haft baner. I starten var det hovedsageligt Speedway der blev kørt, siden er banen blevet bygget om. I de senere år har det været Gokart, Folkerace og Rallycross, der er blevet kørt i Kirkedalen.",
+                                "I foråret 2010 er banerne endnu en gang blevet udvidet. Denne gang er der lagt asfalt, på en del af jordbanen, således at den nu også kan anvendes til RallyCross.",
+                                "Gokartbanen er også blevet udbygget med et par nye sving, og et nyt stort pitområde.Nogle af de største navne Viborg Motor Klub har huset, er Ole Olsen(speedway) og Kristian Poulsen(DTC, WTCC og Le Mans). Klubben bliver ved med at have nye talenter i støbeskeen i gokart-afdelingen."
+                            ]
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 }
             ]
         },
@@ -560,22 +804,29 @@
             "description": "Løvels placering",
             "sections": [{
                     "type": "header",
-                    "title": "Løvels placering"
+                    "title": "Løvels placering",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
                     "layout": "two-col",
                     "columns": [{
                             "type": "text",
-                            "content": "<p>Kun 10 min. kørsel nord for Viborg ligger landsbyen Løvel.</p><p>Løvel er en drivkraftig by med handelsmulighed, pasning, skole og et væld af foreninger.</p><p>Løvel er byen man flytter til hvis man søger nærhed, aktiv fritid, natur og tryghed.</p>"
+                            "paragraphs": [
+                                "Kun 10 min. kørsel nord for Viborg ligger landsbyen Løvel.",
+                                "Løvel er en drivkraftig by med handelsmulighed, pasning, skole og et væld af foreninger.",
+                                "Løvel er byen man flytter til hvis man søger nærhed, aktiv fritid, natur og tryghed."
+                            ]
                         },
                         {
                             "type": "map",
                             "src": "https://www.openstreetmap.org/export/embed.html?bbox=9.460732,56.530343,9.476732,56.538343&layer=mapnik&marker=56.534343,9.468732",
-                            "alt": "Kort til Løvel",
-                            "width": "2"
+                            "alt": "Kort til Løvel"
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 }
             ]
         },
@@ -584,7 +835,9 @@
             "description": "Løvel Byfest",
             "sections": [{
                     "type": "header",
-                    "title": "Byfest"
+                    "title": "Byfest",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
@@ -596,10 +849,19 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p><strong>Byfest</strong></p><p>Det er den årlige festuge i juni måned, festen er for både børn og voksne. Festen afholdes som regel i uge 23.</p><p>Byfesten er knap en uge med fest og farver.</p><p>Der er festplads og -telt med diverse underholdning, fællesspisning og bal.</p><p>Underholdningen er i top for både børn og voksne.</p><p><strong>Arrangør:</strong> Festudvalg nedsat af Idrætsforeningen og Borgerforeningen med deltagelse af Løven.</p><p>Like og find nyeste information om byfesten på deres <a href='https://www.facebook.com/L%C3%B8vel-Byfest-585120928305171/' target='_blank'>Facebookside</a></p>",
+                            "paragraphs": [
+                                "Byfest",
+                                "Det er den årlige festuge i juni måned, festen er for både børn og voksne. Festen afholdes som regel i uge 23.",
+                                "Byfesten er knap en uge med fest og farver.",
+                                "Der er festplads og -telt med diverse underholdning, fællesspisning og bal.",
+                                "Underholdningen er i top for både børn og voksne.",
+                                "Arrangør:Festudvalg nedsat af Idrætsforeningen og Borgerforeningen med deltagelse af Løven."
+                            ],
                             "width": "2"
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 }
             ]
         },
@@ -608,7 +870,9 @@
             "description": "Byens Løve",
             "sections": [{
                     "type": "header",
-                    "title": "Byens Løve"
+                    "title": "Byens Løve",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
@@ -620,9 +884,17 @@
                         },
                         {
                             "type": "text",
-                            "content": "<p>Årets Æresløve bliver udnævnt hvert år ved byfestens afslutning. For at blive Æresløve skal man have ydet en anerkendelsesværdig indsats for Løvel og omegn.</p><p>Som bevis på udnævnelsen modtager Løven en kæde, som skal bæres ved forskellige arrangementer i byen. Desuden får Æresløven 1.000 kr., som han/hun skal få størst mulig udbytte af, ved afholdelse af forskellige aktiviteter.</p><p>Udbyttet bliver indsat på en konto og midlerne skal bruges til by-forskønnelse eller andre formål, der kommer borgerne i Løvel og omegn til gode.</p><p>Tilskud kan søges af alle i Løvel og omegn, såvel foreninger som enkeltpersoner.</p><p>Alle foreninger og indbyggere i Løvel og omegn kan skriftligt indstille kandidater til Årets Æresløve</p>"
+                            "paragraphs": [
+                                "Årets Æresløve bliver udnævnt hvert år ved byfestens afslutning. For at blive Æresløve skal man have ydet en anerkendelsesværdig indsats for Løvel og omegn.",
+                                "Som bevis på udnævnelsen modtager Løven en kæde, som skal bæres ved forskellige arrangementer i byen. Desuden får Æresløven 1.000 kr., som han/hun skal få størst mulig udbytte af, ved afholdelse af forskellige aktiviteter.",
+                                "Udbyttet bliver indsat på en konto og midlerne skal bruges til by-forskønnelse eller andre formål, der kommer borgerne i Løvel og omegn til gode.",
+                                "Tilskud kan søges af alle i Løvel og omegn, såvel foreninger som enkeltpersoner.",
+                                "Alle foreninger og indbyggere i Løvel og omegn kan skriftligt indstille kandidater til Årets Æresløve"
+                            ]
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 }
             ]
         },
@@ -631,7 +903,9 @@
             "description": "Løvel Vandværk",
             "sections": [{
                     "type": "header",
-                    "title": "Løvel Vandværk"
+                    "title": "Løvel Vandværk",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "content",
@@ -639,14 +913,19 @@
                     "columns": [{
                             "type": "image",
                             "src": "media/informationer/vandvaerk-banner.jpg",
-                            "alt": "Vandværk",
-                            "width": "2"
+                            "alt": "Vandværk"
                         },
                         {
                             "type": "text",
-                            "content": "<p>Løvel Vandværk er byens lokale vandværk der leverer rent og sikkert vand til områdets indbyggere.</p><p>Hjemmeside: <a href='https://lovelvandvaerk.wixsite.com/lovelvandvaerk' target='_blank'>Løvel Vandværk</a></p><p><strong>Kontakt:</strong></p><p>Formand: Kim Jakobsen, tlf.: 31234861</p>"
+                            "paragraphs": [
+                                "Løvel Vandværk er byens lokale vandværk der leverer rent og sikkert vand til områdets indbyggere.",
+                                "Kontakt:",
+                                "Formand: Kim Jakobsen, tlf.: 31234861"
+                            ]
                         }
-                    ]
+                    ],
+                    "collapsible": false,
+                    "id": null
                 }
             ]
         },
@@ -655,19 +934,30 @@
             "description": "Film og videoer om Løvel",
             "sections": [{
                     "type": "header",
-                    "title": "Film og Videoer"
+                    "title": "Film og Videoer",
+                    "id": null,
+                    "collapsible": false
                 },
                 {
                     "type": "text",
-                    "content": "<p><strong>Videoer om Løvel</strong></p><p>Her finder du film og videoer om Løvel og dets aktiviteter. Hvis du har videoer du gerne vil dele, kontakt os venligst.</p>"
+                    "paragraphs": [
+                        "Videoer om Løvel",
+                        "Her finder du film og videoer om Løvel og dets aktiviteter. Hvis du har videoer du gerne vil dele, kontakt os venligst."
+                    ]
                 },
                 {
                     "type": "text",
-                    "content": "<h3>YouTube Videoer</h3><p><em>Videoerne vises nedenfor. Klik for at se dem i fuld størrelse.</em></p>"
+                    "paragraphs": [
+                        "YouTube Videoer",
+                        "Videoerne vises nedenfor. Klik for at se dem i fuld størrelse."
+                    ],
+                    "title": "YouTube Videoer"
                 },
                 {
                     "type": "text",
-                    "content": "<div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg);'><div style='background: #f0f0f0; border-radius: var(--radius); overflow: hidden;'><div style='position: relative; padding-bottom: 56.25%; height: 0;'><iframe style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' src='https://www.youtube.com/embed/dQw4w9WgXcQ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div><p style='padding: var(--spacing); margin: 0; text-align: center; font-size: 0.9rem;'><em>Erstat video-ID ovenfor med dine YouTube videoer</em></p></div></div>"
+                    "paragraphs": [
+                        "Erstat video-ID ovenfor med dine YouTube videoer"
+                    ]
                 }
             ]
         }

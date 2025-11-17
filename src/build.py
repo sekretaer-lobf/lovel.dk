@@ -8,6 +8,10 @@ import json
 import os
 from pathlib import Path
 from datetime import datetime
+from templates import (
+    render_header, render_text_section, render_two_column_section,
+    render_hero_section, render_navbar
+)
 
 # Configuration
 SITE_ROOT = Path(__file__).parent.parent
@@ -19,176 +23,51 @@ ASSET_DIR = SITE_ROOT / "assets"
 with open(SRC_DIR / "site-data.json") as f:
     SITE_DATA = json.load(f)
 
-# Template functions
+# Utility functions
 def get_root_path(page_path: str) -> str:
     """Get relative path to root from current page."""
-    # Count slashes and add 1 for the file itself
     depth = page_path.count("/") + 1 if page_path else 0
     return "../" * depth if depth > 0 else ""
 
 def render_section(section: dict, root_path: str) -> str:
-    """Render a single section."""
+    """
+    Render a section using template functions.
+    Dispatches to appropriate template based on section type.
+    Supports both old HTML-embedded and new clean data formats.
+    """
     section_type = section.get("type")
     is_collapsible = section.get("collapsible", False)
     section_id = section.get("id", "")
     
     if section_type == "header":
-        if is_collapsible and section_id:
-            title = section.get('title', '')
-            return f"<div class='section collapsible-header collapsed' data-section='{section_id}'><div class='container'><h2 class='collapse-toggle' role='button' tabindex='0' aria-expanded='false' aria-label='Expand {title} section'>{title}</h2></div></div>\n"
-        return f"<div class='section'><div class='container'><h1>{section.get('title', '')}</h1></div></div>\n"
+        return render_header(section.get('title', ''), is_collapsible, section_id)
     
     elif section_type == "text":
-        is_collapsible = section.get("collapsible", False)
-        section_id = section.get("id", "")
-        collapse_class = "collapsible-content collapsed" if is_collapsible else ""
-        collapse_attr = f"data-section='{section_id}'" if is_collapsible and section_id else ""
-        return f"<div class='section {collapse_class}' {collapse_attr}><div class='container'>{section.get('content', '')}</div></div>\n"
+        return render_text_section(
+            content=section.get('content'),
+            title=section.get('title'),
+            paragraphs=section.get('paragraphs'),
+            bullets=section.get('bullets'),
+            is_collapsible=is_collapsible,
+            section_id=section_id
+        )
     
     elif section_type == "content":
         layout = section.get("layout", "single")
         columns = section.get("columns", [])
-        is_collapsible = section.get("collapsible", False)
-        section_id = section.get("id", "")
-        collapse_class = "collapsible-content collapsed" if is_collapsible else ""
-        collapse_attr = f"data-section='{section_id}'" if is_collapsible and section_id else ""
         
         if layout == "two-col":
-            # Check if any column has width="2" to use ratio layout
-            has_ratio = any(col.get("width") == "2" for col in columns)
-            row_class = "cols-2-ratio" if has_ratio else "cols-2"
-            html = f"<div class='section {collapse_class}' {collapse_attr}><div class='container'><div class='row {row_class}'>"
-            for col in columns:
-                # Support optional 'width' property (e.g., '1' or '2' for 1:2 ratio)
-                width = col.get("width", "1")
-                col_style = f" style='grid-column: span {width};'" if width != "1" and not has_ratio else ""
-                html += f"<div class='col'{col_style}>"
-                if col.get("type") == "text":
-                    html += col.get("content", "")
-                elif col.get("type") == "map":
-                    src = col.get("src", "")
-                    alt = col.get("alt", "")
-                    html += f"<iframe src='{src}' style='border: 1px solid #ccc; width: 100%; height: 400px;' frameborder='0'></iframe>"
-                elif col.get("type") == "image":
-                    src = col.get("src", "")
-                    alt = col.get("alt", "")
-                    html += f"<div class='img-container'><img src='{root_path}{src}' alt='{alt}'></div>"
-                elif col.get("type") == "gallery":
-                    html += "<div class='gallery'>"
-                    for img in col.get("images", []):
-                        src = img.get("src", "")
-                        alt = img.get("alt", "")
-                        html += f"<div class='img-container'><img src='{root_path}{src}' alt='{alt}'></div>"
-                    html += "</div>"
-                html += "</div>"
-            html += "</div></div></div>\n"
-            return html
+            return render_two_column_section(columns, root_path, is_collapsible, section_id)
         else:
-            html = f"<div class='section {collapse_class}' {collapse_attr}><div class='container'>"
+            # Single column layout
+            html = f"<div class='section'><div class='container'>"
             for col in columns:
                 if col.get("type") == "text":
                     html += col.get("content", "")
-                elif col.get("type") == "map":
-                    src = col.get("src", "")
-                    alt = col.get("alt", "")
-                    html += f"<iframe src='{src}' style='border: 1px solid #ccc; width: 100%; height: 400px;' frameborder='0'></iframe>"
-                elif col.get("type") == "image":
-                    src = col.get("src", "")
-                    alt = col.get("alt", "")
-                    html += f"<div class='img-container'><img src='{root_path}{src}' alt='{alt}'></div>"
-                elif col.get("type") == "gallery":
-                    html += "<div class='gallery'>"
-                    for img in col.get("images", []):
-                        src = img.get("src", "")
-                        alt = img.get("alt", "")
-                        html += f"<div class='img-container'><img src='{root_path}{src}' alt='{alt}'></div>"
-                    html += "</div>"
             html += "</div></div>\n"
             return html
     
     return ""
-
-def build_navigation(root_path: str, is_home: bool) -> str:
-    """Build navigation menu dynamically from site data."""
-    pages = SITE_DATA['pages']
-    
-    # Organize pages by category
-    dagtilbud_pages = {k: v for k, v in pages.items() if k.startswith('dagtilbud/')}
-    foreninger_pages = {k: v for k, v in pages.items() if k.startswith('foreninger/')}
-    informationer_pages = {k: v for k, v in pages.items() if k.startswith('informationer/')}
-    
-    nav = f"""<nav class="navbar" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" id="navbar-toggle">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="{root_path}index.html" class="logo">Løvel</a>
-            </div>
-            <div class="navbar-menu" id="navbar-menu">
-                <ul class="nav-list">
-                    <li><a href="{root_path}index.html" class="{'active' if is_home else ''}">Forside</a></li>
-"""
-    
-    # Informationer dropdown (moved after Forside)
-    if informationer_pages:
-        nav += """                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Informationer</a>
-                        <ul class="dropdown-menu">
-"""
-        for page_id in sorted(informationer_pages.keys()):
-            title = informationer_pages[page_id].get('title', page_id.split('/')[-1])
-            nav += f'                            <li><a href="{root_path}{page_id}/">{title}</a></li>\n'
-        nav += """                        </ul>
-                    </li>
-"""
-    
-    # Dagtilbud dropdown
-    if dagtilbud_pages:
-        nav += """                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Dagtilbud</a>
-                        <ul class="dropdown-menu">
-"""
-        # Custom order: vuggestue, dagpleje, børnehave, skole
-        dagtilbud_order = ['dagtilbud/vuggestue', 'dagtilbud/dagpleje', 'dagtilbud/boernehave', 'dagtilbud/skole']
-        for page_id in dagtilbud_order:
-            if page_id in dagtilbud_pages:
-                title = dagtilbud_pages[page_id].get('title', page_id.split('/')[-1])
-                nav += f'                            <li><a href="{root_path}{page_id}/">{title}</a></li>\n'
-        nav += """                        </ul>
-                    </li>
-"""
-    
-    # Foreninger dropdown
-    if foreninger_pages:
-        nav += """                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Foreninger</a>
-                        <ul class="dropdown-menu">
-"""
-        for page_id in sorted(foreninger_pages.keys()):
-            title = foreninger_pages[page_id].get('title', page_id.split('/')[-1])
-            nav += f'                            <li><a href="{root_path}{page_id}/">{title}</a></li>\n'
-        nav += """                        </ul>
-                    </li>
-"""
-    
-    # Check for erhverv page
-    if 'erhverv' in pages:
-        nav += f'                    <li><a href="{root_path}erhverv/">Erhverv</a></li>\n'
-    
-    # Check for film page - display as regular link (not dropdown)
-    if 'film' in pages:
-        nav += f"""                    <li><a href="{root_path}film.html">Film</a></li>
-"""
-    
-    nav += """                </ul>
-            </div>
-        </div>
-    </nav>"""
-    
-    return nav
 
 def render_page(page_id: str, page_data: dict) -> str:
     """Render a complete HTML page."""
@@ -207,7 +86,7 @@ def render_page(page_id: str, page_data: dict) -> str:
     css_path = root_path + "assets/styles.css" if "/" in page_id else "assets/styles.css"
     
     # Build navigation dynamically
-    nav_html = build_navigation(root_path, is_home)
+    nav_html = render_navbar(SITE_DATA['pages'], root_path, is_home)
     
     # Build HTML
     html = f"""<!DOCTYPE html>
