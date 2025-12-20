@@ -113,6 +113,13 @@ def render_gallery(images: list, root_path: str) -> str:
     return html
 
 
+def render_video_column(video_id: str) -> str:
+    """Render a YouTube video embed in a column."""
+    return f"""<div class='video-container' style='position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;'>
+    <iframe style='position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 8px;' src='https://www.youtube.com/embed/{video_id}?rel=0&showinfo=0' allowfullscreen='' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>
+</div>"""
+
+
 def render_two_column_section(
     columns: list, 
     root_path: str, 
@@ -158,6 +165,8 @@ def render_two_column_section(
             html += render_map_column(col.get("src", ""), col.get("alt", ""))
         elif col_type == "gallery":
             html += render_gallery(col.get("images", []), root_path)
+        elif col_type == "video":
+            html += render_video_column(col.get("video_id", ""))
         
         html += "</div>"
     

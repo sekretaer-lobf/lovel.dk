@@ -930,33 +930,37 @@
             ]
         },
         "film": {
-            "title": "Film",
-            "description": "Film og videoer om Løvel",
+            "title": "Film om Løvel",
+            "description": "En film om Løvel lavet i samarbejde med AV-picture og Viborg Landsbysammenslutnings filmfond. Filmen giver et indblik i byens sammenhold, natur samt det store væld af forskelligartet tilbud.",
             "sections": [{
                     "type": "header",
-                    "title": "Film og Videoer",
+                    "title": "Film om Løvel",
                     "id": null,
                     "collapsible": false
                 },
                 {
-                    "type": "text",
-                    "paragraphs": [
-                        "Videoer om Løvel",
-                        "Her finder du film og videoer om Løvel og dets aktiviteter. Hvis du har videoer du gerne vil dele, kontakt os venligst."
-                    ]
-                },
-                {
-                    "type": "text",
-                    "paragraphs": [
-                        "YouTube Videoer",
-                        "Videoerne vises nedenfor. Klik for at se dem i fuld størrelse."
+                    "type": "content",
+                    "layout": "two-col",
+                    "columns": [{
+                            "type": "text",
+                            "title": "Om filmen",
+                            "paragraphs": [
+                                "Denne film er lavet i samarbejde med AV-picture og Viborg Landsbysammenslutnings filmfond.",
+                                "Filmen giver et indblik i byens sammenhold, natur samt det store væld af forskelligartet tilbud, som Løvel og området omkring byen kan tilbyde."
+                            ]
+                        },
+                        {
+                            "type": "video",
+                            "video_id": "DaYmxW91MCU"
+                        }
                     ],
-                    "title": "YouTube Videoer"
+                    "collapsible": false,
+                    "id": null
                 },
                 {
                     "type": "text",
                     "paragraphs": [
-                        "Erstat video-ID ovenfor med dine YouTube videoer"
+                        "Hvis du har videoer eller film om Løvel som du gerne vil dele, kontakt os venligst på support@lovel.dk."
                     ]
                 }
             ]

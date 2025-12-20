@@ -46,6 +46,12 @@ def render_section(section: dict, root_path: str) -> str:
             html += "</div></div>\n"
             return html
     
+    elif section_type == "video":
+        video_id = section.get("video_id", "")
+        if video_id:
+            from templates import render_video_column
+            return f"<div class='section'><div class='container'><div class='row cols-1'><div class='col'>" + render_video_column(video_id) + "</div></div></div></div>\n"
+    
     return ""
 
 
