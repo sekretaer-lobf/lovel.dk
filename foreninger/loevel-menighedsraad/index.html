@@ -63,6 +63,54 @@
     </nav>
     <main>
 <div class='section'><div class='container'><h1>Menighedsrådet</h1></div></div>
+<div class='section'><div class='container'><div class='slider' id='media-slider'><div class='slide active'><img src='../../media/foreninger/kirkejpg.jpg' alt='Kirken'></div><div class='slide '><img src='../../media/foreninger/forsamlingshuset.jpg' alt='Forsamlingshuset'></div><div class='slide '><img src='../../media/foreninger/hvid-gren.jpg' alt='Hvid gren'></div><button class='slider-prev' aria-label='Previous slide'>&#10094;</button><button class='slider-next' aria-label='Next slide'>&#10095;</button><div class='slider-dots'><span class='slider-dot active' data-index='0' role='button' tabindex='0' aria-label='Go to slide 1'></span><span class='slider-dot ' data-index='1' role='button' tabindex='0' aria-label='Go to slide 2'></span><span class='slider-dot ' data-index='2' role='button' tabindex='0' aria-label='Go to slide 3'></span></div></div><script>
+(function() {
+    const slider = document.getElementById('media-slider');
+    if (!slider) return;
+    
+    const slides = slider.querySelectorAll('.slide');
+    const dots = slider.querySelectorAll('.slider-dot');
+    const prevBtn = slider.querySelector('.slider-prev');
+    const nextBtn = slider.querySelector('.slider-next');
+    let currentIndex = 0;
+    
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+        currentIndex = index;
+    }
+    
+    function nextSlide() {
+        const nextIndex = (currentIndex + 1) % slides.length;
+        showSlide(nextIndex);
+    }
+    
+    function prevSlide() {
+        const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(prevIndex);
+    }
+    
+    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+    
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            const index = parseInt(dot.dataset.index);
+            showSlide(index);
+        });
+        
+        dot.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                const index = parseInt(dot.dataset.index);
+                showSlide(index);
+            }
+        });
+    });
+})();
+</script></div></div>
 <div class='section ' ><div class='container'><div class='row cols-2'><div class='col'><div class='img-container'><img src='../../media/foreninger/kirkejpg.jpg' alt='Kirken'></div></div><div class='col'><p>Formål</p><p>Menighedsrådet styrer sognets anliggender i troskab mod den danske evangelisk-lutherske folkekirke, så der bliver gode vilkår for den kristne menigheds liv og vækst.</p><p>Målet er at gøre kirken til et sted, hvor man føler sig velkommen både til hverdag og til særlige lejligheder.</p></div></div></div></div>
     </main>
 

@@ -52,6 +52,13 @@ def render_section(section: dict, root_path: str) -> str:
             from templates import render_video_column
             return f"<div class='section'><div class='container'><div class='row cols-1'><div class='col'>" + render_video_column(video_id) + "</div></div></div></div>\n"
     
+    elif section_type == "slider":
+        images = section.get("images", [])
+        if images:
+            from templates import render_slider
+            slider_html = render_slider(images, root_path)
+            return f"<div class='section'><div class='container'>" + slider_html + "</div></div>\n"
+    
     return ""
 
 

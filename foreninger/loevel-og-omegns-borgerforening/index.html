@@ -63,6 +63,54 @@
     </nav>
     <main>
 <div class='section'><div class='container'><h1>Løvel og Omegns Borgerforening</h1></div></div>
+<div class='section'><div class='container'><div class='slider' id='media-slider'><div class='slide active'><img src='../../media/foreninger/hvid-gren.jpg' alt='Hvid gren'></div><div class='slide '><img src='../../media/foreninger/logo.jpg' alt='Logo'></div><div class='slide '><img src='../../media/foreninger/friluftsliv.jpg' alt='Friluftsliv'></div><button class='slider-prev' aria-label='Previous slide'>&#10094;</button><button class='slider-next' aria-label='Next slide'>&#10095;</button><div class='slider-dots'><span class='slider-dot active' data-index='0' role='button' tabindex='0' aria-label='Go to slide 1'></span><span class='slider-dot ' data-index='1' role='button' tabindex='0' aria-label='Go to slide 2'></span><span class='slider-dot ' data-index='2' role='button' tabindex='0' aria-label='Go to slide 3'></span></div></div><script>
+(function() {
+    const slider = document.getElementById('media-slider');
+    if (!slider) return;
+    
+    const slides = slider.querySelectorAll('.slide');
+    const dots = slider.querySelectorAll('.slider-dot');
+    const prevBtn = slider.querySelector('.slider-prev');
+    const nextBtn = slider.querySelector('.slider-next');
+    let currentIndex = 0;
+    
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+        currentIndex = index;
+    }
+    
+    function nextSlide() {
+        const nextIndex = (currentIndex + 1) % slides.length;
+        showSlide(nextIndex);
+    }
+    
+    function prevSlide() {
+        const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(prevIndex);
+    }
+    
+    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+    
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            const index = parseInt(dot.dataset.index);
+            showSlide(index);
+        });
+        
+        dot.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                const index = parseInt(dot.dataset.index);
+                showSlide(index);
+            }
+        });
+    });
+})();
+</script></div></div>
 <div class='section ' ><div class='container'><div class='row cols-2'><div class='col'><div class='img-container'><img src='../../media/foreninger/hvid-gren.jpg' alt='Blomst'></div></div><div class='col'><p>LOBF arbejder i dag på mange fronter for at gøre by og omegn aktiv og dynamisk – til et godt sted at bo og være – ved både at bibeholde nogle af de gamle og traditionelle aktiviteter og samtidig bygge på ved nye tiltag.</p><p>Derfor er nye ideer og ikke mindst medlemmers opbakning og støtte nødvendig.</p><p><strong>Aktiviteter som foreningen har tradition for at lave:</strong></p><ul><li>Fastelavn</li><li>Ren by</li><li>Skt. Hans</li><li>Juletræsfest</li></ul><p><strong>Medlemskontingent:</strong></p><ul><li>Husstand: 120 kr.</li><li>Enlige og pensionistpar: 80 kr.</li><li>Enlig pensionist: 60 kr.</li></ul><p><strong>Indbetalingsformer:</strong></p><ul><li>Girokort</li><li>MobilePay til nr. 11658</li><li>Kontant til bestyrelsesmedlemmer</li><li>Indbetaling i Den Jyske Sparekasse på reg. nr. 9261 konto 2810070342</li><li>Automatisk betaling via betalingsservice</li></ul></div></div></div></div>
 <div class='section ' ><div class='container'><div class='row cols-2'><div class='col'><p>Kontaktoplysninger:</p><p>Formand:Kaj Kristensen, tlf.: 26 63 95 31Mail: Kristensen_kaj@hotmail.com</p><p>Næstformand:Kjeld Berg Jacobsen, tlf.: 23 28 05 38Mail: Jacobsen.loevel@outlook.com</p></div><div class='col'><div class='img-container'><img src='../../media/foreninger/logo.jpg' alt='LOBF logo'></div></div></div></div></div>
     </main>

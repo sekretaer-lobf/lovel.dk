@@ -63,6 +63,54 @@
     </nav>
     <main>
 <div class='section'><div class='container'><h1>Løvelfonden 2000</h1></div></div>
+<div class='section'><div class='container'><div class='slider' id='media-slider'><div class='slide active'><img src='../../media/foreninger/loevelfondenjpg.png' alt='Løvelfonden 2000'></div><div class='slide '><img src='../../media/foreninger/hvid-gren.jpg' alt='Hvid gren'></div><div class='slide '><img src='../../media/foreninger/forsamlingshuset.jpg' alt='Forsamlingshuset'></div><button class='slider-prev' aria-label='Previous slide'>&#10094;</button><button class='slider-next' aria-label='Next slide'>&#10095;</button><div class='slider-dots'><span class='slider-dot active' data-index='0' role='button' tabindex='0' aria-label='Go to slide 1'></span><span class='slider-dot ' data-index='1' role='button' tabindex='0' aria-label='Go to slide 2'></span><span class='slider-dot ' data-index='2' role='button' tabindex='0' aria-label='Go to slide 3'></span></div></div><script>
+(function() {
+    const slider = document.getElementById('media-slider');
+    if (!slider) return;
+    
+    const slides = slider.querySelectorAll('.slide');
+    const dots = slider.querySelectorAll('.slider-dot');
+    const prevBtn = slider.querySelector('.slider-prev');
+    const nextBtn = slider.querySelector('.slider-next');
+    let currentIndex = 0;
+    
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+        currentIndex = index;
+    }
+    
+    function nextSlide() {
+        const nextIndex = (currentIndex + 1) % slides.length;
+        showSlide(nextIndex);
+    }
+    
+    function prevSlide() {
+        const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(prevIndex);
+    }
+    
+    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+    
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            const index = parseInt(dot.dataset.index);
+            showSlide(index);
+        });
+        
+        dot.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                const index = parseInt(dot.dataset.index);
+                showSlide(index);
+            }
+        });
+    });
+})();
+</script></div></div>
 <div class='section ' ><div class='container'><div class='row cols-2'><div class='col'><div class='img-container'><img src='../../media/foreninger/loevelfondenjpg.png' alt='Løvelfonden 2000'></div></div><div class='col'><p>Baggrund</p><p>Ideen til at etablere "Løvelfonden 2000" blev skabt af en gruppe mennesker, bredt repræsenteret dels fra byens foreningsliv og af privatpersoner uden for foreningslivet. Gruppen bestod af ca. 15-18 personer. I perioden marts–oktober 2000 arbejdede gruppen med et oplæg til en udvidelse af Løvel hallen og det var sideløbende hermed, at tankerne om en "Løvelfond" så dagens lys.</p><p>Man så nødvendigheden i at skabe noget overordnet, en form for en fremtidssikring for udviklingen i Løvel og omegn. I erkendelse af, at alt udvikling udover initiativ også koster penge er det en nødvendighed, at et lokalsamfund selv står med et kapitalberedskab, der kan virke som medfinansierende til eksisterende og nye initiativer.</p></div></div></div></div>
 <div class='section ' ><div class='container'><p>Medlemskab</p><p>For at kunne give noget ud, skal der jo som bekendt også noget ind. Dette gælder også midlerne i "Løvelfonden 2000". Ifølge vedtægterne skal der oparbejdes en grundkapital på 250.000 kr., før der kan foretages udlodning. Det er hensigten, at der altid skal være en grundkapital på dette beløb.</p><p>Tegn et medlemskab i "Løvelfonden 2000" og vær med til at støtte udviklingen i din by og opland. Medlemskontingentet udgør:</p><p>100 kr. for en hustand</p><p>150 kr. for foreninger</p><p>250 kr. for virksomheder</p><p>Kontakt:Formand: Klaus Høgh, 20454202</p></div></div>
     </main>

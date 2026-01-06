@@ -68,6 +68,22 @@
                     ],
                     "collapsible": false,
                     "id": null
+                },
+                {
+                    "type": "slider",
+                    "images": [{
+                            "src": "media/dagtilbud/dagpleje.jpg",
+                            "alt": "Dagpleje"
+                        },
+                        {
+                            "src": "media/dagtilbud/vuggestue.jpg",
+                            "alt": "Vuggestue"
+                        },
+                        {
+                            "src": "media/dagtilbud/boernehave.jpg",
+                            "alt": "Børnehave"
+                        }
+                    ]
                 }
             ]
         },
@@ -201,6 +217,22 @@
                     ],
                     "collapsible": false,
                     "id": null
+                },
+                {
+                    "type": "slider",
+                    "images": [{
+                            "src": "media/dagtilbud/soedal-boernehus.png",
+                            "alt": "Sødal Børnehus"
+                        },
+                        {
+                            "src": "media/dagtilbud/boernehave.jpg",
+                            "alt": "Børnehave"
+                        },
+                        {
+                            "src": "media/dagtilbud/dagpleje.jpg",
+                            "alt": "Dagpleje"
+                        }
+                    ]
                 }
             ]
         },
@@ -240,6 +272,22 @@
                     ],
                     "collapsible": false,
                     "id": null
+                },
+                {
+                    "type": "slider",
+                    "images": [{
+                            "src": "media/dagtilbud/soedalskolen.png",
+                            "alt": "Sødalskolen"
+                        },
+                        {
+                            "src": "media/dagtilbud/soedal-boernehus.png",
+                            "alt": "Sødal Børnehus"
+                        },
+                        {
+                            "src": "media/dagtilbud/boernehave.jpg",
+                            "alt": "Børnehave"
+                        }
+                    ]
                 }
             ]
         },
@@ -251,6 +299,26 @@
                     "title": "LUIF - Løvel Ungdoms- og Idrætsforening",
                     "id": null,
                     "collapsible": false
+                },
+                {
+                    "type": "slider",
+                    "images": [{
+                            "src": "media/foreninger/luif.png",
+                            "alt": "LUIF"
+                        },
+                        {
+                            "src": "media/foreninger/fodbold.jpg",
+                            "alt": "Fodbold"
+                        },
+                        {
+                            "src": "media/foreninger/friluftsliv.jpg",
+                            "alt": "Friluftsliv"
+                        },
+                        {
+                            "src": "media/foreninger/gymnastik.png",
+                            "alt": "Gymnastik"
+                        }
+                    ]
                 },
                 {
                     "type": "content",
@@ -465,6 +533,22 @@
                     "collapsible": false
                 },
                 {
+                    "type": "slider",
+                    "images": [{
+                            "src": "media/foreninger/forsamlingshuset.jpg",
+                            "alt": "Forsamlingshuset"
+                        },
+                        {
+                            "src": "media/foreninger/kirkejpg.jpg",
+                            "alt": "Kirken"
+                        },
+                        {
+                            "src": "media/foreninger/amatoerscenen1.jpg",
+                            "alt": "Amatørscenen"
+                        }
+                    ]
+                },
+                {
                     "type": "content",
                     "layout": "two-col",
                     "columns": [{
@@ -498,6 +582,22 @@
                     "collapsible": false
                 },
                 {
+                    "type": "slider",
+                    "images": [{
+                            "src": "media/foreninger/kirkejpg.jpg",
+                            "alt": "Kirken"
+                        },
+                        {
+                            "src": "media/foreninger/forsamlingshuset.jpg",
+                            "alt": "Forsamlingshuset"
+                        },
+                        {
+                            "src": "media/foreninger/hvid-gren.jpg",
+                            "alt": "Hvid gren"
+                        }
+                    ]
+                },
+                {
                     "type": "content",
                     "layout": "two-col",
                     "columns": [{
@@ -527,6 +627,22 @@
                     "title": "Løvel og Omegns Borgerforening",
                     "id": null,
                     "collapsible": false
+                },
+                {
+                    "type": "slider",
+                    "images": [{
+                            "src": "media/foreninger/hvid-gren.jpg",
+                            "alt": "Hvid gren"
+                        },
+                        {
+                            "src": "media/foreninger/logo.jpg",
+                            "alt": "Logo"
+                        },
+                        {
+                            "src": "media/foreninger/friluftsliv.jpg",
+                            "alt": "Friluftsliv"
+                        }
+                    ]
                 },
                 {
                     "type": "content",
@@ -602,6 +718,22 @@
                     "collapsible": false
                 },
                 {
+                    "type": "slider",
+                    "images": [{
+                            "src": "media/foreninger/senior.png",
+                            "alt": "Senior"
+                        },
+                        {
+                            "src": "media/foreninger/hvid-gren.jpg",
+                            "alt": "Hvid gren"
+                        },
+                        {
+                            "src": "media/foreninger/forsamlingshuset.jpg",
+                            "alt": "Forsamlingshuset"
+                        }
+                    ]
+                },
+                {
                     "type": "content",
                     "layout": "two-col",
                     "columns": [{
@@ -633,6 +765,22 @@
                     "title": "Løvelfonden 2000",
                     "id": null,
                     "collapsible": false
+                },
+                {
+                    "type": "slider",
+                    "images": [{
+                            "src": "media/foreninger/loevelfondenjpg.png",
+                            "alt": "Løvelfonden 2000"
+                        },
+                        {
+                            "src": "media/foreninger/hvid-gren.jpg",
+                            "alt": "Hvid gren"
+                        },
+                        {
+                            "src": "media/foreninger/forsamlingshuset.jpg",
+                            "alt": "Forsamlingshuset"
+                        }
+                    ]
                 },
                 {
                     "type": "content",
@@ -711,6 +859,22 @@
                     "collapsible": false
                 },
                 {
+                    "type": "slider",
+                    "images": [{
+                            "src": "media/foreninger/amatoerscenen1.jpg",
+                            "alt": "Amatørscenen"
+                        },
+                        {
+                            "src": "media/foreninger/forsamlingshuset.jpg",
+                            "alt": "Forsamlingshuset"
+                        },
+                        {
+                            "src": "media/foreninger/hvid-gren.jpg",
+                            "alt": "Hvid gren"
+                        }
+                    ]
+                },
+                {
                     "type": "content",
                     "layout": "two-col",
                     "columns": [{
@@ -746,6 +910,22 @@
                     "collapsible": false
                 },
                 {
+                    "type": "slider",
+                    "images": [{
+                            "src": "media/foreninger/lrv-skals.jpg",
+                            "alt": "LRV-Skals"
+                        },
+                        {
+                            "src": "media/foreninger/team-loevel-2.jpg",
+                            "alt": "Team Løvel"
+                        },
+                        {
+                            "src": "media/foreninger/friluftsliv.jpg",
+                            "alt": "Friluftsliv"
+                        }
+                    ]
+                },
+                {
                     "type": "content",
                     "layout": "two-col",
                     "columns": [{
@@ -776,6 +956,22 @@
                     "title": "Viborg Motorklub",
                     "id": null,
                     "collapsible": false
+                },
+                {
+                    "type": "slider",
+                    "images": [{
+                            "src": "media/foreninger/loevelbanen.jpg",
+                            "alt": "Løvelbanen"
+                        },
+                        {
+                            "src": "media/foreninger/petanque.jpg",
+                            "alt": "Petanque"
+                        },
+                        {
+                            "src": "media/foreninger/friluftsliv.jpg",
+                            "alt": "Friluftsliv"
+                        }
+                    ]
                 },
                 {
                     "type": "content",
@@ -840,6 +1036,22 @@
                     "collapsible": false
                 },
                 {
+                    "type": "slider",
+                    "images": [{
+                            "src": "media/informationer/byfest.jpg",
+                            "alt": "Byfest"
+                        },
+                        {
+                            "src": "media/informationer/loeve.jpg",
+                            "alt": "Løve"
+                        },
+                        {
+                            "src": "media/informationer/vandvaerk-banner.jpg",
+                            "alt": "Vandværk"
+                        }
+                    ]
+                },
+                {
                     "type": "content",
                     "layout": "two-col",
                     "columns": [{
@@ -875,6 +1087,22 @@
                     "collapsible": false
                 },
                 {
+                    "type": "slider",
+                    "images": [{
+                            "src": "media/informationer/loeve.jpg",
+                            "alt": "Løve"
+                        },
+                        {
+                            "src": "media/informationer/byfest.jpg",
+                            "alt": "Byfest"
+                        },
+                        {
+                            "src": "media/informationer/vandvaerk-banner.jpg",
+                            "alt": "Vandværk"
+                        }
+                    ]
+                },
+                {
                     "type": "content",
                     "layout": "two-col",
                     "columns": [{
@@ -906,6 +1134,22 @@
                     "title": "Løvel Vandværk",
                     "id": null,
                     "collapsible": false
+                },
+                {
+                    "type": "slider",
+                    "images": [{
+                            "src": "media/informationer/vandvaerk-banner.jpg",
+                            "alt": "Vandværk"
+                        },
+                        {
+                            "src": "media/informationer/loeve.jpg",
+                            "alt": "Løve"
+                        },
+                        {
+                            "src": "media/informationer/byfest.jpg",
+                            "alt": "Byfest"
+                        }
+                    ]
                 },
                 {
                     "type": "content",
@@ -956,6 +1200,22 @@
                     ],
                     "collapsible": false,
                     "id": null
+                },
+                {
+                    "type": "slider",
+                    "images": [{
+                            "src": "media/shared/general/forside.jpg",
+                            "alt": "Løvel byudsigt"
+                        },
+                        {
+                            "src": "media/shared/general/hvid-gren.jpg",
+                            "alt": "Hvid gren - natur i Løvel"
+                        },
+                        {
+                            "src": "media/shared/general/wordle-loevel-2.png",
+                            "alt": "Løvel word cloud"
+                        }
+                    ]
                 },
                 {
                     "type": "text",

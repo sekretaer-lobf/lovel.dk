@@ -113,6 +113,84 @@ def render_gallery(images: list, root_path: str) -> str:
     return html
 
 
+def render_slider(images: list, root_path: str) -> str:
+    """Render an image slider/carousel."""
+    slider_id = "media-slider"
+    html = f"<div class='slider' id='{slider_id}'>"
+    
+    # Create slides
+    for idx, img in enumerate(images):
+        src = img.get("src", "")
+        alt = img.get("alt", "")
+        active_class = "active" if idx == 0 else ""
+        html += f"<div class='slide {active_class}'><img src='{root_path}{src}' alt='{alt}'></div>"
+    
+    # Navigation buttons
+    html += "<button class='slider-prev' aria-label='Previous slide'>&#10094;</button>"
+    html += "<button class='slider-next' aria-label='Next slide'>&#10095;</button>"
+    
+    # Dots indicator
+    html += "<div class='slider-dots'>"
+    for idx in range(len(images)):
+        dot_class = "active" if idx == 0 else ""
+        html += f"<span class='slider-dot {dot_class}' data-index='{idx}' role='button' tabindex='0' aria-label='Go to slide {idx + 1}'></span>"
+    html += "</div>"
+    
+    html += "</div>"
+    
+    # Add slider JavaScript
+    html += f"""<script>
+(function() {{
+    const slider = document.getElementById('{slider_id}');
+    if (!slider) return;
+    
+    const slides = slider.querySelectorAll('.slide');
+    const dots = slider.querySelectorAll('.slider-dot');
+    const prevBtn = slider.querySelector('.slider-prev');
+    const nextBtn = slider.querySelector('.slider-next');
+    let currentIndex = 0;
+    
+    function showSlide(index) {{
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+        currentIndex = index;
+    }}
+    
+    function nextSlide() {{
+        const nextIndex = (currentIndex + 1) % slides.length;
+        showSlide(nextIndex);
+    }}
+    
+    function prevSlide() {{
+        const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(prevIndex);
+    }}
+    
+    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+    
+    dots.forEach(dot => {{
+        dot.addEventListener('click', () => {{
+            const index = parseInt(dot.dataset.index);
+            showSlide(index);
+        }});
+        
+        dot.addEventListener('keypress', (e) => {{
+            if (e.key === 'Enter' || e.key === ' ') {{
+                const index = parseInt(dot.dataset.index);
+                showSlide(index);
+            }}
+        }});
+    }});
+}})();
+</script>"""
+    
+    return html
+
+
 def render_video_column(video_id: str) -> str:
     """Render a YouTube video embed in a column."""
     return f"""<div class='video-container' style='position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;'>

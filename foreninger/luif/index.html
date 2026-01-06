@@ -63,6 +63,54 @@
     </nav>
     <main>
 <div class='section'><div class='container'><h1>LUIF - Løvel Ungdoms- og Idrætsforening</h1></div></div>
+<div class='section'><div class='container'><div class='slider' id='media-slider'><div class='slide active'><img src='../../media/foreninger/luif.png' alt='LUIF'></div><div class='slide '><img src='../../media/foreninger/fodbold.jpg' alt='Fodbold'></div><div class='slide '><img src='../../media/foreninger/friluftsliv.jpg' alt='Friluftsliv'></div><div class='slide '><img src='../../media/foreninger/gymnastik.png' alt='Gymnastik'></div><button class='slider-prev' aria-label='Previous slide'>&#10094;</button><button class='slider-next' aria-label='Next slide'>&#10095;</button><div class='slider-dots'><span class='slider-dot active' data-index='0' role='button' tabindex='0' aria-label='Go to slide 1'></span><span class='slider-dot ' data-index='1' role='button' tabindex='0' aria-label='Go to slide 2'></span><span class='slider-dot ' data-index='2' role='button' tabindex='0' aria-label='Go to slide 3'></span><span class='slider-dot ' data-index='3' role='button' tabindex='0' aria-label='Go to slide 4'></span></div></div><script>
+(function() {
+    const slider = document.getElementById('media-slider');
+    if (!slider) return;
+    
+    const slides = slider.querySelectorAll('.slide');
+    const dots = slider.querySelectorAll('.slider-dot');
+    const prevBtn = slider.querySelector('.slider-prev');
+    const nextBtn = slider.querySelector('.slider-next');
+    let currentIndex = 0;
+    
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+        currentIndex = index;
+    }
+    
+    function nextSlide() {
+        const nextIndex = (currentIndex + 1) % slides.length;
+        showSlide(nextIndex);
+    }
+    
+    function prevSlide() {
+        const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(prevIndex);
+    }
+    
+    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+    
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            const index = parseInt(dot.dataset.index);
+            showSlide(index);
+        });
+        
+        dot.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                const index = parseInt(dot.dataset.index);
+                showSlide(index);
+            }
+        });
+    });
+})();
+</script></div></div>
 <div class='section ' ><div class='container'><div class='row cols-2'><div class='col'><div class='img-container'><img src='../../media/foreninger/luif.png' alt='LUIF logo'></div></div><div class='col'><p>Løvel Ungdoms og idrætforening er grundlagt i 1902 og tæller i dag 10 afdelinger og ca 700 medlemmer.</p><p>Under sig har LUIF flere foreninger i byen, du kan læse mere om hver enkelt underforening her på hjemmesiden.</p><p>Foreningen har som formål at samle unge og ældre til idrætslig og socialt samvær</p><p>Kontakt:Formand: Jesper Taastrup ChristensenTlf.: 25 11 31 11Mail: jtc@fibermail.dk</p></div></div></div></div>
 <div class='section collapsible-header collapsed' data-section='badminton'><div class='container'><h2 class='collapse-toggle' role='button' tabindex='0' aria-expanded='false' aria-label='Expand Badminton section'>Badminton</h2></div></div>
 <div class='section collapsible-content collapsed' data-section='badminton'><div class='container'><p>I Løvel er der under idrætsforeningen en selvstændig badmintonafdeling. Også her samarbejder Løvel med nabobyen Rødding. Der er mulighed for både sommer- og vinterbadminton samt motions, trænings- og turneringsmuligheder for alle aldersgrupper. Om vinteren tilbydes træning for børn og unge med træner udefra.</p></div></div>
