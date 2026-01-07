@@ -128,17 +128,6 @@ def render_page_footer(metadata: dict) -> str:
                     <p><a href="mailto:support@lovel.dk">support@lovel.dk</a></p>
                 </div>
                 <div class="footer-section">
-                    <p><strong>Sitemap</strong></p>
-                    <ul style="list-style: none; padding: 0; margin: 0;">
-                        <li><a href="{root_path}index.html">Forside</a></li>
-                        <li><a href="{root_path}dagtilbud/vuggestue/">Dagtilbud</a></li>
-                        <li><a href="{root_path}foreninger/luif/">Foreninger</a></li>
-                        <li><a href="{root_path}informationer/placering/">Informationer</a></li>
-                        <li><a href="{root_path}erhverv.html">Erhverv</a></li>
-                        <li><a href="{root_path}film.html">Film</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
                     <p>© 2025 | Løvel - lige i nærheden</p>
                     <p><small>Sidst opdateret: {last_updated}</small></p>
                 </div>
