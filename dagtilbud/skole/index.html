@@ -64,54 +64,6 @@
     <main>
 <div class='section'><div class='container'><h1>Sødalskolen</h1></div></div>
 <div class='section ' ><div class='container'><div class='row cols-2-ratio'><div class='col'><div class='img-container'><img src='../../media/dagtilbud/soedalskolen.png' alt='Sødalskolen logo'></div></div><div class='col'><h2>Sødalskolen</h2><p>Sødalskolen</p><p>Skolen</p><p>Sødalskolen er en folkeskole i Viborg Kommune med fokus på tryghed, ansvar, respekt og faglighed. Skolen består af to afdelinger:</p><p>Løvel Afdeling:0. - 6. klasse</p><p>Rødding Afdeling:0. - 9. klasse (udskolingen foregår her)</p><p>Vi kalder os "Danmarks længste skole" – der er 5 kilometer mellem afdelingerne.</p><p>Nøgletal:Omkring 360 elever og 53 ansatte.</p><p>Ledelse:Skoleleder: Brian AlbækDaglig leder i Løvel: Pia ØstergaardFormand for skolebestyrelsen: Henrik Karlsen</p><p>Adresse: Meldgårdsvej 24 / Gl. Røddingvej 8, 8830 Tjele</p></div></div></div></div>
-<div class='section'><div class='container'><div class='slider' id='media-slider'><div class='slide active'><img src='../../media/dagtilbud/soedalskolen.png' alt='Sødalskolen'></div><div class='slide '><img src='../../media/dagtilbud/soedal-boernehus.png' alt='Sødal Børnehus'></div><div class='slide '><img src='../../media/dagtilbud/boernehave.jpg' alt='Børnehave'></div><button class='slider-prev' aria-label='Previous slide'>&#10094;</button><button class='slider-next' aria-label='Next slide'>&#10095;</button><div class='slider-dots'><span class='slider-dot active' data-index='0' role='button' tabindex='0' aria-label='Go to slide 1'></span><span class='slider-dot ' data-index='1' role='button' tabindex='0' aria-label='Go to slide 2'></span><span class='slider-dot ' data-index='2' role='button' tabindex='0' aria-label='Go to slide 3'></span></div></div><script>
-(function() {
-    const slider = document.getElementById('media-slider');
-    if (!slider) return;
-    
-    const slides = slider.querySelectorAll('.slide');
-    const dots = slider.querySelectorAll('.slider-dot');
-    const prevBtn = slider.querySelector('.slider-prev');
-    const nextBtn = slider.querySelector('.slider-next');
-    let currentIndex = 0;
-    
-    function showSlide(index) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        dots.forEach(dot => dot.classList.remove('active'));
-        
-        slides[index].classList.add('active');
-        dots[index].classList.add('active');
-        currentIndex = index;
-    }
-    
-    function nextSlide() {
-        const nextIndex = (currentIndex + 1) % slides.length;
-        showSlide(nextIndex);
-    }
-    
-    function prevSlide() {
-        const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
-        showSlide(prevIndex);
-    }
-    
-    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-    
-    dots.forEach(dot => {
-        dot.addEventListener('click', () => {
-            const index = parseInt(dot.dataset.index);
-            showSlide(index);
-        });
-        
-        dot.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                const index = parseInt(dot.dataset.index);
-                showSlide(index);
-            }
-        });
-    });
-})();
-</script></div></div>
     </main>
 
     <button id="scrollToTop" aria-label="Tilbage til toppen">↑</button>
@@ -124,19 +76,8 @@
                     <p><a href="mailto:support@lovel.dk">support@lovel.dk</a></p>
                 </div>
                 <div class="footer-section">
-                    <p><strong>Sitemap</strong></p>
-                    <ul style="list-style: none; padding: 0; margin: 0;">
-                        <li><a href="../../index.html">Forside</a></li>
-                        <li><a href="../../dagtilbud/vuggestue/">Dagtilbud</a></li>
-                        <li><a href="../../foreninger/luif/">Foreninger</a></li>
-                        <li><a href="../../informationer/placering/">Informationer</a></li>
-                        <li><a href="../../erhverv.html">Erhverv</a></li>
-                        <li><a href="../../film.html">Film</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
                     <p>© 2025 | Løvel - lige i nærheden</p>
-                    <p><small>Sidst opdateret: 20. December 2025</small></p>
+                    <p><small>Sidst opdateret: 07. January 2026</small></p>
                 </div>
             </div>
         </div>

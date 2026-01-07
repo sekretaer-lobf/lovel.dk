@@ -63,54 +63,6 @@
     </nav>
     <main>
 <div class='section'><div class='container'><h1>Byfest</h1></div></div>
-<div class='section'><div class='container'><div class='slider' id='media-slider'><div class='slide active'><img src='../../media/informationer/byfest.jpg' alt='Byfest'></div><div class='slide '><img src='../../media/informationer/loeve.jpg' alt='Løve'></div><div class='slide '><img src='../../media/informationer/vandvaerk-banner.jpg' alt='Vandværk'></div><button class='slider-prev' aria-label='Previous slide'>&#10094;</button><button class='slider-next' aria-label='Next slide'>&#10095;</button><div class='slider-dots'><span class='slider-dot active' data-index='0' role='button' tabindex='0' aria-label='Go to slide 1'></span><span class='slider-dot ' data-index='1' role='button' tabindex='0' aria-label='Go to slide 2'></span><span class='slider-dot ' data-index='2' role='button' tabindex='0' aria-label='Go to slide 3'></span></div></div><script>
-(function() {
-    const slider = document.getElementById('media-slider');
-    if (!slider) return;
-    
-    const slides = slider.querySelectorAll('.slide');
-    const dots = slider.querySelectorAll('.slider-dot');
-    const prevBtn = slider.querySelector('.slider-prev');
-    const nextBtn = slider.querySelector('.slider-next');
-    let currentIndex = 0;
-    
-    function showSlide(index) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        dots.forEach(dot => dot.classList.remove('active'));
-        
-        slides[index].classList.add('active');
-        dots[index].classList.add('active');
-        currentIndex = index;
-    }
-    
-    function nextSlide() {
-        const nextIndex = (currentIndex + 1) % slides.length;
-        showSlide(nextIndex);
-    }
-    
-    function prevSlide() {
-        const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
-        showSlide(prevIndex);
-    }
-    
-    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-    
-    dots.forEach(dot => {
-        dot.addEventListener('click', () => {
-            const index = parseInt(dot.dataset.index);
-            showSlide(index);
-        });
-        
-        dot.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                const index = parseInt(dot.dataset.index);
-                showSlide(index);
-            }
-        });
-    });
-})();
-</script></div></div>
 <div class='section ' ><div class='container'><div class='row cols-2-ratio'><div class='col'><div class='img-container'><img src='../../media/informationer/byfest.jpg' alt='Byfest'></div></div><div class='col'><p>Byfest</p><p>Det er den årlige festuge i juni måned, festen er for både børn og voksne. Festen afholdes som regel i uge 23.</p><p>Byfesten er knap en uge med fest og farver.</p><p>Der er festplads og -telt med diverse underholdning, fællesspisning og bal.</p><p>Underholdningen er i top for både børn og voksne.</p><p>Arrangør:Festudvalg nedsat af Idrætsforeningen og Borgerforeningen med deltagelse af Løven.</p></div></div></div></div>
     </main>
 
@@ -124,19 +76,8 @@
                     <p><a href="mailto:support@lovel.dk">support@lovel.dk</a></p>
                 </div>
                 <div class="footer-section">
-                    <p><strong>Sitemap</strong></p>
-                    <ul style="list-style: none; padding: 0; margin: 0;">
-                        <li><a href="../../index.html">Forside</a></li>
-                        <li><a href="../../dagtilbud/vuggestue/">Dagtilbud</a></li>
-                        <li><a href="../../foreninger/luif/">Foreninger</a></li>
-                        <li><a href="../../informationer/placering/">Informationer</a></li>
-                        <li><a href="../../erhverv.html">Erhverv</a></li>
-                        <li><a href="../../film.html">Film</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
                     <p>© 2025 | Løvel - lige i nærheden</p>
-                    <p><small>Sidst opdateret: 20. December 2025</small></p>
+                    <p><small>Sidst opdateret: 07. January 2026</small></p>
                 </div>
             </div>
         </div>
