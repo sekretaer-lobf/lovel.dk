@@ -685,12 +685,92 @@
                     ]
                 },
                 {
+                    "type": "header",
+                    "title": "Virksomheder i Løvel",
+                    "id": null,
+                    "collapsible": false
+                },
+                {
                     "type": "text",
                     "paragraphs": [
-                        "Virksomheder i Løvel",
-                        "Denne liste opdateres løbende. Hvis du driver virksomhed i Løvel og gerne vil være med, kontakt os venligst."
+                        "Løvel Auto ApS",
+                        "Søndergade 31, 8830 Tjele",
+                        "Bilmekanik og autoudvikling"
                     ],
-                    "title": "Virksomheder i Løvel"
+                    "title": "Løvel Auto ApS"
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Vilofoss A/S",
+                        "Pederstrupvej 5, 8830 Tjele",
+                        "Industriproduktion"
+                    ],
+                    "title": "Vilofoss A/S"
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Løvel Mølle",
+                        "Møllevej 32, 8830 Tjele",
+                        "Mølle og landbrugsprodukter"
+                    ],
+                    "title": "Løvel Mølle"
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Løvel Køreskole",
+                        "Rødkløvervej 5, 8830 Tjele",
+                        "Kørekursus og kørelektioner",
+                        "Telefon: 42 31 69",
+                        "Website: www.lovel-ks.dk"
+                    ],
+                    "title": "Løvel Køreskole"
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Løvel Pizza",
+                        "Gyngkær 2, 8830 Tjele",
+                        "Restaurant og pizzeria"
+                    ],
+                    "title": "Løvel Pizza"
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Køibmanden i Løvel ApS",
+                        "Gl. Aalborgvej 11, 8830 Tjele",
+                        "Dagligvarebutik",
+                        "Telefon: 86 69 90"
+                    ],
+                    "title": "Køibmanden i Løvel ApS"
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Løvel Butikshus ApS",
+                        "Aalborgvej 161, 8830 Tjele",
+                        "Detailhandel"
+                    ],
+                    "title": "Løvel Butikshus ApS"
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Løvel Gartneri",
+                        "Gillebakken 26, 8830 Tjele",
+                        "Plantesalg og gartneri",
+                        "Åbent hele året"
+                    ],
+                    "title": "Løvel Gartneri"
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Virksomheder opdateres løbende. Hvis du driver virksomhed i Løvel og gerne vil være med, kontakt os venligst."
+                    ]
                 },
                 {
                     "type": "text",
@@ -895,6 +975,75 @@
                     ],
                     "collapsible": false,
                     "id": null
+                }
+            ]
+        },
+        "informationer/byggegrunde": {
+            "title": "Byggegrunde",
+            "description": "Byggegrunde til salg i Løvel",
+            "sections": [{
+                    "type": "header",
+                    "title": "Byggegrunde i Løvel - Speltvænget",
+                    "id": null,
+                    "collapsible": false
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Løvel er en aktiv og drivkraftig landsby. Den ligger lige i nærheden af et væld af muligheder. 10 minutters kørsel til Viborg, naturen lige i baghaven og nærvær og tryghed for børnene.",
+                        "Her ses byggegrunde til salg i området Speltvænget. Klik på grundene i kortet for mere information eller besøg Viborg Kommunes website for yderligere detaljer."
+                    ]
+                },
+                {
+                    "type": "content",
+                    "layout": "single",
+                    "columns": [{
+                            "type": "iframe",
+                            "src": "https://kort.viborg.dk/?modus=eksterner_embed&tema=byggegrunde_loevel_speltvaenget",
+                            "alt": "Interaktivt kort med byggegrunde i Løvel Speltvænget"
+                        }
+                    ],
+                    "collapsible": false,
+                    "id": null
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Kontakt",
+                        "For mere information om byggegrundene, se Viborg Kommunes side:",
+                        "Trafik og veje - Byggegrunde",
+                        "Telefon: 87 87 50 06 eller 87 87 56 00",
+                        "Email: trafikogveje@viborg.dk"
+                    ]
+                }
+            ]
+        },
+        "informationer/huse-til-salg": {
+            "title": "Huse til salg",
+            "description": "Huse til salg i Løvel",
+            "sections": [{
+                    "type": "header",
+                    "title": "Huse til salg i Løvel",
+                    "id": null,
+                    "collapsible": false
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Se huse til salg i Løvel og omegn på boliga.dk"
+                    ]
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Klik på linket herunder for at se alle huse til salg i Løvel-området:"
+                    ]
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "<a href='https://www.boliga.dk/kortsoegning?searchTab=0&latMin=56,487661851332305&latMax=56,57208821762074&lonMin=9,297342831890235&lonMax=9,653615352157058&sort=street-a&pageSize=500&polygon=56.5600,%209.4754%2056.5598,%209.4811%2056.5593,%209.4867%2056.5585,%209.4922%2056.5574,%209.4975%2056.5560,%209.5026%2056.5543,%209.5073%2056.5523,%209.5117%2056.5501,%209.5158%2056.5476,%209.5193%2056.5450,%209.5224%2056.5422,%209.5250%2056.5393,%209.5270%2056.5362,%209.5285%2056.5331,%209.5294%2056.5300,%209.5297%2056.5269,%209.5294%2056.5238,%209.5285%2056.5207,%209.5270%2056.5178,%209.5250%2056.5150,%209.5224%2056.5124,%209.5193%2056.5099,%209.5157%2056.5077,%209.5117%2056.5057,%209.5073%2056.5040,%209.5025%2056.5026,%209.4975%2056.5015,%209.4922%2056.5007,%209.4867%2056.5002,%209.4811%2056.5000,%209.4754%2056.5002,%209.4697%2056.5007,%209.4641%2056.5015,%209.4586%2056.5026,%209.4533%2056.5040,%209.4483%2056.5057,%209.4435%2056.5077,%209.4391%2056.5099,%209.4351%2056.5124,%209.4315%2056.5150,%209.4284%2056.5178,%209.4258%2056.5207,%209.4238%2056.5238,%209.4223%2056.5269,%209.4214%2056.5300,%209.4211%2056.5331,%209.4214%2056.5362,%209.4223%2056.5393,%209.4237%2056.5422,%209.4258%2056.5450,%209.4284%2056.5476,%209.4315%2056.5501,%209.4350%2056.5523,%209.4390%2056.5543,%209.4435%2056.5560,%209.4482%2056.5574,%209.4533%2056.5585,%209.4586%2056.5593,%209.4641%2056.5598,%209.4697&pt=r&rskm=3340.7677438471796&rslat=56.529999928808564&rslng=9.475392021793189' target='_blank' style='display: inline-block; padding: 10px 20px; background-color: #e0f7b6; color: #000; text-decoration: none; border-radius: 4px; font-weight: bold;'>Se huse til salg på boliga.dk</a>"
+                    ]
                 }
             ]
         },

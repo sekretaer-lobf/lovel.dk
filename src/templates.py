@@ -102,6 +102,11 @@ def render_map_column(src: str, alt: str = "") -> str:
     return f"<iframe src='{src}' style='border: 1px solid #ccc; width: 100%; height: 400px;' frameborder='0'></iframe>"
 
 
+def render_iframe_column(src: str, alt: str = "") -> str:
+    """Render a generic iframe column."""
+    return f"<iframe src='{src}' style='border: 1px solid #ccc; width: 100%; height: 600px;' frameborder='0' allow='fullscreen'></iframe>"
+
+
 def render_gallery(images: list, root_path: str) -> str:
     """Render a gallery of images."""
     html = "<div class='gallery'>"
@@ -241,6 +246,8 @@ def render_two_column_section(
             html += render_image_column(col.get("src", ""), root_path, col.get("alt", ""))
         elif col_type == "map":
             html += render_map_column(col.get("src", ""), col.get("alt", ""))
+        elif col_type == "iframe":
+            html += render_iframe_column(col.get("src", ""), col.get("alt", ""))
         elif col_type == "gallery":
             html += render_gallery(col.get("images", []), root_path)
         elif col_type == "video":

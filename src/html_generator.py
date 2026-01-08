@@ -39,10 +39,18 @@ def render_section(section: dict, root_path: str) -> str:
             return render_two_column_section(columns, root_path, is_collapsible, section_id)
         else:
             # Single column layout
+            from templates import render_iframe_column, render_map_column, render_image_column
             html = f"<div class='section'><div class='container'>"
             for col in columns:
-                if col.get("type") == "text":
+                col_type = col.get("type")
+                if col_type == "text":
                     html += col.get("content", "")
+                elif col_type == "iframe":
+                    html += render_iframe_column(col.get("src", ""), col.get("alt", ""))
+                elif col_type == "map":
+                    html += render_map_column(col.get("src", ""), col.get("alt", ""))
+                elif col_type == "image":
+                    html += render_image_column(col.get("src", ""), root_path, col.get("alt", ""))
             html += "</div></div>\n"
             return html
     
