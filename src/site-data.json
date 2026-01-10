@@ -695,7 +695,8 @@
                     "paragraphs": [
                         "Løvel Auto ApS",
                         "Søndergade 31, 8830 Tjele",
-                        "Bilmekanik og autoudvikling"
+                        "Bilmekanik og autoudvikling",
+                        "Telefon: 60 12 24 35"
                     ],
                     "title": "Løvel Auto ApS"
                 },
@@ -721,31 +722,23 @@
                     "type": "text",
                     "paragraphs": [
                         "Løvel Køreskole",
-                        "Rødkløvervej 5, 8830 Tjele",
+                        "Jordkløvervej 5, 8830 Tjele",
                         "Kørekursus og kørelektioner",
-                        "Telefon: 42 31 69",
-                        "Website: www.lovel-ks.dk"
+                        "Telefon: 40 11 26 99",
+                        "Website: https://www.maibrittskoereskole.dk/"
                     ],
                     "title": "Løvel Køreskole"
                 },
                 {
                     "type": "text",
                     "paragraphs": [
-                        "Løvel Pizza",
+                        "Løvel Pizza & Grill",
                         "Gyngkær 2, 8830 Tjele",
-                        "Restaurant og pizzeria"
+                        "Restaurant og pizzeria",
+                        "Telefon: 81 65 52 31",
+                        "Website: https://loevelpizza.dk/"
                     ],
                     "title": "Løvel Pizza"
-                },
-                {
-                    "type": "text",
-                    "paragraphs": [
-                        "Køibmanden i Løvel ApS",
-                        "Gl. Aalborgvej 11, 8830 Tjele",
-                        "Dagligvarebutik",
-                        "Telefon: 86 69 90"
-                    ],
-                    "title": "Køibmanden i Løvel ApS"
                 },
                 {
                     "type": "text",
@@ -762,7 +755,8 @@
                         "Løvel Gartneri",
                         "Gillebakken 26, 8830 Tjele",
                         "Plantesalg og gartneri",
-                        "Åbent hele året"
+                        "Åbent hele året",
+                        "Telefon: 31 10 23 37"
                     ],
                     "title": "Løvel Gartneri"
                 },
@@ -770,13 +764,6 @@
                     "type": "text",
                     "paragraphs": [
                         "Virksomheder opdateres løbende. Hvis du driver virksomhed i Løvel og gerne vil være med, kontakt os venligst."
-                    ]
-                },
-                {
-                    "type": "text",
-                    "paragraphs": [
-                        "Din virksomhed her?",
-                        "Hvis du driver en virksomhed i Løvel eller er interesseret i at være præsenteret på denne side, kontakt os:"
                     ]
                 }
             ]
@@ -998,11 +985,10 @@
                     "type": "content",
                     "layout": "single",
                     "columns": [{
-                            "type": "iframe",
-                            "src": "https://kort.viborg.dk/?modus=eksterner_embed&tema=byggegrunde_loevel_speltvaenget",
-                            "alt": "Interaktivt kort med byggegrunde i Løvel Speltvænget"
-                        }
-                    ],
+                        "type": "iframe",
+                        "src": "https://kort.viborg.dk/?modus=eksterner_embed&tema=byggegrunde_loevel_speltvaenget",
+                        "alt": "Interaktivt kort med byggegrunde i Løvel Speltvænget"
+                    }],
                     "collapsible": false,
                     "id": null
                 },
