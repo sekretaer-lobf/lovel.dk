@@ -693,6 +693,58 @@
                 {
                     "type": "text",
                     "paragraphs": [
+                        "Løvel Butikshus ApS",
+                        "Aalborgvej 161, 8830 Tjele",
+                        "Detailhandel"
+                    ],
+                    "title": "Løvel Butikshus ApS"
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Løvel Pizza & Grill",
+                        "Gyngkær 2, 8830 Tjele",
+                        "Restaurant og pizzeria",
+                        "Telefon: 81 65 52 31",
+                        "Website: https://loevelpizza.dk/"
+                    ],
+                    "title": "Løvel Pizza"
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Løvel Gartneri",
+                        "Gillebakken 26, 8830 Tjele",
+                        "Plantesalg og gartneri",
+                        "Åbent hele året",
+                        "Telefon: 31 10 23 37"
+                    ],
+                    "title": "Løvel Gartneri"
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Munk Diner Catering",
+                        "Catering og fødevareservice",
+                        "Telefon: 23 39 39 90",
+                        "Website: https://www.munkdinercatering.dk/"
+                    ],
+                    "title": "Munk Diner Catering"
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Løvel Køreskole",
+                        "Jordkløvervej 5, 8830 Tjele",
+                        "Kørekursus og kørelektioner",
+                        "Telefon: 40 11 26 99",
+                        "Website: https://www.maibrittskoereskole.dk/"
+                    ],
+                    "title": "Løvel Køreskole"
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
                         "Løvel Auto ApS",
                         "Søndergade 31, 8830 Tjele",
                         "Bilmekanik og autoudvikling",
@@ -717,48 +769,6 @@
                         "Mølle og landbrugsprodukter"
                     ],
                     "title": "Løvel Mølle"
-                },
-                {
-                    "type": "text",
-                    "paragraphs": [
-                        "Løvel Køreskole",
-                        "Jordkløvervej 5, 8830 Tjele",
-                        "Kørekursus og kørelektioner",
-                        "Telefon: 40 11 26 99",
-                        "Website: https://www.maibrittskoereskole.dk/"
-                    ],
-                    "title": "Løvel Køreskole"
-                },
-                {
-                    "type": "text",
-                    "paragraphs": [
-                        "Løvel Pizza & Grill",
-                        "Gyngkær 2, 8830 Tjele",
-                        "Restaurant og pizzeria",
-                        "Telefon: 81 65 52 31",
-                        "Website: https://loevelpizza.dk/"
-                    ],
-                    "title": "Løvel Pizza"
-                },
-                {
-                    "type": "text",
-                    "paragraphs": [
-                        "Løvel Butikshus ApS",
-                        "Aalborgvej 161, 8830 Tjele",
-                        "Detailhandel"
-                    ],
-                    "title": "Løvel Butikshus ApS"
-                },
-                {
-                    "type": "text",
-                    "paragraphs": [
-                        "Løvel Gartneri",
-                        "Gillebakken 26, 8830 Tjele",
-                        "Plantesalg og gartneri",
-                        "Åbent hele året",
-                        "Telefon: 31 10 23 37"
-                    ],
-                    "title": "Løvel Gartneri"
                 },
                 {
                     "type": "text",
