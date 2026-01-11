@@ -996,8 +996,8 @@
                     "layout": "single",
                     "columns": [{
                         "type": "iframe",
-                        "src": "https://kort.viborg.dk/?modus=eksterner_embed&tema=byggegrunde_loevel_speltvaenget",
-                        "alt": "Interaktivt kort med byggegrunde i Løvel Speltvænget"
+                        "src": "https://kort.viborg.dk/?modus=eksterner_embed&center=56.534,9.469&zoom=14",
+                        "alt": "Interaktivt kort med Løvel by"
                     }],
                     "collapsible": false,
                     "id": null
@@ -1109,6 +1109,18 @@
                         {
                             "src": "media/shared/general/wordle-loevel-2.png",
                             "alt": "Løvel word cloud"
+                        },
+                        {
+                            "src": "media/film/slugten-1.jpg",
+                            "alt": "Slugten - friluftspladsen med bålhytte"
+                        },
+                        {
+                            "src": "media/film/slugten-2.jpg",
+                            "alt": "Slugten - picnicborde og shelter"
+                        },
+                        {
+                            "src": "media/film/slugten-3.jpg",
+                            "alt": "Slugten - vandkanten og aktivitetsområde"
                         }
                     ]
                 },
