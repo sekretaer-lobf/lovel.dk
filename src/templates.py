@@ -3,6 +3,8 @@ HTML Component Templates for Løvel website
 Separates HTML rendering from data and build logic
 """
 
+import json
+
 def render_header(title: str, is_collapsible: bool = False, section_id: str = "") -> str:
     """Render a page section header."""
     if is_collapsible and section_id:
@@ -108,13 +110,79 @@ def render_iframe_column(src: str, alt: str = "") -> str:
 
 
 def render_gallery(images: list, root_path: str) -> str:
-    """Render a gallery of images."""
-    html = "<div class='gallery'>"
-    for img in images:
+    """Render a gallery of images in grid format with lightbox."""
+    gallery_id = "gallery-lightbox"
+    html = f"<div class='gallery-grid' id='{gallery_id}'>"
+    
+    # Create grid items
+    for idx, img in enumerate(images):
         src = img.get("src", "")
         alt = img.get("alt", "")
-        html += f"<div class='img-container'><img src='{root_path}{src}' alt='{alt}'></div>"
+        html += f"<div class='gallery-item' data-index='{idx}' onclick='openLightbox({idx})'><img src='{root_path}{src}' alt='{alt}'></div>"
+    
     html += "</div>"
+    
+    # Add lightbox modal
+    html += f"""
+<div id='lightbox-modal' class='lightbox-modal' onclick='closeLightbox(event)'>
+    <span class='lightbox-close' onclick='closeLightbox()'>&times;</span>
+    <button class='lightbox-prev' onclick='prevLightbox(event)'>&#10094;</button>
+    <div class='lightbox-container'>
+        <img id='lightbox-image' src='' alt=''>
+    </div>
+    <button class='lightbox-next' onclick='nextLightbox(event)'>&#10095;</button>
+</div>
+
+<script>
+let lightboxIndex = 0;
+const lightboxImages = {json.dumps([img.get('src', '') for img in images])};
+
+function openLightbox(index) {{
+    lightboxIndex = index;
+    updateLightbox();
+    document.getElementById('lightbox-modal').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}}
+
+function closeLightbox(event) {{
+    if (event && event.target.id !== 'lightbox-modal') return;
+    document.getElementById('lightbox-modal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}}
+
+function updateLightbox() {{
+    const img = document.getElementById('lightbox-image');
+    const src = '{root_path}' + lightboxImages[lightboxIndex];
+    img.src = src;
+}}
+
+function nextLightbox(event) {{
+    event.stopPropagation();
+    lightboxIndex = (lightboxIndex + 1) % lightboxImages.length;
+    updateLightbox();
+}}
+
+function prevLightbox(event) {{
+    event.stopPropagation();
+    lightboxIndex = (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length;
+    updateLightbox();
+}}
+
+// Keyboard navigation
+document.addEventListener('keydown', function(event) {{
+    const modal = document.getElementById('lightbox-modal');
+    if (modal.style.display !== 'flex') return;
+    
+    if (event.key === 'ArrowRight') {{
+        nextLightbox({{stopPropagation: function() {{}}}});
+    }} else if (event.key === 'ArrowLeft') {{
+        prevLightbox({{stopPropagation: function() {{}}}});
+    }} else if (event.key === 'Escape') {{
+        closeLightbox();
+    }}
+}});
+</script>
+"""
     return html
 
 
@@ -431,9 +499,9 @@ def render_navbar(pages: dict, root_path: str, is_home: bool) -> str:
                     </li>
 """
     
-    # Top-level pages (Film, Erhverv)
+    # Top-level pages (Medier, Erhverv)
     nav += f"""                    <li><a href="{root_path}erhverv.html">Erhverv</a></li>
-                    <li><a href="{root_path}film.html">Film</a></li>
+                    <li><a href="{root_path}medier.html">Medier</a></li>
                 </ul>
             </div>
         </div>

@@ -67,6 +67,13 @@ def render_section(section: dict, root_path: str) -> str:
             slider_html = render_slider(images, root_path)
             return f"<div class='section'><div class='container'>" + slider_html + "</div></div>\n"
     
+    elif section_type == "gallery":
+        images = section.get("images", [])
+        if images:
+            from templates import render_gallery
+            gallery_html = render_gallery(images, root_path)
+            return f"<div class='section'><div class='container'>" + gallery_html + "</div></div>\n"
+    
     return ""
 
 

@@ -1068,12 +1068,12 @@
                 }
             ]
         },
-        "film": {
-            "title": "Film om Løvel",
-            "description": "En film om Løvel lavet i samarbejde med AV-picture og Viborg Landsbysammenslutnings filmfond. Filmen giver et indblik i byens sammenhold, natur samt det store væld af forskelligartet tilbud.",
+        "medier": {
+            "title": "Medier om Løvel",
+            "description": "Medier og billeder fra Løvel. Her finder du videoer og billeder fra aktiviteter i vores by.",
             "sections": [{
                     "type": "header",
-                    "title": "Film om Løvel",
+                    "title": "Medier om Løvel",
                     "id": null,
                     "collapsible": false
                 },
@@ -1097,30 +1097,64 @@
                     "id": null
                 },
                 {
-                    "type": "slider",
+                    "type": "header",
+                    "title": "Galleri",
+                    "id": null,
+                    "collapsible": false
+                },
+                {
+                    "type": "gallery",
                     "images": [{
-                            "src": "media/shared/general/forside.jpg",
-                            "alt": "Løvel byudsigt"
+                            "src": "media/Galleri/2022_04_29_5218.jpg",
+                            "alt": "Løvel galleri billede 1"
                         },
                         {
-                            "src": "media/shared/general/hvid-gren.jpg",
-                            "alt": "Hvid gren - natur i Løvel"
+                            "src": "media/Galleri/IMG_4687.jpg",
+                            "alt": "Løvel galleri billede 2"
                         },
                         {
-                            "src": "media/shared/general/wordle-loevel-2.png",
-                            "alt": "Løvel word cloud"
+                            "src": "media/Galleri/IMG_4697.jpg",
+                            "alt": "Løvel galleri billede 3"
                         },
                         {
-                            "src": "media/film/slugten-1.jpg",
-                            "alt": "Slugten - friluftspladsen med bålhytte"
+                            "src": "media/Galleri/amatoerscenen1.jpg",
+                            "alt": "Amatørscenen - teaterforestilling"
                         },
                         {
-                            "src": "media/film/slugten-2.jpg",
-                            "alt": "Slugten - picnicborde og shelter"
+                            "src": "media/Galleri/byfest.jpg",
+                            "alt": "Byfest - aktiviteter"
                         },
                         {
-                            "src": "media/film/slugten-3.jpg",
-                            "alt": "Slugten - vandkanten og aktivitetsområde"
+                            "src": "media/Galleri/dagpleje.jpg",
+                            "alt": "Dagpleje"
+                        },
+                        {
+                            "src": "media/Galleri/friluftsliv.jpg",
+                            "alt": "Friluftsliv"
+                        },
+                        {
+                            "src": "media/Galleri/gymnastik.png",
+                            "alt": "Gymnastik - børnetræning"
+                        },
+                        {
+                            "src": "media/Galleri/hvid-gren.jpg",
+                            "alt": "Natur i Løvel"
+                        },
+                        {
+                            "src": "media/Galleri/kirkejpg.jpg",
+                            "alt": "Løvel Kirke"
+                        },
+                        {
+                            "src": "media/Galleri/loeve.jpg",
+                            "alt": "Byens Løve"
+                        },
+                        {
+                            "src": "media/Galleri/petanque.jpg",
+                            "alt": "Petanque"
+                        },
+                        {
+                            "src": "media/Galleri/team-loevel-2.jpg",
+                            "alt": "Team Løvel - løbeclub"
                         }
                     ]
                 },
