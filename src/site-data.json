@@ -326,7 +326,8 @@
                 {
                     "type": "text",
                     "paragraphs": [
-                        "Kontakt: Jan Jakobsen - Tlf. 21469965"
+                        "Kontakt: Jan Jakobsen",
+                        "Tlf. 21469965"
                     ],
                     "id": "fodbold",
                     "collapsible": true
@@ -349,7 +350,8 @@
                 {
                     "type": "text",
                     "paragraphs": [
-                        "Kontakt: H.C. Hansen - Tlf. 22181757"
+                        "Kontakt: H.C. Hansen",
+                        "Tlf. 22181757"
                     ],
                     "id": "floorball",
                     "collapsible": true
@@ -366,10 +368,10 @@
                     "columns": [{
                             "type": "text",
                             "paragraphs": [
-                                "LRV-Skals Håndbold er en selvstændig håndboldklub, som tilbyder hold fra U6 til senior. Vi sætter det sociale miljø og tætte samarbejde højt, så kom og vær med, her er plads til alle!",
-                                "Klubben blev grundlagt i 2012, hvor håndboldafdelingen i Skals GF og håndboldklubben LRV gik sammen og dannede en ny forening. LRV-Skals står for Løvel, Rødding, Vammen og Skals.",
-                                "Vi byder alle spillere, forældre, trænere og frivillige velkomne klubben! Kontakt gerne bestyrelsen, hvis du har kommentarer eller er interesseret i at være med.",
-                                "Se mere på hjemmesiden: www.lrv-skals.dk"
+                                "LUIF og LRV-Skals Håndbold har igennem mange år samarbejdet om at tilbyde håndbold til alle i Løvel og omegn.",
+                                "RV-Skals Håndbold er en selvstændig håndboldklub, som har eksisteret siden 2012. Vi tilbyder hold fra U6 til senior. Både kampe og træning foregår i såvel Løvelhallen som Skals idrætscenter.",
+                                "LRV-Skals Håndbold er en selvstændig håndboldklub, som har eksisteret siden 2012. Vi tilbyder hold fra U6 til senior. Både kampe og træning foregår i såvel Løvelhallen som Skals idrætscenter.",
+                                "Vi byder alle spillere, forældre, trænere og frivillige velkomne klubben! Kontakt gerne bestyrelsen, hvis du har kommentarer eller er interesseret i at være med i fællesskabet. Sammen er vi stærkere."
                             ]
                         },
                         {
@@ -384,7 +386,9 @@
                 {
                     "type": "text",
                     "paragraphs": [
-                        "Formand: Torben Brøndum - Tlf. 61681515 - Email: lrvskals.formand@gmail.com"
+                        "Formand: Torben Brøndum",
+                        "Tlf. 61681515",
+                        "Email: lrvskals.formand@gmail.com"
                     ],
                     "id": "haandbold",
                     "collapsible": true
@@ -410,7 +414,9 @@
                 {
                     "type": "text",
                     "paragraphs": [
-                        "Kontakt: Torben Gade - Tlf. 21 65 43 40 - Email: tg8830@gmail.com"
+                        "Kontakt: Torben Gade",
+                        "Tlf. 21 65 43 40",
+                        "Email: tg8830@gmail.com"
                     ],
                     "id": "friluftsliv",
                     "collapsible": true
@@ -465,7 +471,9 @@
                 {
                     "type": "text",
                     "paragraphs": [
-                        "Kontakt: Sanni Kalhøj - Tlf. 26 25 40 57 - Email: Sanni.kalhoj@gmail.com"
+                        "Kontakt: Sanni Kalhøj",
+                        "Tlf. 26 25 40 57",
+                        "Email: Sanni.kalhoj@gmail.com"
                     ],
                     "id": "gymnastik",
                     "collapsible": true
@@ -489,7 +497,9 @@
                 {
                     "type": "text",
                     "paragraphs": [
-                        "Kontakt: Jens Henriksen - Tlf. 23358712 - Email: dittejens@mail.dk"
+                        "Kontakt: Jens Henriksen",
+                        "Tlf. 23358712",
+                        "Email: dittejens@mail.dk"
                     ],
                     "id": "petanque",
                     "collapsible": true
@@ -579,9 +589,12 @@
                     "type": "text",
                     "paragraphs": [
                         "Styregruppen:",
-                        "Martin Bjerring - Tlf. 2617 9346 - martinbjerring@gmail.com",
-                        "Birgit Frandsen - Tlf. 2346 3828 - birgit.frandsen@hotmail.com",
-                        "Anders Thisted - Tlf. 28152599 - thistedanders@gmail.com"
+                        "Martin Bjerring",
+                        "Tlf. 2617 9346 - martinbjerring@gmail.com",
+                        "Birgit Frandsen",
+                        "Tlf. 2346 3828 - birgit.frandsen@hotmail.com",
+                        "Anders Thisted",
+                        "Tlf. 28152599 - thistedanders@gmail.com"
                     ],
                     "id": "team-loevel",
                     "collapsible": true

@@ -291,8 +291,8 @@ main {
 }
 
 .section {
-    padding: var(--spacing-lg);
-    margin-bottom: var(--spacing-lg);
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
     background: var(--bg);
     border-radius: var(--radius);
     box-shadow: var(--shadow-sm);
