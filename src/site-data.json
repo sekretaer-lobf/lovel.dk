@@ -655,61 +655,25 @@
                             "type": "text",
                             "paragraphs": [
                                 "<strong>Formål</strong>",
-                                "Menighedsrådet styrer sognets anliggender i troskab mod den danske evangelisk-lutherske folkekirke, så der bliver gode vilkår for den kristne menigheds liv og vækst.",
-                                "Målet er at gøre kirken til et sted, hvor man føler sig velkommen både til hverdag og til særlige lejligheder.",
+                                "Menighedsrådet styrer sognets anliggender i troskab mod den danske evangelisk-lutherske folkekirke, så der bliver gode vilkår for den kristne menigheds liv og vækst. Målet er at gøre kirken til et sted, hvor man føler sig velkommen både til hverdag og til særlige lejligheder.",
                                 "",
                                 "<strong>Aktiviteter og tilbud</strong>",
-                                "Menighedsrådet arrangerer og støtter mange aktiviteter for menigheden:",
-                                "• Gudstjenester i Løvel kirken",
-                                "• Babysalmesang for børn på barsel",
-                                "• Konfirmationsforberedelse for børn og unge",
-                                "• Kirkekoret og musikarrangementer",
-                                "• Fællesspisninger og sociale sammenkomster",
-                                "• Bibelkredse og spirituelle samtaler",
-                                "• Menighedsplejen - aktiviteter for ældre",
-                                "• Sangaftener og kulturelle arrangementer",
-                                "• Dåb, konfirmation, bryllup og begravelser",
-                                "• Nørklere - håndarbejde og fællesskab",
-                                "Alle er velkomne til at deltage i menigheden uanset tro og baggrund.",
+                                "Menighedsrådet arrangerer og støtter mange aktiviteter for menigheden såsom gudstjenester, babysalmesang for børn på barsel, konfirmationsforberedelse, kirkekoret, fællesspisninger, bibelkredse, menighedsplejen for ældre, sangaftener, samt dåb, konfirmation, bryllup og begravelser. Alle er velkomne til at deltage i menigheden uanset tro og baggrund.",
                                 "",
                                 "<strong>Frivillighed og engagement</strong>",
-                                "Menighedsrådet består af aktive frivillige, der arbejder for at skabe et levende kirkeliv i Løvel, Rødding og Pederstrup sogn.",
-                                "",
-                                "Hvis du er interesseret i at blive frivillig eller deltage i meninghedsrådets arbejde, er du meget velkommen! Du kan:",
-                                "• Blive medlem af menighedsrådet",
-                                "• Hjælpe til ved arrangementer",
-                                "• Deltage i udvalgsarbejde (aktiviteter, kirkeblad, økonomi m.m.)",
-                                "• Støtte menigheden på andre måder",
-                                "Kontakt en af kontaktpersonerne for at høre mere om mulighederne.",
+                                "Menighedsrådet består af aktive frivillige, der arbejder for at skabe et levende kirkeliv i Løvel, Rødding og Pederstrup sogn. Hvis du er interesseret i at blive frivillig eller deltage i menighedsrådets arbejde, er du meget velkommen. Du kan blive medlem, hjælpe ved arrangementer, deltage i udvalgsarbejde eller støtte menigheden på andre måder. Kontakt en af kontaktpersonerne for at høre mere om mulighederne.",
                                 "",
                                 "<strong>Kontakt til sognepræsten</strong>",
-                                "Sognepræst: Niels-Peter Lund Jacobsen",
-                                "Adresse: Kirkegade 14, 8830 Tjele",
-                                "Telefon: 21 64 31 64",
-                                "Mail: nplj@km.dk",
+                                "Sognepræst: Niels-Peter Lund Jacobsen </br>Adresse: Kirkegade 14, 8830 Tjele </br>Telefon: 21 64 31 64</br>Mail: nplj@km.dk",
                                 "",
-                                "Præsten ser gerne du ringer i tide, så der er mulighed for at tale sammen."
+                                "Præsten ser gerne du ringer i tide, så der er mulighed for at tale sammen.",
+                                "",
+                                "<a href='https://www.roddingkirke.dk/' target='_blank'>Besøg Rødding Kirkes hjemmeside</a>"
                             ]
                         }
                     ],
                     "collapsible": false,
                     "id": null
-                },
-                {
-                    "type": "content",
-                    "layout": "single",
-                    "columns": [{
-                        "type": "text",
-                        "paragraphs": [
-                            "Se mere på Rødding, Løvel og Pederstrup kirkers hjemmeside"
-                        ]
-                    }],
-                    "collapsible": false,
-                    "id": null,
-                    "links": [{
-                        "text": "Besøg Rødding Kirkes hjemmeside",
-                        "url": "https://www.roddingkirke.dk/kontakt/menighedsraad/loevel/"
-                    }]
                 }
             ]
         },
