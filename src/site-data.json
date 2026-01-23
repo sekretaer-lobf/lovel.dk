@@ -265,17 +265,10 @@
                             "paragraphs": [
                                 "Løvel Ungdoms og idrætforening er grundlagt i 1902 og tæller i dag 10 afdelinger og ca 700 medlemmer.",
                                 "Under sig har LUIF flere foreninger i byen, du kan læse mere om hver enkelt underforening her på hjemmesiden.",
-                                "Foreningen har som formål at samle unge og ældre til idrætslig og socialt samvær"
+                                "Foreningen har som formål at samle unge og ældre til idrætslig og socialt samvær",
+                                "Kontakt:Formand: Jesper Taastrup ChristensenTlf.: 25 11 31 11Mail: jtc@fibermail.dk"
                             ]
                         }
-                    ],
-                    "collapsible": false,
-                    "id": null
-                },
-                {
-                    "type": "text",
-                    "paragraphs": [
-                        "Kontakt: Jesper Taastrup Christensen - Tlf. 25 11 31 11 - Email: jtc@fibermail.dk"
                     ],
                     "collapsible": false,
                     "id": null
