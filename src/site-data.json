@@ -265,10 +265,17 @@
                             "paragraphs": [
                                 "Løvel Ungdoms og idrætforening er grundlagt i 1902 og tæller i dag 10 afdelinger og ca 700 medlemmer.",
                                 "Under sig har LUIF flere foreninger i byen, du kan læse mere om hver enkelt underforening her på hjemmesiden.",
-                                "Foreningen har som formål at samle unge og ældre til idrætslig og socialt samvær",
-                                "Kontakt:Formand: Jesper Taastrup ChristensenTlf.: 25 11 31 11Mail: jtc@fibermail.dk"
+                                "Foreningen har som formål at samle unge og ældre til idrætslig og socialt samvær"
                             ]
                         }
+                    ],
+                    "collapsible": false,
+                    "id": null
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Kontakt: Jesper Taastrup Christensen - Tlf. 25 11 31 11 - Email: jtc@fibermail.dk"
                     ],
                     "collapsible": false,
                     "id": null
@@ -282,7 +289,17 @@
                 {
                     "type": "text",
                     "paragraphs": [
-                        "I Løvel er der under idrætsforeningen en selvstændig badmintonafdeling. Også her samarbejder Løvel med nabobyen Rødding. Der er mulighed for både sommer- og vinterbadminton samt motions, trænings- og turneringsmuligheder for alle aldersgrupper. Om vinteren tilbydes træning for børn og unge med træner udefra."
+                        "I Løvel UIF har vi badminton for de voksne. Vi har plads til dem som gerne vil spille for sjov og for dem som gerne vil spille stævner/turneringer.",
+                        "Vi giver garanti for sved på panden og sjov spil med fjerbold og ketsjere.",
+                        "Badminton senior træner mandag fra kl. 20.00 til 22.00"
+                    ],
+                    "id": "badminton",
+                    "collapsible": true
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Vi mangler instruktør til børnebadminton, så kontakt endelig bestyrelsen hvis du har lyst til at være badmintontræner."
                     ],
                     "id": "badminton",
                     "collapsible": true
@@ -306,13 +323,78 @@
                             "paragraphs": [
                                 "Løvel Ungdoms- og Idrætsforening tilbyder fodbold til både ungdom og seniorer: Drenge og piger såvel som damer og herrer.",
                                 "Der samarbejdes med Rødding og Vammen under navnet Tjele Vest Sport. Vi deltager i rækker lige fra micro til oldboys. Kom og vær med for motionens, spillets og samværets skyld. Vi har gode omklædningsfaciliteter. Med mellemrum afvikles Tjele Mesterskabet i Løvel.",
-                                "Derudover er der fodboldskole i Løvel som afholdes i samarbejde med DBU. Det er en succes hvert år med mange deltagende børn.",
-                                "Kontakt: Jan Jakobsen tlf.: 21469965"
+                                "Derudover er der fodboldskole i Løvel som afholdes i samarbejde med DBU. Det er en succes hvert år med mange deltagende børn."
                             ]
                         }
                     ],
                     "collapsible": true,
                     "id": "fodbold"
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Kontakt: Jan Jakobsen - Tlf. 21469965"
+                    ],
+                    "id": "fodbold",
+                    "collapsible": true
+                },
+                {
+                    "type": "header",
+                    "title": "Floorball",
+                    "id": "floorball",
+                    "collapsible": true
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Floorball er for alle og er god motion med meget intervaltræning, hvor pulsen kommer i vejret. Hurtighed og reflekser trænes. Det er god motorik-træning, da det kræver sit at styre bolden i driblinger frem til gode afleveringer og pasninger med staven i fart. Der er tempo på, det er hårdt og intens, men det er sjovt.",
+                        "Til dig i alderen fra 15 år og opefter, som gerne vil have sved på panden. Vi spiller sjov floorball og holdet er uformelt. Kom hvis du har lyst og tid, så sørger vi for, at du får masser af motion."
+                    ],
+                    "id": "floorball",
+                    "collapsible": true
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Kontakt: H.C. Hansen - Tlf. 22181757"
+                    ],
+                    "id": "floorball",
+                    "collapsible": true
+                },
+                {
+                    "type": "header",
+                    "title": "Håndbold",
+                    "id": "haandbold",
+                    "collapsible": true
+                },
+                {
+                    "type": "content",
+                    "layout": "two-col",
+                    "columns": [{
+                            "type": "text",
+                            "paragraphs": [
+                                "LRV-Skals Håndbold er en selvstændig håndboldklub, som tilbyder hold fra U6 til senior. Vi sætter det sociale miljø og tætte samarbejde højt, så kom og vær med, her er plads til alle!",
+                                "Klubben blev grundlagt i 2012, hvor håndboldafdelingen i Skals GF og håndboldklubben LRV gik sammen og dannede en ny forening. LRV-Skals står for Løvel, Rødding, Vammen og Skals.",
+                                "Vi byder alle spillere, forældre, trænere og frivillige velkomne klubben! Kontakt gerne bestyrelsen, hvis du har kommentarer eller er interesseret i at være med.",
+                                "Se mere på hjemmesiden: www.lrv-skals.dk"
+                            ]
+                        },
+                        {
+                            "type": "image",
+                            "src": "media/foreninger/lrv-skals.jpg",
+                            "alt": "LRV-Skals Håndbold"
+                        }
+                    ],
+                    "collapsible": true,
+                    "id": "haandbold"
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Formand: Torben Brøndum - Tlf. 61681515 - Email: lrvskals.formand@gmail.com"
+                    ],
+                    "id": "haandbold",
+                    "collapsible": true
                 },
                 {
                     "type": "header",
@@ -321,33 +403,29 @@
                     "collapsible": true
                 },
                 {
-                    "type": "content",
-                    "layout": "two-col",
-                    "columns": [{
-                            "type": "image",
-                            "src": "media/foreninger/friluftsliv.jpg",
-                            "alt": "Friluftsliv"
-                        },
-                        {
-                            "type": "text",
-                            "paragraphs": [
-                                "Løvel Friluftsliv er en aktivitet under LUIF",
-                                "Friluftsliv er et alternativ til idrætsforeningens traditionelle aktiviteter - Så er du til aktiviteter ude i naturen, så er friluftsliv lige noget for dig / dit barn.",
-                                "Børnene deles i 2 hold.",
-                                "Hakuna: 0., 1. og 2. Klasse.Matata: 3. klasse til og med 7. klasse.",
-                                "Der tilbydes oplevelser ude i naturen, hvor sanseoplevelser, og brug af kroppen kommer i fokus. Friluftsliv bygger på succesoplevelser både individuelt og som del af et team.",
-                                "Vi mødes i Slugten, Kirkedal i Løvel, en friluftsplads der sammen med naturen danner ramme om vores aktiviteter.",
-                                "KontaktTorben GadeTlf.nr.: 21 65 43 40E-mail: tg8830@gmail.com"
-                            ]
-                        }
+                    "type": "text",
+                    "paragraphs": [
+                        "Løvel Friluftsliv er en aktivitet under LUIF.",
+                        "VI MANGLER INSTRUKTØR, SÅ DERFOR ER DER IKKE FRILUFTSLIV LIGE NU. KONTAKT TORBEN GADE HVIS DU BRÆNDER FOR AT VÆRE UDE OG VÆRE SAMMEN MED EN MASSE SKØNNE BØRN.",
+                        "Friluftsliv er et alternativ til idrætsforeningens traditionelle aktiviteter - Så er du til aktiviteter ude i naturen, så er friluftsliv lige noget for dig / dit barn.",
+                        "Der tilbydes oplevelser ude i naturen, hvor sanseoplevelser, og brug af kroppen kommer i fokus. Friluftsliv bygger på succesoplevelser både individuelt og som del af et team.",
+                        "Vi mødes i Slugten, Kirkedal i Løvel, en friluftsplads der sammen med naturen danner ramme om vores aktiviteter."
                     ],
-                    "collapsible": true,
-                    "id": "friluftsliv"
+                    "id": "friluftsliv",
+                    "collapsible": true
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Kontakt: Torben Gade - Tlf. 21 65 43 40 - Email: tg8830@gmail.com"
+                    ],
+                    "id": "friluftsliv",
+                    "collapsible": true
                 },
                 {
                     "type": "header",
-                    "title": "Slugten kan lejes til børnefødselsdag, overnatting m.m.",
-                    "id": "friluftsliv",
+                    "title": "Slugten - Naturlegeplads og fællesskab",
+                    "id": "slugten",
                     "collapsible": true
                 },
                 {
@@ -361,15 +439,17 @@
                         {
                             "type": "text",
                             "paragraphs": [
-                                "Leje af Slugten giver adgang til toilet, tekøkken, shelters og bålhytten.",
-                                "Bookning af Slugten gøres via hjemmesiden:",
-                                "Hvis der skulle opstå spørgsmål, eller problemer med booking, så skriv til nedenstående kontaktperson."
+                                "Slugten er en naturlegeplads i kanten af Løvel by. Det er et fantastisk sted for børnene og der er hele tiden noget at lave.",
+                                "Faciliteter: Fælleshshus med 2 toilet-, bade- og køkkenfaciliteter, en overdækning, 2 shelters med grill, bålhytte og tarzanbane.",
+                                "Slugten kan lejes til børnefødselsdag, overnatting, familiefester og meget mere.",
+                                "Bookning af Slugten gøres via hjemmesiden: www.luif.minisite.dk",
+                                "Hvis der skulle opstå spørgsmål eller problemer med booking, så skriv til Torben Gade tlf. 21654340."
                             ],
                             "width": "2"
                         }
                     ],
                     "collapsible": true,
-                    "id": "friluftsliv"
+                    "id": "slugten"
                 },
                 {
                     "type": "header",
@@ -378,28 +458,24 @@
                     "collapsible": true
                 },
                 {
-                    "type": "content",
-                    "layout": "two-col",
-                    "columns": [{
-                            "type": "text",
-                            "paragraphs": [
-                                "Gymnastik er et udvalg under Løvel Ungdoms- og Idrætsforening",
-                                "Gymnastik er primært for de yngste medlemmer.",
-                                "Fræser: 4 - 6 år",
-                                "Turbo: 7 - ca. 12 år",
-                                "Aktiviteterne minder meget om selve gymnastikken, om end den er krydret med anderledes gymnastik, aktiviteten foregår i Løvel Hallen. Vi forsøger, at lave aktiviteter der udvikler børnenes sammenhænge mellem sanser og intelligens. Det foregår ved hjælp af forskellige boldspil, sanglege, rytme, og en masse sjov og ballade.",
-                                "Tider og priser oplyses ved henvendelse til nedenstående instruktører:",
-                                "Anne Mette Hansen tlf.: 2933 5181 mail: sit@mail.dk"
-                            ]
-                        },
-                        {
-                            "type": "image",
-                            "src": "media/foreninger/gymnastik.png",
-                            "alt": "Gymnastik"
-                        }
+                    "type": "text",
+                    "paragraphs": [
+                        "I Løvel UIF tilbyder vi gymnastik for børn i forskellige aldre, fordelt på tre holds:",
+                        "• Tumlebillerne (0-3 år med forælder): For de mindste sammen med mor/far. Her er det leg, motorik og sjov i centrum.",
+                        "• Fræser Kids (Børnehave-klasse): En energisk og sjov time hvor vi arbejder med motorik, spring, løb og leg.",
+                        "• Spring og Bevægelse (1. - 3. klasse): Her er der fokus på spring, stavspring, parkour-øvelser og andre sjove bevægelsesaktiviteter.",
+                        "Alle holds mødes løbende og tilbyder både træning og kammeratskab."
                     ],
-                    "collapsible": true,
-                    "id": "gymnastik"
+                    "id": "gymnastik",
+                    "collapsible": true
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Kontakt: Sanni Kalhøj - Tlf. 26 25 40 57 - Email: Sanni.kalhoj@gmail.com"
+                    ],
+                    "id": "gymnastik",
+                    "collapsible": true
                 },
                 {
                     "type": "header",
@@ -408,27 +484,56 @@
                     "collapsible": true
                 },
                 {
-                    "type": "content",
-                    "layout": "two-col",
-                    "columns": [{
-                            "type": "image",
-                            "src": "media/foreninger/petanque.jpg",
-                            "alt": "Petanque"
-                        },
-                        {
-                            "type": "text",
-                            "paragraphs": [
-                                "Løvel Petanque Klub er en aktivitet under LUIF",
-                                "En forening, indtil nu primært for seniorerne, som har haft en stor opblomstring og har gjort Løvel kendt rundt omkring. Her er tid og rum til hygge, træning og turnering. Der er mulighed for at spille både indendørs og udendørs. Vi deltager i bl.a. vinterstævner, \"bistrocup\", klubmesterskaber og DGI-turnering. Ønsker du at være med så bare mød op.FormålAt samle interesserede til på sportslig og kammeratlig vis at deltage i spillet Petanque. At deltage i træning og turneringer. At udbrede kendskabet til Petanque."
-                            ]
-                        }
+                    "type": "text",
+                    "paragraphs": [
+                        "Løvel Petanque Klub er en aktivitet under LUIF",
+                        "En forening, indtil nu primært for seniorerne, som har haft en stor opblomstring og har gjort Løvel kendt rundt omkring. Her er tid og rum til hygge, træning og turnering. Der er mulighed for at spille både indendørs og udendørs. Vi deltager i bl.a. vinterstævner, \"bistrocup\", klubmesterskaber og DGI-turnering. Ønsker du at være med så bare mød op.",
+                        "Formål: At samle interesserede til på sportslig og kammeratlig vis at deltage i spillet Petanque. At deltage i træning og turneringer. At udbrede kendskabet til Petanque."
                     ],
                     "collapsible": true,
                     "id": "petanque"
                 },
                 {
+                    "type": "text",
+                    "paragraphs": [
+                        "Kontakt: Jens Henriksen - Tlf. 23358712 - Email: dittejens@mail.dk"
+                    ],
+                    "id": "petanque",
+                    "collapsible": true
+                },
+                {
                     "type": "header",
-                    "title": "Team Løvel - Løbeklub",
+                    "title": "Dart",
+                    "id": "dart",
+                    "collapsible": true
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Dart er et udvalg under Løvel Ungdoms- og Idrætsforening.",
+                        "Dart er for alle."
+                    ],
+                    "id": "dart",
+                    "collapsible": true
+                },
+                {
+                    "type": "header",
+                    "title": "E-sport",
+                    "id": "e-sport",
+                    "collapsible": true
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Løvel E-sport er en aktivitet under LUIF.",
+                        "Vi har desværre ikke E-sport lige nu, men har du lyst til at hjælpe med at få det startet op eller har andre gode ideer er du velkommen til at kontakte bestyrelsen."
+                    ],
+                    "id": "e-sport",
+                    "collapsible": true
+                },
+                {
+                    "type": "header",
+                    "title": "Team Løvel - Gang og Løb",
                     "id": "team-loevel",
                     "collapsible": true
                 },
@@ -443,15 +548,50 @@
                         {
                             "type": "text",
                             "paragraphs": [
-                                "FormålTeam Løvel er for alle, der har lyst til at løbe, nybegyndere såvel som garvede.",
-                                "Vi lægger vægt på gode løbeoplevelser i hyggelig atmosfære. I Team Løvel vil vi satse på: Socialt samvær med naboer, venner og medborgere på en sjov og sund måde, som måske kan skabe andre gode ideer for Løvel og Omegn.",
-                                "Socialt samvær med naboer, venner, og medborgere på en sjov og sund måde, som måske kan skabe andre gode ideer for Løvel og Omegn. Opnå et personligt velvære gennem motion og samtidig komme små skavanker i forkøbet. Hjælp fra andre medlemmer til at nå din personlige målsætning med hensyn til motion. Stille med motionshold til mange forskellige former for løb (24 timers løb, halvmaraton, byløb mv.)",
-                                "Styregruppen:"
+                                "Gang og Løb",
+                                "Gang og Løb er styret af Team Løvel, som er en motionsklub beliggende i Løvel lidt nord for Viborg.",
+                                "Vores motionsklub er for alle, der har lyst til at gå og/eller løbe, nybegyndere såvel som øvede. Vi lægger vægt på gode gå og løbeoplevelser i en hyggelig atmosfære.",
+                                "Team Løvel blev stiftet i november 2004 og har pt. ca. 90 medlemmer."
                             ]
                         }
                     ],
                     "collapsible": true,
                     "id": "team-loevel"
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Vores fokusområder:",
+                        "Socialt samvær med naboer, venner og medborgere på en sjov og sund måde, som måske kan skabe andre gode ideer for Løvel og Omegn.",
+                        "Personligt velvære gennem motion og samtidig komme småskavanker i forkøbet",
+                        "Gå og løbeoplevelser i den dejlige natur i vort lokalområde.",
+                        "Hjælp og støtte fra andre medlemmer til at nå personlige mål med hensyn til løb, gang og motion.",
+                        "At stille med motionshold til forskellige former for løb som f.eks. 24 timers løb, Kalkmineløb, Lokaldysten mv."
+                    ],
+                    "id": "team-loevel",
+                    "collapsible": true
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Praktisk information:",
+                        "Der er fællestræning hver tirsdag kl. 17.30 og lørdag kl. 08.00",
+                        "Se mere på vores facebookside: https://www.facebook.com/Teamloevel",
+                        "Og vores hjemmeside: https://teamloevel.dk/"
+                    ],
+                    "id": "team-loevel",
+                    "collapsible": true
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Styregruppen:",
+                        "Martin Bjerring - Tlf. 2617 9346 - martinbjerring@gmail.com",
+                        "Birgit Frandsen - Tlf. 2346 3828 - birgit.frandsen@hotmail.com",
+                        "Anders Thisted - Tlf. 28152599 - thistedanders@gmail.com"
+                    ],
+                    "id": "team-loevel",
+                    "collapsible": true
                 }
             ]
         },
