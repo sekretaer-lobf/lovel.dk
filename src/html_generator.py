@@ -9,10 +9,12 @@ from templates import (
 )
 
 
-def render_section(section: dict, root_path: str) -> str:
+def render_section(section: dict, root_path: str, parent_collapsible_id: str = None) -> str:
     """
     Dispatch section rendering to appropriate template.
     Pure HTML generation based on section data.
+    
+    parent_collapsible_id: If set, this section is content under a collapsible header
     """
     section_type = section.get("type")
     is_collapsible = section.get("collapsible", False)
@@ -27,8 +29,8 @@ def render_section(section: dict, root_path: str) -> str:
             title=section.get('title'),
             paragraphs=section.get('paragraphs'),
             bullets=section.get('bullets'),
-            is_collapsible=is_collapsible,
-            section_id=section_id
+            is_collapsible=is_collapsible or bool(parent_collapsible_id),
+            section_id=parent_collapsible_id or section_id
         )
     
     elif section_type == "content":
@@ -124,9 +126,25 @@ def render_page_main(metadata: dict) -> str:
     html = "    <main>\n"
     html += render_page_hero(metadata)
     
-    # Add sections
-    for section in metadata['sections']:
-        html += render_section(section, metadata['root_path'])
+    # Add sections - with collapsible logic
+    sections = metadata['sections']
+    current_collapsible_id = None
+    
+    for section in sections:
+        section_type = section.get("type")
+        
+        # If this is a collapsible header, remember its ID for next sections
+        if section_type == "header" and section.get("collapsible") and section.get("id"):
+            current_collapsible_id = section.get("id")
+            html += render_section(section, metadata['root_path'])
+        # If this is another header, clear the collapsible context
+        elif section_type == "header":
+            current_collapsible_id = None
+            html += render_section(section, metadata['root_path'])
+        # All other sections after a collapsible header get the parent ID
+        else:
+            html += render_section(section, metadata['root_path'], parent_collapsible_id=current_collapsible_id)
+            # Keep the collapsible context for following sections until next header
     
     html += "    </main>\n"
     return html

@@ -25,7 +25,7 @@ SRC_DIR = SITE_ROOT / "src"
 OUTPUT_DIR = SITE_ROOT
 
 # Load site data once
-with open(SRC_DIR / "site-data.json") as f:
+with open(SRC_DIR / "site-data.json", encoding="utf-8") as f:
     SITE_DATA = json.load(f)
 
 

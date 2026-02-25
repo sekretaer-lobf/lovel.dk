@@ -603,7 +603,7 @@
         },
         "foreninger/loevel-kultur-og-forsamlingshus": {
             "title": "Løvel Kultur og Forsamlingshus",
-            "description": "Løvel Kultur og Forsamlingshus",
+            "description": "Løvel Kultur og Forsamlingshus - prisliste, regler og kontaktinformation",
             "sections": [{
                     "type": "header",
                     "title": "Løvel Kultur og Forsamlingshus (LKOF)",
@@ -623,14 +623,101 @@
                             "paragraphs": [
                                 "Formål",
                                 "Foreningens formål er at drive Løvel Kultur og Forsamlingshus, der skal virke som møde og forsamlingssted for egnens beboer. Løvel Kultur og Forsamlingshus danner ramme om kulturelle aktiviteter såsom møder, amatørteater, dans, foredrag, foreningsarrangementer og fester.",
-                                "Forsamlingshuset har gode faciliteter til at holde fest, her er både en stor og lille sal samt gode køkkenfaciliteter.",
-                                "Kontakt",
-                                "Dan Gohlke"
+                                "Forsamlingshuset har gode faciliteter til at holde fest, her er både en stor og lille sal samt gode køkkenfaciliteter."
                             ]
                         }
                     ],
                     "collapsible": false,
                     "id": null
+                },
+                {
+                    "type": "header",
+                    "title": "Medlemskab",
+                    "id": "medlemskab",
+                    "collapsible": true
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Ønsker du at blive medlem af Løvel Kultur- & Forsamlingshus?<br>Indbetaling kan ske via MobilePay: <strong>20614</strong>",
+                        "",
+                        "<strong>Kontingent</strong>",
+                        "Husstand: 250 kr.<br>Pensionistpar: 125 kr.<br>Foreninger: 500 kr."
+                    ],
+                    "id": null,
+                    "collapsible": false
+                },
+                {
+                    "type": "header",
+                    "title": "Priser – Løvel Kultur- & Forsamlingshus",
+                    "id": "prisliste",
+                    "collapsible": true
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "<strong>Generelt</strong>",
+                        "Alle priser er inkl. rengøring. Service er kun inkluderet, når køkkenet er lejet.",
+                        "El og gas afregnes efter forbrug: Gas 28 kr. pr. enhed, El 7 kr. pr. enhed.",
+                        "Depositum: 500 kr. betales ved booking.",
+                        "",
+                        "<strong>Hele huset</strong>",
+                        "<em>Lørdag kl. 10.00 – søndag kl. 10.00</em>",
+                        "Medlemmer: 2.400 kr.<br>Ikke-medlemmer: 2.800 kr.",
+                        "",
+                        "<strong>Lille sal + køkken</strong>",
+                        "<em>Lørdag kl. 10.00 – søndag kl. 10.00</em>",
+                        "Medlemmer: 1.400 kr.<br>Ikke-medlemmer: 1.800 kr.",
+                        "",
+                        "<strong>Lille sal (aftenarrangement)</strong>",
+                        "",
+                        "Medlemmer: 800 kr.<br>Ikke-medlemmer: 1.000 kr.",
+                        "",
+                        "<strong>Ungdomsfester</strong>",
+                        "Pris: 4.500 kr. Betales ved udlevering af nøgle.",
+                        "",
+                        "<strong>Ekstra lejedage</strong>",
+                        "Ønskes adgang dagen før og/eller dagen efter arrangementet: 300 kr. pr. dag",
+                        "",
+                        "<strong>Skader</strong>",
+                        "Eventuelle skader erstattes af lejer ud over lejeprisen.",
+                        "",
+                        "<strong>Booking & Kontakt</strong>",
+                        "Ved leje af huset kontaktes: <strong>Nadja</strong><br>📞 30 59 27 02<br>✉️ <a href=\"mailto:nadja.stahl@yahoo.com\">nadja.stahl@yahoo.com</a>"
+                    ],
+                    "id": null,
+                    "collapsible": false
+                },
+                {
+                    "type": "header",
+                    "title": "Hus- og ordensregler",
+                    "id": "hus-og-ordensregler",
+                    "collapsible": true
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "For at sikre gode rammer for alle lejere, forventes det, at lokaler, inventar og udstyr behandles med omtanke. Lejer er ansvarlig for eventuelle skader.",
+                        "",
+                        "<strong>Ved ankomst</strong>",
+                        "Tag billeder af elmåler og gasmåler. Send billederne til Nadja på tlf. 30 59 27 02. Ankomst tidligst kl. 10.00 (medmindre andet er aftalt).",
+                        "",
+                        "<strong>Ved afrejse (senest kl. 10.00)</strong>",
+                        "",
+                        "<strong>Rengøring og oprydning</strong>",
+                        "Bordene rengøres og stilles på plads i baglokalet (dog ikke de 5 træborde i lille sal). Stolene stables i stakke á 10 og sættes på plads. Porcelæn sættes på rette plads. Lysestager renses for stearin. Gulve fejes og pletter tørres op. Toiletter og vaske rengøres. Borde, komfur, ovn og kogeplader rengøres. Opvaskemaskine tømmes for vand (plastikrør trækkes op), rengøres og slukkes. Frysere og køleskabe tømmes, rengøres, slukkes og efterlades åbne.",
+                        "",
+                        "<strong>Affaldssortering</strong>",
+                        "Rest- og madaffald → container til rest. Dåser og flasker → container til glas. Pap → container til pap. Oprydning omkring huset inkl. askebægre.",
+                        "",
+                        "<strong>Lukning af huset</strong>",
+                        "Varmen sættes på \"BORTREJST\" (display ved el-tavlen). Alle udvendige døre låses. Vinduer lukkes. Alt lys slukkes. Ventilation stoppes.",
+                        "",
+                        "<strong>Øvrigt</strong>",
+                        "Rygning er ikke tilladt indendørs. Eventuelle fejl og mangler meddeles til Nadja hurtigst muligt. Andre ankomst-/afrejsetidspunkter skal aftales på forhånd."
+                    ],
+                    "id": null,
+                    "collapsible": false
                 }
             ]
         },
