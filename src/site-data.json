@@ -682,6 +682,7 @@
                         "<strong>Skader</strong>",
                         "Eventuelle skader erstattes af lejer ud over lejeprisen.",
                         "",
+                        "Formand: Lars Olesen Thilquist<br>📞 21 72 47 04",
                         "<strong>Booking & Kontakt</strong>",
                         "Ved leje af huset kontaktes: <strong>Nadja</strong><br>📞 30 59 27 02<br>✉️ <a href=\"mailto:nadja.stahl@yahoo.com\">nadja.stahl@yahoo.com</a>"
                     ],
@@ -841,8 +842,10 @@
                             "type": "text",
                             "paragraphs": [
                                 "Kontaktoplysninger:",
-                                "Formand:Kaj Kristensen, tlf.: 26 63 95 31Mail: Kristensen_kaj@hotmail.com",
-                                "Næstformand:Kjeld Berg Jacobsen, tlf.: 23 28 05 38Mail: Jacobsen.loevel@outlook.com"
+                                "Formand: Kirstine Thybo Andersen",
+                                "Tlf. 2636 9042",
+                                "E-mail: kirstinethybo@gmail.com",
+                                "Alternativ e-mail: Lovel.borgerforening1946@gmail.com"
                             ]
                         },
                         {
@@ -880,7 +883,8 @@
                                 "Foreningens formål er at samle omegnens ældre til socialt samvær. Dette søges opnået ved møder af vidt forskellig art, f.eks. underholdning, spil, udflugter og fester. Endvidere at varetage pensionisters og seniorers særlige interesser overfor myndighederne.",
                                 "Formand",
                                 "Vera Kristensen",
-                                "Tlf. nr. 24 98 82 60"
+                                "Tlf. nr. 24 98 82 60",
+                                "E-mail: overgaard@fibermail.dk"
                             ]
                         }
                     ],
@@ -927,7 +931,10 @@
                         "100 kr. for en hustand",
                         "150 kr. for foreninger",
                         "250 kr. for virksomheder",
-                        "Kontakt:Formand: Klaus Høgh, 20454202"
+                        "Kontaktoplysninger:",
+                        "Formand: Klaus Høgh",
+                        "Tlf. 2045 4202",
+                        "E-mail: lovelfonden2000@lovel.dk"
                     ]
                 }
             ]
@@ -1074,6 +1081,15 @@
                     ],
                     "collapsible": false,
                     "id": null
+                },
+                {
+                    "type": "text",
+                    "paragraphs": [
+                        "Kontaktoplysninger",
+                        "Formand: Else Nielsen",
+                        "Tlf. 2829 9016",
+                        "E-mail: enie09@gmail.com"
+                    ]
                 }
             ]
         },
