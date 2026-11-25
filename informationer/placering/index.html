@@ -13,7 +13,7 @@
 <body><nav class="navbar" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" id="navbar-toggle">
+                <button type="button" class="navbar-toggle" id="navbar-toggle" aria-label="Hovedmenu" aria-controls="navbar-menu" aria-expanded="false">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -24,8 +24,8 @@
                 <ul class="nav-list">
                     <li><a href="../../index.html" class="">Forside</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Informationer</a>
-                        <ul class="dropdown-menu">
+                        <button type="button" class="dropdown-toggle" aria-controls="nav-informationer" aria-expanded="false">Informationer</button>
+                        <ul class="dropdown-menu" id="nav-informationer" hidden>
                             <li><a href="../../informationer/byens-loeve/">Byens Løve</a></li>
                             <li><a href="../../informationer/byfest/">Byfest</a></li>
                             <li><a href="../../informationer/byggegrunde/">Byggegrunde</a></li>
@@ -35,8 +35,8 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Dagtilbud</a>
-                        <ul class="dropdown-menu">
+                        <button type="button" class="dropdown-toggle" aria-controls="nav-dagtilbud" aria-expanded="false">Dagtilbud</button>
+                        <ul class="dropdown-menu" id="nav-dagtilbud" hidden>
                             <li><a href="../../dagtilbud/vuggestue/">Vuggestue</a></li>
                             <li><a href="../../dagtilbud/dagpleje/">Dagpleje</a></li>
                             <li><a href="../../dagtilbud/boernehave/">Børnehave</a></li>
@@ -44,8 +44,8 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Foreninger</a>
-                        <ul class="dropdown-menu">
+                        <button type="button" class="dropdown-toggle" aria-controls="nav-foreninger" aria-expanded="false">Foreninger</button>
+                        <ul class="dropdown-menu" id="nav-foreninger" hidden>
                             <li><a href="../../foreninger/amatoerscenen/">Amatørscenen</a></li>
                             <li><a href="../../foreninger/loevel-kultur-og-forsamlingshus/">Løvel Kultur og Forsamlingshus</a></li>
                             <li><a href="../../foreninger/loevel-menighedsraad/">Menighedsrådet</a></li>
@@ -64,7 +64,7 @@
     </nav>
     <main>
 <div class='section'><div class='container'><h1>Løvels placering</h1></div></div>
-<div class='section ' ><div class='container'><div class='row cols-2'><div class='col'><p>Kun 10 min. kørsel nord for Viborg ligger landsbyen Løvel.</p><p>Løvel er en drivkraftig by med handelsmulighed, pasning, skole og et væld af foreninger.</p><p>Løvel er byen man flytter til hvis man søger nærhed, aktiv fritid, natur og tryghed.</p></div><div class='col'><iframe src='https://www.openstreetmap.org/export/embed.html?bbox=9.460732,56.530343,9.476732,56.538343&layer=mapnik&marker=56.534343,9.468732' style='border: 1px solid #ccc; width: 100%; height: 400px;' frameborder='0'></iframe></div></div></div></div>
+<div class='section ' ><div class='container'><div class='row cols-2'><div class='col'><p>Kun 10 min. kørsel nord for Viborg ligger landsbyen Løvel.</p><p>Løvel er en drivkraftig by med handelsmulighed, pasning, skole og et væld af foreninger.</p><p>Løvel er byen man flytter til hvis man søger nærhed, aktiv fritid, natur og tryghed.</p></div><div class='col'><iframe src='https://www.openstreetmap.org/export/embed.html?bbox=9.460732,56.530343,9.476732,56.538343&layer=mapnik&marker=56.534343,9.468732' title='Kort til Løvel' style='border: 1px solid #ccc; width: 100%; height: 400px;'></iframe></div></div></div></div>
     </main>
 
     <button id="scrollToTop" aria-label="Tilbage til toppen">↑</button>
@@ -102,24 +102,51 @@
             });
         });
 
-        // Mobile menu toggle
-        const toggle = document.getElementById('navbar-toggle');
+        const mobileToggle = document.getElementById('navbar-toggle');
         const menu = document.getElementById('navbar-menu');
-        
-        if (toggle && menu) {
-            toggle.addEventListener('click', function() {
-                menu.classList.toggle('active');
-            });
+        const navbar = mobileToggle.closest('nav');
+        const dropdowns = [...navbar.querySelectorAll('.dropdown-toggle')];
+
+        function setDropdown(button, expanded) {
+            button.setAttribute('aria-expanded', expanded);
+            document.getElementById(button.getAttribute('aria-controls')).hidden = !expanded;
         }
-        
-        // Dropdown menus
-        document.querySelectorAll('.dropdown').forEach(dropdown => {
-            const toggle = dropdown.querySelector('.dropdown-toggle');
-            if (toggle) {
-                toggle.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    dropdown.classList.toggle('active');
-                });
+
+        function closeDropdowns() {
+            dropdowns.forEach(button => setDropdown(button, false));
+        }
+
+        function setMobileMenu(expanded) {
+            mobileToggle.setAttribute('aria-expanded', expanded);
+            menu.classList.toggle('active', expanded);
+            if (!expanded) closeDropdowns();
+        }
+
+        mobileToggle.addEventListener('click', () => {
+            setMobileMenu(mobileToggle.getAttribute('aria-expanded') === 'false');
+        });
+        dropdowns.forEach(button => {
+            button.addEventListener('click', () => {
+                const expanded = button.getAttribute('aria-expanded') === 'false';
+                closeDropdowns();
+                setDropdown(button, expanded);
+            });
+            button.closest('.dropdown').addEventListener('focusout', event => {
+                if (!event.currentTarget.contains(event.relatedTarget)) setDropdown(button, false);
+            });
+        });
+        document.addEventListener('click', event => {
+            if (!navbar.contains(event.target)) setMobileMenu(false);
+        });
+        navbar.addEventListener('keydown', event => {
+            if (event.key !== 'Escape') return;
+            const openDropdown = dropdowns.find(button => button.getAttribute('aria-expanded') === 'true');
+            if (openDropdown) {
+                setDropdown(openDropdown, false);
+                openDropdown.focus();
+            } else if (mobileToggle.getAttribute('aria-expanded') === 'true') {
+                setMobileMenu(false);
+                mobileToggle.focus();
             }
         });
 

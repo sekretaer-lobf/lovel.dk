@@ -192,7 +192,8 @@ a:focus-visible {
     position: relative;
 }
 
-.nav-list a {
+.nav-list a,
+.nav-list .dropdown-toggle {
     display: inline-block;
     color: var(--text);
     font-weight: 500;
@@ -203,13 +204,22 @@ a:focus-visible {
 }
 
 .nav-list a:hover,
+.nav-list .dropdown-toggle:hover,
+.nav-list .dropdown-toggle[aria-expanded="true"],
 .nav-list a.active {
     background-color: rgba(0, 0, 0, 0.1);
     text-decoration: none;
 }
 
+.dropdown-toggle {
+    background: none;
+    border: 0;
+    font: inherit;
+    cursor: pointer;
+    text-align: left;
+}
+
 .dropdown-menu {
-    display: none;
     position: absolute;
     top: calc(100% - 2px);
     left: 0;
@@ -222,10 +232,6 @@ a:focus-visible {
     overflow: hidden;
     margin-top: 0;
     padding-top: 2px;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
 }
 
 .dropdown-menu li {
@@ -421,21 +427,19 @@ footer {
     .nav-list>li {
         border-bottom: 1px solid var(--border);
     }
-    .nav-list a {
+    .nav-list a,
+    .nav-list .dropdown-toggle {
         display: block;
+        width: 100%;
         padding: var(--spacing);
     }
     .dropdown-menu {
         position: static;
-        display: none;
         box-shadow: none;
         border: none;
         background: var(--bg-light);
         margin: 0;
         border-radius: 0;
-    }
-    .dropdown.active .dropdown-menu {
-        display: block;
     }
     .dropdown-menu a {
         padding-left: calc(var(--spacing) * 2);
@@ -736,6 +740,8 @@ footer {
 
 .gallery-item {
     position: relative;
+    padding: 0;
+    border: 0;
     overflow: hidden;
     border-radius: var(--radius);
     box-shadow: var(--shadow-sm);
@@ -760,27 +766,43 @@ footer {
 /* Lightbox Modal */
 
 .lightbox-modal {
-    display: none;
     position: fixed;
-    z-index: 2000;
-    left: 0;
-    top: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: rgba(0, 0, 0, 0.9);
     justify-content: center;
     align-items: center;
-    flex-direction: row;
 }
 
-.lightbox-modal.show {
-    display: flex !important;
+.lightbox-modal[open] {
+    display: flex;
+}
+
+body:has(.lightbox-modal[open]) {
+    overflow: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
 
 .lightbox-close {
     position: absolute;
     top: 20px;
     right: 30px;
+    background: none;
+    border: 0;
     color: white;
     font-size: 40px;
     font-weight: bold;
@@ -795,7 +817,7 @@ footer {
 
 .lightbox-container {
     position: relative;
-    max-width: 90%;
+    min-width: 0;
     max-height: 90%;
     display: flex;
     justify-content: center;
@@ -828,6 +850,10 @@ footer {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.navbar-toggle:focus-visible,
+.dropdown-toggle:focus-visible,
+.gallery-item:focus-visible,
+.lightbox-close:focus-visible,
 .lightbox-prev:focus-visible,
 .lightbox-next:focus-visible {
     outline: 2px solid var(--accent);

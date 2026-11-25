@@ -3,7 +3,7 @@ HTML Component Templates for Løvel website
 Separates HTML rendering from data and build logic
 """
 
-import json
+from html import escape
 
 def render_header(title: str, is_collapsible: bool = False, section_id: str = "") -> str:
     """Render a page section header."""
@@ -101,89 +101,77 @@ def render_image_column(src: str, root_path: str, alt: str = "") -> str:
 
 def render_map_column(src: str, alt: str = "") -> str:
     """Render an OpenStreetMap iframe column."""
-    return f"<iframe src='{src}' style='border: 1px solid #ccc; width: 100%; height: 400px;' frameborder='0'></iframe>"
+    return f"<iframe src='{src}' title='{escape(alt or "Kort")}' style='border: 1px solid #ccc; width: 100%; height: 400px;'></iframe>"
 
 
 def render_iframe_column(src: str, alt: str = "") -> str:
     """Render a generic iframe column."""
-    return f"<iframe src='{src}' style='border: 1px solid #ccc; width: 100%; height: 600px;' frameborder='0' allow='fullscreen'></iframe>"
+    return f"<iframe src='{src}' title='{escape(alt or "Indlejret indhold")}' style='border: 1px solid #ccc; width: 100%; height: 600px;' allow='fullscreen'></iframe>"
 
 
 def render_gallery(images: list, root_path: str) -> str:
-    """Render a gallery of images in grid format with lightbox."""
-    gallery_id = "gallery-lightbox"
-    html = f"<div class='gallery-grid' id='{gallery_id}'>"
-    
-    # Create grid items
-    for idx, img in enumerate(images):
-        src = img.get("src", "")
-        alt = img.get("alt", "")
-        html += f"<div class='gallery-item' data-index='{idx}' onclick='openLightbox({idx})'><img src='{root_path}{src}' alt='{alt}'></div>"
-    
-    html += "</div>"
-    
-    # Add lightbox modal
-    html += f"""
-<div id='lightbox-modal' class='lightbox-modal' onclick='closeLightbox(event)'>
-    <span class='lightbox-close' onclick='closeLightbox()'>&times;</span>
-    <button class='lightbox-prev' onclick='prevLightbox(event)'>&#10094;</button>
+    """Render gallery thumbnails and a keyboard-operable modal."""
+    html = "<div class='gallery-grid'>"
+    for index, image in enumerate(images, start=1):
+        src = escape(root_path + image.get("src", ""))
+        alt = escape(image.get("alt") or f"Billede {index}")
+        html += (
+            f"<button type='button' class='gallery-item' aria-haspopup='dialog' "
+            f"aria-label='Vis stort billede: {alt}'>"
+            f"<img src='{src}' alt='{alt}'></button>"
+        )
+
+    return html + """</div>
+<dialog class='lightbox-modal' aria-label='Billedgalleri'>
+    <button type='button' class='lightbox-close' aria-label='Luk billedvisning' autofocus>&times;</button>
+    <button type='button' class='lightbox-prev' aria-label='Forrige billede'>&#10094;</button>
     <div class='lightbox-container'>
-        <img id='lightbox-image' src='' alt=''>
+        <img alt=''>
+        <span class='visually-hidden' role='status'></span>
     </div>
-    <button class='lightbox-next' onclick='nextLightbox(event)'>&#10095;</button>
-</div>
-
+    <button type='button' class='lightbox-next' aria-label='Næste billede'>&#10095;</button>
+</dialog>
 <script>
-let lightboxIndex = 0;
-const lightboxImages = {json.dumps([img.get('src', '') for img in images])};
+{
+    const dialog = document.currentScript.previousElementSibling;
+    const thumbnails = [...dialog.previousElementSibling.querySelectorAll('.gallery-item')];
+    const image = dialog.querySelector('img');
+    const status = dialog.querySelector('[role="status"]');
+    let current = 0;
+    let opener;
 
-function openLightbox(index) {{
-    lightboxIndex = index;
-    updateLightbox();
-    document.getElementById('lightbox-modal').style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-}}
+    function showImage(index) {
+        current = (index + thumbnails.length) % thumbnails.length;
+        const thumbnail = thumbnails[current].querySelector('img');
+        image.src = thumbnail.src;
+        image.alt = thumbnail.alt;
+        status.textContent = `Billede ${current + 1} af ${thumbnails.length}: ${image.alt}`;
+    }
 
-function closeLightbox(event) {{
-    if (event && event.target.id !== 'lightbox-modal') return;
-    document.getElementById('lightbox-modal').style.display = 'none';
-    document.body.style.overflow = 'auto';
-}}
+    thumbnails.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            opener = button;
+            dialog.showModal();
+            showImage(index);
+        });
+    });
 
-function updateLightbox() {{
-    const img = document.getElementById('lightbox-image');
-    const src = '{root_path}' + lightboxImages[lightboxIndex];
-    img.src = src;
-}}
-
-function nextLightbox(event) {{
-    event.stopPropagation();
-    lightboxIndex = (lightboxIndex + 1) % lightboxImages.length;
-    updateLightbox();
-}}
-
-function prevLightbox(event) {{
-    event.stopPropagation();
-    lightboxIndex = (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length;
-    updateLightbox();
-}}
-
-// Keyboard navigation
-document.addEventListener('keydown', function(event) {{
-    const modal = document.getElementById('lightbox-modal');
-    if (modal.style.display !== 'flex') return;
-    
-    if (event.key === 'ArrowRight') {{
-        nextLightbox({{stopPropagation: function() {{}}}});
-    }} else if (event.key === 'ArrowLeft') {{
-        prevLightbox({{stopPropagation: function() {{}}}});
-    }} else if (event.key === 'Escape') {{
-        closeLightbox();
-    }}
-}});
+    dialog.querySelector('.lightbox-close').addEventListener('click', () => dialog.close());
+    dialog.querySelector('.lightbox-prev').addEventListener('click', () => showImage(current - 1));
+    dialog.querySelector('.lightbox-next').addEventListener('click', () => showImage(current + 1));
+    dialog.addEventListener('click', event => {
+        if (event.target === dialog) dialog.close();
+    });
+    dialog.addEventListener('keydown', event => {
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+            event.preventDefault();
+            showImage(current + (event.key === 'ArrowLeft' ? -1 : 1));
+        }
+    });
+    dialog.addEventListener('close', () => opener.focus());
+}
 </script>
 """
-    return html
 
 
 def render_slider(images: list, root_path: str) -> str:
@@ -267,7 +255,7 @@ def render_slider(images: list, root_path: str) -> str:
 def render_video_column(video_id: str) -> str:
     """Render a YouTube video embed in a column."""
     return f"""<div class='video-container' style='position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;'>
-    <iframe style='position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 8px;' src='https://www.youtube.com/embed/{video_id}?rel=0&showinfo=0' allowfullscreen='' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>
+    <iframe title='Film om Løvel' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 8px;' src='https://www.youtube.com/embed/{video_id}?rel=0&showinfo=0' allowfullscreen='' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>
 </div>"""
 
 
@@ -439,7 +427,7 @@ def render_navbar(pages: dict, root_path: str, is_home: bool) -> str:
     nav = f"""<nav class="navbar" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" id="navbar-toggle">
+                <button type="button" class="navbar-toggle" id="navbar-toggle" aria-label="Hovedmenu" aria-controls="navbar-menu" aria-expanded="false">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -454,8 +442,8 @@ def render_navbar(pages: dict, root_path: str, is_home: bool) -> str:
     # Informationer dropdown (moved after Forside)
     if informationer_pages:
         nav += """                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Informationer</a>
-                        <ul class="dropdown-menu">
+                        <button type="button" class="dropdown-toggle" aria-controls="nav-informationer" aria-expanded="false">Informationer</button>
+                        <ul class="dropdown-menu" id="nav-informationer" hidden>
 """
         for page_id in sorted(informationer_pages.keys()):
             title = informationer_pages[page_id].get('title', page_id.split('/')[-1])
@@ -476,8 +464,8 @@ def render_navbar(pages: dict, root_path: str, is_home: bool) -> str:
         sorted_dagtilbud = [k for k in dagtilbud_order if k in dagtilbud_pages]
         
         nav += """                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Dagtilbud</a>
-                        <ul class="dropdown-menu">
+                        <button type="button" class="dropdown-toggle" aria-controls="nav-dagtilbud" aria-expanded="false">Dagtilbud</button>
+                        <ul class="dropdown-menu" id="nav-dagtilbud" hidden>
 """
         for page_id in sorted_dagtilbud:
             title = dagtilbud_pages[page_id].get('title', page_id.split('/')[-1])
@@ -489,8 +477,8 @@ def render_navbar(pages: dict, root_path: str, is_home: bool) -> str:
     # Foreninger dropdown
     if foreninger_pages:
         nav += """                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Foreninger</a>
-                        <ul class="dropdown-menu">
+                        <button type="button" class="dropdown-toggle" aria-controls="nav-foreninger" aria-expanded="false">Foreninger</button>
+                        <ul class="dropdown-menu" id="nav-foreninger" hidden>
 """
         for page_id in sorted(foreninger_pages.keys()):
             title = foreninger_pages[page_id].get('title', page_id.split('/')[-1])

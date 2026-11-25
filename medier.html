@@ -13,7 +13,7 @@
 <body><nav class="navbar" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" id="navbar-toggle">
+                <button type="button" class="navbar-toggle" id="navbar-toggle" aria-label="Hovedmenu" aria-controls="navbar-menu" aria-expanded="false">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -24,8 +24,8 @@
                 <ul class="nav-list">
                     <li><a href="../index.html" class="">Forside</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Informationer</a>
-                        <ul class="dropdown-menu">
+                        <button type="button" class="dropdown-toggle" aria-controls="nav-informationer" aria-expanded="false">Informationer</button>
+                        <ul class="dropdown-menu" id="nav-informationer" hidden>
                             <li><a href="../informationer/byens-loeve/">Byens Løve</a></li>
                             <li><a href="../informationer/byfest/">Byfest</a></li>
                             <li><a href="../informationer/byggegrunde/">Byggegrunde</a></li>
@@ -35,8 +35,8 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Dagtilbud</a>
-                        <ul class="dropdown-menu">
+                        <button type="button" class="dropdown-toggle" aria-controls="nav-dagtilbud" aria-expanded="false">Dagtilbud</button>
+                        <ul class="dropdown-menu" id="nav-dagtilbud" hidden>
                             <li><a href="../dagtilbud/vuggestue/">Vuggestue</a></li>
                             <li><a href="../dagtilbud/dagpleje/">Dagpleje</a></li>
                             <li><a href="../dagtilbud/boernehave/">Børnehave</a></li>
@@ -44,8 +44,8 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Foreninger</a>
-                        <ul class="dropdown-menu">
+                        <button type="button" class="dropdown-toggle" aria-controls="nav-foreninger" aria-expanded="false">Foreninger</button>
+                        <ul class="dropdown-menu" id="nav-foreninger" hidden>
                             <li><a href="../foreninger/amatoerscenen/">Amatørscenen</a></li>
                             <li><a href="../foreninger/loevel-kultur-og-forsamlingshus/">Løvel Kultur og Forsamlingshus</a></li>
                             <li><a href="../foreninger/loevel-menighedsraad/">Menighedsrådet</a></li>
@@ -65,67 +65,58 @@
     <main>
 <div class='section'><div class='container'><h1>Medier om Løvel</h1></div></div>
 <div class='section ' ><div class='container'><div class='row cols-2'><div class='col'><h2>Om filmen</h2><p>Denne film er lavet i samarbejde med AV-picture og Viborg Landsbysammenslutnings filmfond.</p><p>Filmen giver et indblik i byens sammenhold, natur samt det store væld af forskelligartet tilbud, som Løvel og området omkring byen kan tilbyde.</p></div><div class='col'><div class='video-container' style='position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;'>
-    <iframe style='position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 8px;' src='https://www.youtube.com/embed/DaYmxW91MCU?rel=0&showinfo=0' allowfullscreen='' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>
+    <iframe title='Film om Løvel' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 8px;' src='https://www.youtube.com/embed/DaYmxW91MCU?rel=0&showinfo=0' allowfullscreen='' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>
 </div></div></div></div></div>
 <div class='section'><div class='container'><h1>Galleri</h1></div></div>
-<div class='section'><div class='container'><div class='gallery-grid' id='gallery-lightbox'><div class='gallery-item' data-index='0' onclick='openLightbox(0)'><img src='../media/Galleri/2022_04_29_5218.jpg' alt='Løvel galleri billede 1'></div><div class='gallery-item' data-index='1' onclick='openLightbox(1)'><img src='../media/Galleri/IMG_4687.jpg' alt='Løvel galleri billede 2'></div><div class='gallery-item' data-index='2' onclick='openLightbox(2)'><img src='../media/Galleri/IMG_4697.jpg' alt='Løvel galleri billede 3'></div><div class='gallery-item' data-index='3' onclick='openLightbox(3)'><img src='../media/Galleri/amatoerscenen1.jpg' alt='Amatørscenen - teaterforestilling'></div><div class='gallery-item' data-index='4' onclick='openLightbox(4)'><img src='../media/Galleri/byfest.jpg' alt='Byfest - aktiviteter'></div><div class='gallery-item' data-index='5' onclick='openLightbox(5)'><img src='../media/Galleri/dagpleje.jpg' alt='Dagpleje'></div><div class='gallery-item' data-index='6' onclick='openLightbox(6)'><img src='../media/Galleri/friluftsliv.jpg' alt='Friluftsliv'></div><div class='gallery-item' data-index='7' onclick='openLightbox(7)'><img src='../media/Galleri/gymnastik.png' alt='Gymnastik - børnetræning'></div><div class='gallery-item' data-index='8' onclick='openLightbox(8)'><img src='../media/Galleri/hvid-gren.jpg' alt='Natur i Løvel'></div><div class='gallery-item' data-index='9' onclick='openLightbox(9)'><img src='../media/Galleri/kirkejpg.jpg' alt='Løvel Kirke'></div><div class='gallery-item' data-index='10' onclick='openLightbox(10)'><img src='../media/Galleri/loeve.jpg' alt='Byens Løve'></div><div class='gallery-item' data-index='11' onclick='openLightbox(11)'><img src='../media/Galleri/petanque.jpg' alt='Petanque'></div><div class='gallery-item' data-index='12' onclick='openLightbox(12)'><img src='../media/Galleri/team-loevel-2.jpg' alt='Team Løvel - løbeclub'></div></div>
-<div id='lightbox-modal' class='lightbox-modal' onclick='closeLightbox(event)'>
-    <span class='lightbox-close' onclick='closeLightbox()'>&times;</span>
-    <button class='lightbox-prev' onclick='prevLightbox(event)'>&#10094;</button>
+<div class='section'><div class='container'><div class='gallery-grid'><button type='button' class='gallery-item' aria-haspopup='dialog' aria-label='Vis stort billede: Løvel galleri billede 1'><img src='../media/Galleri/2022_04_29_5218.jpg' alt='Løvel galleri billede 1'></button><button type='button' class='gallery-item' aria-haspopup='dialog' aria-label='Vis stort billede: Løvel galleri billede 2'><img src='../media/Galleri/IMG_4687.jpg' alt='Løvel galleri billede 2'></button><button type='button' class='gallery-item' aria-haspopup='dialog' aria-label='Vis stort billede: Løvel galleri billede 3'><img src='../media/Galleri/IMG_4697.jpg' alt='Løvel galleri billede 3'></button><button type='button' class='gallery-item' aria-haspopup='dialog' aria-label='Vis stort billede: Amatørscenen - teaterforestilling'><img src='../media/Galleri/amatoerscenen1.jpg' alt='Amatørscenen - teaterforestilling'></button><button type='button' class='gallery-item' aria-haspopup='dialog' aria-label='Vis stort billede: Byfest - aktiviteter'><img src='../media/Galleri/byfest.jpg' alt='Byfest - aktiviteter'></button><button type='button' class='gallery-item' aria-haspopup='dialog' aria-label='Vis stort billede: Dagpleje'><img src='../media/Galleri/dagpleje.jpg' alt='Dagpleje'></button><button type='button' class='gallery-item' aria-haspopup='dialog' aria-label='Vis stort billede: Friluftsliv'><img src='../media/Galleri/friluftsliv.jpg' alt='Friluftsliv'></button><button type='button' class='gallery-item' aria-haspopup='dialog' aria-label='Vis stort billede: Gymnastik - børnetræning'><img src='../media/Galleri/gymnastik.png' alt='Gymnastik - børnetræning'></button><button type='button' class='gallery-item' aria-haspopup='dialog' aria-label='Vis stort billede: Natur i Løvel'><img src='../media/Galleri/hvid-gren.jpg' alt='Natur i Løvel'></button><button type='button' class='gallery-item' aria-haspopup='dialog' aria-label='Vis stort billede: Løvel Kirke'><img src='../media/Galleri/kirkejpg.jpg' alt='Løvel Kirke'></button><button type='button' class='gallery-item' aria-haspopup='dialog' aria-label='Vis stort billede: Byens Løve'><img src='../media/Galleri/loeve.jpg' alt='Byens Løve'></button><button type='button' class='gallery-item' aria-haspopup='dialog' aria-label='Vis stort billede: Petanque'><img src='../media/Galleri/petanque.jpg' alt='Petanque'></button><button type='button' class='gallery-item' aria-haspopup='dialog' aria-label='Vis stort billede: Team Løvel - løbeclub'><img src='../media/Galleri/team-loevel-2.jpg' alt='Team Løvel - løbeclub'></button></div>
+<dialog class='lightbox-modal' aria-label='Billedgalleri'>
+    <button type='button' class='lightbox-close' aria-label='Luk billedvisning' autofocus>&times;</button>
+    <button type='button' class='lightbox-prev' aria-label='Forrige billede'>&#10094;</button>
     <div class='lightbox-container'>
-        <img id='lightbox-image' src='' alt=''>
+        <img alt=''>
+        <span class='visually-hidden' role='status'></span>
     </div>
-    <button class='lightbox-next' onclick='nextLightbox(event)'>&#10095;</button>
-</div>
-
+    <button type='button' class='lightbox-next' aria-label='Næste billede'>&#10095;</button>
+</dialog>
 <script>
-let lightboxIndex = 0;
-const lightboxImages = ["media/Galleri/2022_04_29_5218.jpg", "media/Galleri/IMG_4687.jpg", "media/Galleri/IMG_4697.jpg", "media/Galleri/amatoerscenen1.jpg", "media/Galleri/byfest.jpg", "media/Galleri/dagpleje.jpg", "media/Galleri/friluftsliv.jpg", "media/Galleri/gymnastik.png", "media/Galleri/hvid-gren.jpg", "media/Galleri/kirkejpg.jpg", "media/Galleri/loeve.jpg", "media/Galleri/petanque.jpg", "media/Galleri/team-loevel-2.jpg"];
+{
+    const dialog = document.currentScript.previousElementSibling;
+    const thumbnails = [...dialog.previousElementSibling.querySelectorAll('.gallery-item')];
+    const image = dialog.querySelector('img');
+    const status = dialog.querySelector('[role="status"]');
+    let current = 0;
+    let opener;
 
-function openLightbox(index) {
-    lightboxIndex = index;
-    updateLightbox();
-    document.getElementById('lightbox-modal').style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-}
-
-function closeLightbox(event) {
-    if (event && event.target.id !== 'lightbox-modal') return;
-    document.getElementById('lightbox-modal').style.display = 'none';
-    document.body.style.overflow = 'auto';
-}
-
-function updateLightbox() {
-    const img = document.getElementById('lightbox-image');
-    const src = '../' + lightboxImages[lightboxIndex];
-    img.src = src;
-}
-
-function nextLightbox(event) {
-    event.stopPropagation();
-    lightboxIndex = (lightboxIndex + 1) % lightboxImages.length;
-    updateLightbox();
-}
-
-function prevLightbox(event) {
-    event.stopPropagation();
-    lightboxIndex = (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length;
-    updateLightbox();
-}
-
-// Keyboard navigation
-document.addEventListener('keydown', function(event) {
-    const modal = document.getElementById('lightbox-modal');
-    if (modal.style.display !== 'flex') return;
-    
-    if (event.key === 'ArrowRight') {
-        nextLightbox({stopPropagation: function() {}});
-    } else if (event.key === 'ArrowLeft') {
-        prevLightbox({stopPropagation: function() {}});
-    } else if (event.key === 'Escape') {
-        closeLightbox();
+    function showImage(index) {
+        current = (index + thumbnails.length) % thumbnails.length;
+        const thumbnail = thumbnails[current].querySelector('img');
+        image.src = thumbnail.src;
+        image.alt = thumbnail.alt;
+        status.textContent = `Billede ${current + 1} af ${thumbnails.length}: ${image.alt}`;
     }
-});
+
+    thumbnails.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            opener = button;
+            dialog.showModal();
+            showImage(index);
+        });
+    });
+
+    dialog.querySelector('.lightbox-close').addEventListener('click', () => dialog.close());
+    dialog.querySelector('.lightbox-prev').addEventListener('click', () => showImage(current - 1));
+    dialog.querySelector('.lightbox-next').addEventListener('click', () => showImage(current + 1));
+    dialog.addEventListener('click', event => {
+        if (event.target === dialog) dialog.close();
+    });
+    dialog.addEventListener('keydown', event => {
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+            event.preventDefault();
+            showImage(current + (event.key === 'ArrowLeft' ? -1 : 1));
+        }
+    });
+    dialog.addEventListener('close', () => opener.focus());
+}
 </script>
 </div></div>
 <div class='section ' ><div class='container'><p>Hvis du har videoer eller film om Løvel som du gerne vil dele, kontakt os venligst på support@lovel.dk.</p></div></div>
@@ -166,24 +157,51 @@ document.addEventListener('keydown', function(event) {
             });
         });
 
-        // Mobile menu toggle
-        const toggle = document.getElementById('navbar-toggle');
+        const mobileToggle = document.getElementById('navbar-toggle');
         const menu = document.getElementById('navbar-menu');
-        
-        if (toggle && menu) {
-            toggle.addEventListener('click', function() {
-                menu.classList.toggle('active');
-            });
+        const navbar = mobileToggle.closest('nav');
+        const dropdowns = [...navbar.querySelectorAll('.dropdown-toggle')];
+
+        function setDropdown(button, expanded) {
+            button.setAttribute('aria-expanded', expanded);
+            document.getElementById(button.getAttribute('aria-controls')).hidden = !expanded;
         }
-        
-        // Dropdown menus
-        document.querySelectorAll('.dropdown').forEach(dropdown => {
-            const toggle = dropdown.querySelector('.dropdown-toggle');
-            if (toggle) {
-                toggle.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    dropdown.classList.toggle('active');
-                });
+
+        function closeDropdowns() {
+            dropdowns.forEach(button => setDropdown(button, false));
+        }
+
+        function setMobileMenu(expanded) {
+            mobileToggle.setAttribute('aria-expanded', expanded);
+            menu.classList.toggle('active', expanded);
+            if (!expanded) closeDropdowns();
+        }
+
+        mobileToggle.addEventListener('click', () => {
+            setMobileMenu(mobileToggle.getAttribute('aria-expanded') === 'false');
+        });
+        dropdowns.forEach(button => {
+            button.addEventListener('click', () => {
+                const expanded = button.getAttribute('aria-expanded') === 'false';
+                closeDropdowns();
+                setDropdown(button, expanded);
+            });
+            button.closest('.dropdown').addEventListener('focusout', event => {
+                if (!event.currentTarget.contains(event.relatedTarget)) setDropdown(button, false);
+            });
+        });
+        document.addEventListener('click', event => {
+            if (!navbar.contains(event.target)) setMobileMenu(false);
+        });
+        navbar.addEventListener('keydown', event => {
+            if (event.key !== 'Escape') return;
+            const openDropdown = dropdowns.find(button => button.getAttribute('aria-expanded') === 'true');
+            if (openDropdown) {
+                setDropdown(openDropdown, false);
+                openDropdown.focus();
+            } else if (mobileToggle.getAttribute('aria-expanded') === 'true') {
+                setMobileMenu(false);
+                mobileToggle.focus();
             }
         });
 
