@@ -13,7 +13,7 @@
 <body><nav class="navbar" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" id="navbar-toggle">
+                <button type="button" class="navbar-toggle" id="navbar-toggle" aria-label="Hovedmenu" aria-controls="navbar-menu" aria-expanded="false">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -24,8 +24,8 @@
                 <ul class="nav-list">
                     <li><a href="../../index.html" class="">Forside</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Informationer</a>
-                        <ul class="dropdown-menu">
+                        <button type="button" class="dropdown-toggle" aria-controls="nav-informationer" aria-expanded="false">Informationer</button>
+                        <ul class="dropdown-menu" id="nav-informationer" hidden>
                             <li><a href="../../informationer/byens-loeve/">Byens Løve</a></li>
                             <li><a href="../../informationer/byfest/">Byfest</a></li>
                             <li><a href="../../informationer/byggegrunde/">Byggegrunde</a></li>
@@ -35,8 +35,8 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Dagtilbud</a>
-                        <ul class="dropdown-menu">
+                        <button type="button" class="dropdown-toggle" aria-controls="nav-dagtilbud" aria-expanded="false">Dagtilbud</button>
+                        <ul class="dropdown-menu" id="nav-dagtilbud" hidden>
                             <li><a href="../../dagtilbud/vuggestue/">Vuggestue</a></li>
                             <li><a href="../../dagtilbud/dagpleje/">Dagpleje</a></li>
                             <li><a href="../../dagtilbud/boernehave/">Børnehave</a></li>
@@ -44,8 +44,8 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Foreninger</a>
-                        <ul class="dropdown-menu">
+                        <button type="button" class="dropdown-toggle" aria-controls="nav-foreninger" aria-expanded="false">Foreninger</button>
+                        <ul class="dropdown-menu" id="nav-foreninger" hidden>
                             <li><a href="../../foreninger/amatoerscenen/">Amatørscenen</a></li>
                             <li><a href="../../foreninger/loevel-kultur-og-forsamlingshus/">Løvel Kultur og Forsamlingshus</a></li>
                             <li><a href="../../foreninger/loevel-menighedsraad/">Menighedsrådet</a></li>
@@ -81,7 +81,7 @@
 <div class='section collapsible-content collapsed' data-section='friluftsliv'><div class='container'><p>Løvel Friluftsliv er en aktivitet under LUIF.</p><p>VI MANGLER INSTRUKTØR, SÅ DERFOR ER DER IKKE FRILUFTSLIV LIGE NU. KONTAKT TORBEN GADE HVIS DU BRÆNDER FOR AT VÆRE UDE OG VÆRE SAMMEN MED EN MASSE SKØNNE BØRN.</p><p>Friluftsliv er et alternativ til idrætsforeningens traditionelle aktiviteter - Så er du til aktiviteter ude i naturen, så er friluftsliv lige noget for dig / dit barn.</p><p>Der tilbydes oplevelser ude i naturen, hvor sanseoplevelser, og brug af kroppen kommer i fokus. Friluftsliv bygger på succesoplevelser både individuelt og som del af et team.</p><p>Vi mødes i Slugten, Kirkedal i Løvel, en friluftsplads der sammen med naturen danner ramme om vores aktiviteter.</p></div></div>
 <div class='section collapsible-content collapsed' data-section='friluftsliv'><div class='container'><p>Kontakt: Torben Gade</p><p>Tlf. 21 65 43 40</p><p>Email: tg8830@gmail.com</p></div></div>
 <div class='section collapsible-header collapsed' data-section='slugten'><div class='container'><h2 class='collapse-toggle' role='button' tabindex='0' aria-expanded='false' aria-label='Expand Slugten - Naturlegeplads og fællesskab section'>Slugten - Naturlegeplads og fællesskab</h2></div></div>
-<div class='section collapsible-content collapsed' data-section='slugten'><div class='container'><div class='row cols-2-ratio'><div class='col'><iframe src='https://www.openstreetmap.org/export/embed.html?bbox=9.460454,56.529627,9.466454,56.537627&layer=mapnik&marker=56.533627,9.463454' style='border: 1px solid #ccc; width: 100%; height: 400px;' frameborder='0'></iframe></div><div class='col'><p>Slugten er en naturlegeplads i kanten af Løvel by. Det er et fantastisk sted for børnene og der er hele tiden noget at lave.</p><p>Faciliteter: Fælleshshus med 2 toilet-, bade- og køkkenfaciliteter, en overdækning, 2 shelters med grill, bålhytte og tarzanbane.</p><p>Slugten kan lejes til børnefødselsdag, overnatting, familiefester og meget mere.</p><p>Bookning af Slugten gøres via hjemmesiden: www.luif.minisite.dk</p><p>Hvis der skulle opstå spørgsmål eller problemer med booking, så skriv til Torben Gade tlf. 21654340.</p></div></div></div></div>
+<div class='section collapsible-content collapsed' data-section='slugten'><div class='container'><div class='row cols-2-ratio'><div class='col'><iframe src='https://www.openstreetmap.org/export/embed.html?bbox=9.460454,56.529627,9.466454,56.537627&layer=mapnik&marker=56.533627,9.463454' title='Kort til Slugten' style='border: 1px solid #ccc; width: 100%; height: 400px;'></iframe></div><div class='col'><p>Slugten er en naturlegeplads i kanten af Løvel by. Det er et fantastisk sted for børnene og der er hele tiden noget at lave.</p><p>Faciliteter: Fælleshshus med 2 toilet-, bade- og køkkenfaciliteter, en overdækning, 2 shelters med grill, bålhytte og tarzanbane.</p><p>Slugten kan lejes til børnefødselsdag, overnatting, familiefester og meget mere.</p><p>Bookning af Slugten gøres via hjemmesiden: www.luif.minisite.dk</p><p>Hvis der skulle opstå spørgsmål eller problemer med booking, så skriv til Torben Gade tlf. 21654340.</p></div></div></div></div>
 <div class='section collapsible-header collapsed' data-section='gymnastik'><div class='container'><h2 class='collapse-toggle' role='button' tabindex='0' aria-expanded='false' aria-label='Expand Gymnastik section'>Gymnastik</h2></div></div>
 <div class='section collapsible-content collapsed' data-section='gymnastik'><div class='container'><p>I Løvel UIF tilbyder vi gymnastik for børn i forskellige aldre, fordelt på tre holds:</p><p>• Tumlebillerne (0-3 år med forælder): For de mindste sammen med mor/far. Her er det leg, motorik og sjov i centrum.</p><p>• Fræser Kids (Børnehave-klasse): En energisk og sjov time hvor vi arbejder med motorik, spring, løb og leg.</p><p>• Spring og Bevægelse (1. - 3. klasse): Her er der fokus på spring, stavspring, parkour-øvelser og andre sjove bevægelsesaktiviteter.</p><p>Alle holds mødes løbende og tilbyder både træning og kammeratskab.</p></div></div>
 <div class='section collapsible-content collapsed' data-section='gymnastik'><div class='container'><p>Kontakt: Sanni Kalhøj</p><p>Tlf. 26 25 40 57</p><p>Email: Sanni.kalhoj@gmail.com</p></div></div>
@@ -134,24 +134,51 @@
             });
         });
 
-        // Mobile menu toggle
-        const toggle = document.getElementById('navbar-toggle');
+        const mobileToggle = document.getElementById('navbar-toggle');
         const menu = document.getElementById('navbar-menu');
-        
-        if (toggle && menu) {
-            toggle.addEventListener('click', function() {
-                menu.classList.toggle('active');
-            });
+        const navbar = mobileToggle.closest('nav');
+        const dropdowns = [...navbar.querySelectorAll('.dropdown-toggle')];
+
+        function setDropdown(button, expanded) {
+            button.setAttribute('aria-expanded', expanded);
+            document.getElementById(button.getAttribute('aria-controls')).hidden = !expanded;
         }
-        
-        // Dropdown menus
-        document.querySelectorAll('.dropdown').forEach(dropdown => {
-            const toggle = dropdown.querySelector('.dropdown-toggle');
-            if (toggle) {
-                toggle.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    dropdown.classList.toggle('active');
-                });
+
+        function closeDropdowns() {
+            dropdowns.forEach(button => setDropdown(button, false));
+        }
+
+        function setMobileMenu(expanded) {
+            mobileToggle.setAttribute('aria-expanded', expanded);
+            menu.classList.toggle('active', expanded);
+            if (!expanded) closeDropdowns();
+        }
+
+        mobileToggle.addEventListener('click', () => {
+            setMobileMenu(mobileToggle.getAttribute('aria-expanded') === 'false');
+        });
+        dropdowns.forEach(button => {
+            button.addEventListener('click', () => {
+                const expanded = button.getAttribute('aria-expanded') === 'false';
+                closeDropdowns();
+                setDropdown(button, expanded);
+            });
+            button.closest('.dropdown').addEventListener('focusout', event => {
+                if (!event.currentTarget.contains(event.relatedTarget)) setDropdown(button, false);
+            });
+        });
+        document.addEventListener('click', event => {
+            if (!navbar.contains(event.target)) setMobileMenu(false);
+        });
+        navbar.addEventListener('keydown', event => {
+            if (event.key !== 'Escape') return;
+            const openDropdown = dropdowns.find(button => button.getAttribute('aria-expanded') === 'true');
+            if (openDropdown) {
+                setDropdown(openDropdown, false);
+                openDropdown.focus();
+            } else if (mobileToggle.getAttribute('aria-expanded') === 'true') {
+                setMobileMenu(false);
+                mobileToggle.focus();
             }
         });
 
