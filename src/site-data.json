@@ -1289,33 +1289,19 @@
             ]
         },
         "informationer/vandvaerket": {
-            "title": "Løvel Vandværk",
-            "description": "Løvel Vandværk",
+            "title": "Sødal Vand",
+            "description": "Sødal Vand er den fælles vandforsyning for Løvel, Rødding og Vammen.",
             "sections": [{
                     "type": "header",
-                    "title": "Løvel Vandværk",
-                    "id": null,
-                    "collapsible": false
+                    "title": "Sødal Vand"
                 },
                 {
-                    "type": "content",
-                    "layout": "two-col",
-                    "columns": [{
-                            "type": "image",
-                            "src": "media/informationer/vandvaerk-banner.jpg",
-                            "alt": "Vandværk"
-                        },
-                        {
-                            "type": "text",
-                            "paragraphs": [
-                                "Løvel Vandværk er byens lokale vandværk der leverer rent og sikkert vand til områdets indbyggere.",
-                                "Kontakt:",
-                                "Formand: Kim Jakobsen, tlf.: 31234861"
-                            ]
-                        }
-                    ],
-                    "collapsible": false,
-                    "id": null
+                    "type": "text",
+                    "paragraphs": [
+                        "Vandværkerne i Løvel, Rødding og Vammen er slået sammen til Sødal Vand, som leverer drikkevand til de tre byer.",
+                        "På <a href='https://soedalvand.dk/'>Sødal Vands hjemmeside</a> kan du se vandprøver og takster, melde flytning og logge ind for at se din regning.",
+                        "<strong>Kontakt Sødal Vand</strong><br>Telefon: <a href='tel:+4540292374'>40 29 23 74</a><br>E-mail: <a href='mailto:kontakt@soedalvand.dk'>kontakt@soedalvand.dk</a>"
+                    ]
                 }
             ]
         },
