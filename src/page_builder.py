@@ -3,7 +3,6 @@ Page builder logic - orchestrates data and generates page structure
 Separation: Logic only, no HTML generation
 """
 
-from datetime import datetime
 from pathlib import Path
 
 
@@ -32,11 +31,6 @@ def get_css_path(page_id: str, root_path: str) -> str:
     return "assets/styles.css"
 
 
-def get_last_updated() -> str:
-    """Get current date in Danish format."""
-    return datetime.now().strftime("%d. %B %Y")
-
-
 def build_page_metadata(page_id: str, page_data: dict, site_data: dict) -> dict:
     """
     Build all metadata needed for page rendering.
@@ -57,7 +51,6 @@ def build_page_metadata(page_id: str, page_data: dict, site_data: dict) -> dict:
         "has_hero": is_home and "hero" in page_data,
         "hero": page_data.get("hero", {}),
         "sections": page_data.get("sections", []),
-        "last_updated": get_last_updated(),
     }
 
 
@@ -65,7 +58,6 @@ def get_output_file(page_id: str, output_dir: Path) -> Path:
     """Determine output file path for page."""
     if "/" in page_id:
         page_dir = output_dir / page_id
-        page_dir.mkdir(parents=True, exist_ok=True)
         return page_dir / "index.html"
     elif page_id == "home":
         return output_dir / "index.html"
