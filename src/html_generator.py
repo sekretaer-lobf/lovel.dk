@@ -152,9 +152,6 @@ def render_page_main(metadata: dict) -> str:
 
 def render_page_footer(metadata: dict) -> str:
     """Generate footer section."""
-    root_path = metadata['root_path']
-    last_updated = metadata['last_updated']
-    
     return f"""
     <button id="scrollToTop" aria-label="Tilbage til toppen">↑</button>
 
@@ -167,7 +164,6 @@ def render_page_footer(metadata: dict) -> str:
                 </div>
                 <div class="footer-section">
                     <p>© 2025 | Løvel - lige i nærheden</p>
-                    <p><small>Sidst opdateret: {last_updated}</small></p>
                 </div>
             </div>
         </div>
